@@ -1,0 +1,6 @@
+{
+  "_aciklama": "Zorunlu güncelleme. Uygulamanın Android sürüm kodu (versionCode) minVersionCode'dan küçükse 'Güncelleme gerekli' ekranı çıkar. Artırınca: npm run site, sonra docs/surum.json'u GitHub'a yükle. Kontrolü içeren ilk sürüm versionCode 3.",
+  "android": {
+    "minVersionCode": 1
+  }
+}
