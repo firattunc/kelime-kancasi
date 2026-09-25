@@ -1,0 +1,69 @@
+# Kelime Kancası
+
+> İngilizce kelimeleri hafıza kancalarıyla öğreten mobil uygulama (Android; iPhone sürümü yakında). Her kelime, Türkçede sesi ya da yazılışı benzeyen bir kelimeye (kanca) bağlanır, kısa bir hikâye ve resimle canlandırılır, aralıklı tekrarla (Leitner kutuları) pekiştirilir. İçerik: İngilizcede en sık kullanılan 1000 kelime (New General Service List). İlk 50 kelime ücretsiz, kalanı tek seferlik tam sürümle açılır. Hesap, reklam ve veri toplama yok.
+
+## Sayfalar
+
+- [Ana sayfa](https://kelimekancasi.com/): uygulamanın tanıtımı, nasıl çalıştığı ve sık sorulan sorular
+- [İngilizce kelime nasıl ezberlenir?](https://kelimekancasi.com/ingilizce-kelime-ezberleme.html): kanca (anahtar kelime) yöntemi ve aralıklı tekrar rehberi, kaynaklarıyla
+- [En sık kullanılan 1000 İngilizce kelime](https://kelimekancasi.com/en-sik-kullanilan-1000-ingilizce-kelime.html): sıklık sırasıyla Türkçe anlamları ve okunuşları
+- [Erken erişim](https://kelimekancasi.com/erken-erisim.html): Android kapalı testine katılma adımları
+- [Gizlilik politikası](https://kelimekancasi.com/gizlilik.html)
+
+## Kancası ve hikâyesi açık kelimeler
+
+- [money ne demek?](https://kelimekancasi.com/kelime/money-ne-demek.html): para; kanca MANİ
+- [car ne demek?](https://kelimekancasi.com/kelime/car-ne-demek.html): araba; kanca KAR
+- [eye ne demek?](https://kelimekancasi.com/kelime/eye-ne-demek.html): göz; kanca AY
+- [hand ne demek?](https://kelimekancasi.com/kelime/hand-ne-demek.html): el; kanca HENDEK
+- [fish ne demek?](https://kelimekancasi.com/kelime/fish-ne-demek.html): balık; kanca FİŞ
+- [call ne demek?](https://kelimekancasi.com/kelime/call-ne-demek.html): aramak, çağırmak; kanca KOL
+- [win ne demek?](https://kelimekancasi.com/kelime/win-ne-demek.html): kazanmak; kanca VİNÇ
+- [far ne demek?](https://kelimekancasi.com/kelime/far-ne-demek.html): uzak; kanca FAR
+- [sell ne demek?](https://kelimekancasi.com/kelime/sell-ne-demek.html): satmak; kanca SEL
+- [buy ne demek?](https://kelimekancasi.com/kelime/buy-ne-demek.html): satın almak, almak; kanca BAY
+- [bed ne demek?](https://kelimekancasi.com/kelime/bed-ne-demek.html): yatak; kanca BEDEN
+- [dog ne demek?](https://kelimekancasi.com/kelime/dog-ne-demek.html): köpek; kanca DOĞA
+- [fall ne demek?](https://kelimekancasi.com/kelime/fall-ne-demek.html): düşmek; kanca FAL
+- [good ne demek?](https://kelimekancasi.com/kelime/good-ne-demek.html): iyi, güzel; kanca GUT
+- [run ne demek?](https://kelimekancasi.com/kelime/run-ne-demek.html): koşmak; kanca RANZA
+- [old ne demek?](https://kelimekancasi.com/kelime/old-ne-demek.html): yaşlı, eski; kanca OLDU
+- [talk ne demek?](https://kelimekancasi.com/kelime/talk-ne-demek.html): konuşmak; kanca TOK
+- [pay ne demek?](https://kelimekancasi.com/kelime/pay-ne-demek.html): ödemek; kanca PAY
+- [book ne demek?](https://kelimekancasi.com/kelime/book-ne-demek.html): kitap; kanca BUKET
+- [month ne demek?](https://kelimekancasi.com/kelime/month-ne-demek.html): ay; kanca MONT
+- [head ne demek?](https://kelimekancasi.com/kelime/head-ne-demek.html): kafa, baş; kanca HEDEF
+- [ask ne demek?](https://kelimekancasi.com/kelime/ask-ne-demek.html): sormak; kanca AŞK
+- [job ne demek?](https://kelimekancasi.com/kelime/job-ne-demek.html): iş; kanca JOP
+- [cost ne demek?](https://kelimekancasi.com/kelime/cost-ne-demek.html): maliyet, mal olmak; kanca KOSTÜM
+- [hold ne demek?](https://kelimekancasi.com/kelime/hold-ne-demek.html): tutmak; kanca HOL
+- [love ne demek?](https://kelimekancasi.com/kelime/love-ne-demek.html): sevgi, aşk; kanca LAV
+- [hard ne demek?](https://kelimekancasi.com/kelime/hard-ne-demek.html): zor, sert; kanca HARDAL
+- [friend ne demek?](https://kelimekancasi.com/kelime/friend-ne-demek.html): arkadaş; kanca FREN
+- [late ne demek?](https://kelimekancasi.com/kelime/late-ne-demek.html): geç; kanca LATTE
+- [young ne demek?](https://kelimekancasi.com/kelime/young-ne-demek.html): genç; kanca YANGIN
+- [stand ne demek?](https://kelimekancasi.com/kelime/stand-ne-demek.html): ayakta durmak; kanca STANT
+- [hope ne demek?](https://kelimekancasi.com/kelime/hope-ne-demek.html): ummak, umut; kanca HOP
+- [feel ne demek?](https://kelimekancasi.com/kelime/feel-ne-demek.html): hissetmek; kanca FİİL
+- [start ne demek?](https://kelimekancasi.com/kelime/start-ne-demek.html): başlamak; kanca TART
+- [room ne demek?](https://kelimekancasi.com/kelime/room-ne-demek.html): oda; kanca ROMAN
+- [idea ne demek?](https://kelimekancasi.com/kelime/idea-ne-demek.html): fikir; kanca İDDİA
+- [person ne demek?](https://kelimekancasi.com/kelime/person-ne-demek.html): kişi; kanca PERSONEL
+- [speak ne demek?](https://kelimekancasi.com/kelime/speak-ne-demek.html): konuşmak; kanca SPİKER
+- [study ne demek?](https://kelimekancasi.com/kelime/study-ne-demek.html): ders çalışmak; kanca STAD
+- [turn ne demek?](https://kelimekancasi.com/kelime/turn-ne-demek.html): dönmek, çevirmek; kanca TURNA
+- [name ne demek?](https://kelimekancasi.com/kelime/name-ne-demek.html): isim, ad; kanca NEYİM
+- [large ne demek?](https://kelimekancasi.com/kelime/large-ne-demek.html): büyük, geniş; kanca ARGE
+- [open ne demek?](https://kelimekancasi.com/kelime/open-ne-demek.html): açmak; kanca ÖPEN
+- [lead ne demek?](https://kelimekancasi.com/kelime/lead-ne-demek.html): önderlik etmek, yönetmek; kanca LİDER
+- [thank ne demek?](https://kelimekancasi.com/kelime/thank-ne-demek.html): teşekkür etmek; kanca TANK
+- [sure ne demek?](https://kelimekancasi.com/kelime/sure-ne-demek.html): emin; kanca ŞUUR
+- [result ne demek?](https://kelimekancasi.com/kelime/result-ne-demek.html): sonuç; kanca REZALET
+- [yet ne demek?](https://kelimekancasi.com/kelime/yet-ne-demek.html): henüz, hâlâ; kanca YETER
+- [team ne demek?](https://kelimekancasi.com/kelime/team-ne-demek.html): takım; kanca TİM
+- [court ne demek?](https://kelimekancasi.com/kelime/court-ne-demek.html): mahkeme, saha; kanca KORT
+
+## İletişim
+
+- E-posta: info@kelimekancasi.com
+- YouTube: https://www.youtube.com/@kelimekancasi
