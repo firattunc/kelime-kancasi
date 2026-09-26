@@ -64,6 +64,8 @@
   @media (prefers-color-scheme: dark) { .dugme.ana { color: #0E1220; } }
   .dugme.ikincil { background: var(--yuzey); color: var(--yazi); border-color: var(--cizgi); }
   .dugme[aria-disabled="true"] { opacity: .78; cursor: default; }
+  /* "iPhone'da çok yakında": tıklanmaz ama soluk durmasın, göze çarpsın. */
+  .dugme.yakinda { background: var(--isaret); color: var(--isaret-yazi); border-color: transparent; opacity: 1; }
   .not { font-size: 14px; color: var(--soluk); margin: 14px 0 0; }
 
   /* Zincir (giriş görseli) */
@@ -361,7 +363,7 @@
         <p>1000 kelimenin her biri için hazır kanca, hikâye, resim ve sesli telaffuz. Aralıklı tekrarı uygulama kendisi takip eder. İlk 50 kelime ücretsiz; hesap ve reklam yok.</p>
         <div class="dugmeler">
           <a class="dugme ana" href="/erken-erisim.html">Android'de erken erişim →</a>
-          <span class="dugme ikincil" aria-disabled="true">iPhone'da yakında</span>
+          <span class="dugme yakinda" aria-disabled="true">📱 iPhone'da çok yakında</span>
         </div>
       </div>
       </div>
