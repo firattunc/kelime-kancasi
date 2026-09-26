@@ -262,6 +262,9 @@
   .gorev b { display: block; font-size: 18px; margin-bottom: 4px; }
   .gorev span { color: var(--soluk); font-size: 16px; }
   .geri { display: inline-block; margin-top: 8px; font-weight: 700; }
+  /* iPhone'dan gelen (ör. Instagram linki) Android adımlarıyla boşuna uğraşmasın: en üstte açık bir not. */
+  .iphone-notu { background: var(--cukur); border: 1px solid var(--cizgi); border-radius: 18px; padding: 16px 18px; margin: 0 0 22px; font-size: 17px; }
+  .iphone-notu a { font-weight: 700; }
   @media (max-width: 880px) { .gorevler { grid-template-columns: minmax(0, 1fr); } }
   @media (max-width: 480px) { .adim-kart { grid-template-columns: minmax(0, 1fr); } }
 </style>
@@ -283,6 +286,7 @@
 
 <main>
   <div class="kap ust-alan">
+    <p class="iphone-notu" id="iphone-notu" hidden><b>📱 iPhone'dan giriyorsun.</b> Bu erken erişim yalnızca Android telefonlar için. iPhone sürümü çok yakında App Store'da; çıkınca <a href="https://www.youtube.com/@kelimekancasi" rel="noopener">YouTube</a> ve <a href="https://www.instagram.com/kelimekancasi" rel="noopener">Instagram</a>'da duyuracağız. <a href="./">Ana sayfaya dön</a></p>
     <span class="etiket">Android erken erişim</span>
     <h1>Kelime Kancası'nı <mark>ilk deneyenlerden</mark> ol.</h1>
     <p class="vaat">Uygulama şu an Google Play'de kapalı testte. Aşağıdaki 3 adımı yap, birkaç dakika içinde telefonunda olsun.</p>
@@ -393,5 +397,13 @@
     </div>
   </div>
 </footer>
+<script>
+  // Ana sayfadaki algılamanın aynısı (iPad'ler kendini Mac gibi tanıtıyor). Blok içinde: sayfadaki başka betiklerle ad çakışmasın.
+  {
+    const ua = navigator.userAgent;
+    const ios = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    if (ios) document.getElementById('iphone-notu').hidden = false;
+  }
+</script>
 </body>
 </html>
