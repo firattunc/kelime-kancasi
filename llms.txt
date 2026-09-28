@@ -13,35 +13,19 @@
 ## Kancası ve hikâyesi açık kelimeler
 
 - [money ne demek?](https://kelimekancasi.com/kelime/money-ne-demek.html): para; kanca MANİ
-- [clock ne demek?](https://kelimekancasi.com/kelime/clock-ne-demek.html): saat (duvar/masa saati); kanca KLAKSON
-- [touch ne demek?](https://kelimekancasi.com/kelime/touch-ne-demek.html): dokunmak; kanca TAÇ
 - [month ne demek?](https://kelimekancasi.com/kelime/month-ne-demek.html): ay; kanca MONT
 - [charge ne demek?](https://kelimekancasi.com/kelime/charge-ne-demek.html): şarj etmek, ücret; kanca ÇARK
 - [car ne demek?](https://kelimekancasi.com/kelime/car-ne-demek.html): araba; kanca KAR
-- [laugh ne demek?](https://kelimekancasi.com/kelime/laugh-ne-demek.html): gülmek; kanca LAF
 - [fill ne demek?](https://kelimekancasi.com/kelime/fill-ne-demek.html): doldurmak; kanca FİL
-- [catch ne demek?](https://kelimekancasi.com/kelime/catch-ne-demek.html): yakalamak; kanca KEÇİ
 - [speak ne demek?](https://kelimekancasi.com/kelime/speak-ne-demek.html): konuşmak; kanca SPİKER
-- [contain ne demek?](https://kelimekancasi.com/kelime/contain-ne-demek.html): içermek; kanca KONTEYNER
 - [bone ne demek?](https://kelimekancasi.com/kelime/bone-ne-demek.html): kemik; kanca BONE
-- [paint ne demek?](https://kelimekancasi.com/kelime/paint-ne-demek.html): boyamak, boya; kanca PEYNİR
-- [reflect ne demek?](https://kelimekancasi.com/kelime/reflect-ne-demek.html): yansıtmak, düşünmek; kanca REFLEKS
 - [store ne demek?](https://kelimekancasi.com/kelime/store-ne-demek.html): mağaza, depolamak; kanca STOR
-- [middle ne demek?](https://kelimekancasi.com/kelime/middle-ne-demek.html): orta; kanca MİDİLLİ
 - [fish ne demek?](https://kelimekancasi.com/kelime/fish-ne-demek.html): balık; kanca FİŞ
-- [should ne demek?](https://kelimekancasi.com/kelime/should-ne-demek.html): -meli, -malı; kanca ŞUT
-- [bear ne demek?](https://kelimekancasi.com/kelime/bear-ne-demek.html): ayı; kanca BERE
-- [foot ne demek?](https://kelimekancasi.com/kelime/foot-ne-demek.html): ayak; kanca FUTBOL
-- [facility ne demek?](https://kelimekancasi.com/kelime/facility-ne-demek.html): tesis, imkân; kanca FISILTI
 - [where ne demek?](https://kelimekancasi.com/kelime/where-ne-demek.html): nerede; kanca VER
 - [sell ne demek?](https://kelimekancasi.com/kelime/sell-ne-demek.html): satmak; kanca SEL
-- [burn ne demek?](https://kelimekancasi.com/kelime/burn-ne-demek.html): yakmak, yanmak; kanca BURUN
-- [ship ne demek?](https://kelimekancasi.com/kelime/ship-ne-demek.html): gemi; kanca ŞİŞE
 - [leg ne demek?](https://kelimekancasi.com/kelime/leg-ne-demek.html): bacak; kanca LEĞEN
-- [this ne demek?](https://kelimekancasi.com/kelime/this-ne-demek.html): bu; kanca DİŞ
 - [far ne demek?](https://kelimekancasi.com/kelime/far-ne-demek.html): uzak; kanca FAR
 - [court ne demek?](https://kelimekancasi.com/kelime/court-ne-demek.html): mahkeme, saha; kanca KORT
-- [basic ne demek?](https://kelimekancasi.com/kelime/basic-ne-demek.html): temel, basit; kanca BEŞİK
 - [rule ne demek?](https://kelimekancasi.com/kelime/rule-ne-demek.html): kural; kanca RULO
 - [able ne demek?](https://kelimekancasi.com/kelime/able-ne-demek.html): yapabilir, muktedir; kanca ABLA
 - [lack ne demek?](https://kelimekancasi.com/kelime/lack-ne-demek.html): eksiklik, yokluk; kanca LEKE
@@ -49,19 +33,35 @@
 - [per ne demek?](https://kelimekancasi.com/kelime/per-ne-demek.html): başına; kanca PERİ
 - [path ne demek?](https://kelimekancasi.com/kelime/path-ne-demek.html): patika, yol; kanca PATİ
 - [cut ne demek?](https://kelimekancasi.com/kelime/cut-ne-demek.html): kesmek; kanca KAT
-- [pound ne demek?](https://kelimekancasi.com/kelime/pound-ne-demek.html): paund (para birimi), libre (ağırlık birimi); kanca PANDA
-- [find ne demek?](https://kelimekancasi.com/kelime/find-ne-demek.html): bulmak; kanca FINDIK
-- [summer ne demek?](https://kelimekancasi.com/kelime/summer-ne-demek.html): yaz; kanca SAMURAY
 - [short ne demek?](https://kelimekancasi.com/kelime/short-ne-demek.html): kısa; kanca ŞORT
-- [sing ne demek?](https://kelimekancasi.com/kelime/sing-ne-demek.html): şarkı söylemek; kanca SİNEK
-- [least ne demek?](https://kelimekancasi.com/kelime/least-ne-demek.html): en az; kanca LİSTE
 - [matter ne demek?](https://kelimekancasi.com/kelime/matter-ne-demek.html): mesele, önemli olmak; kanca METRE
-- [search ne demek?](https://kelimekancasi.com/kelime/search-ne-demek.html): aramak; kanca SERÇE
 - [color ne demek?](https://kelimekancasi.com/kelime/color-ne-demek.html): renk; kanca KALIR
 - [fail ne demek?](https://kelimekancasi.com/kelime/fail-ne-demek.html): başarısız olmak; kanca FAİL
-- [wish ne demek?](https://kelimekancasi.com/kelime/wish-ne-demek.html): dilemek, dilek; kanca VİŞNE
-- [rate ne demek?](https://kelimekancasi.com/kelime/rate-ne-demek.html): oran; kanca REYTİNG
-- [lake ne demek?](https://kelimekancasi.com/kelime/lake-ne-demek.html): göl; kanca LEYLEK
+- [eye ne demek?](https://kelimekancasi.com/kelime/eye-ne-demek.html): göz; kanca AY
+- [hand ne demek?](https://kelimekancasi.com/kelime/hand-ne-demek.html): el; kanca HENDEK
+- [call ne demek?](https://kelimekancasi.com/kelime/call-ne-demek.html): aramak, çağırmak; kanca KOL
+- [win ne demek?](https://kelimekancasi.com/kelime/win-ne-demek.html): kazanmak; kanca VİNÇ
+- [run ne demek?](https://kelimekancasi.com/kelime/run-ne-demek.html): koşmak; kanca RANZA
+- [pay ne demek?](https://kelimekancasi.com/kelime/pay-ne-demek.html): ödemek; kanca PAY
+- [fall ne demek?](https://kelimekancasi.com/kelime/fall-ne-demek.html): düşmek; kanca FAL
+- [head ne demek?](https://kelimekancasi.com/kelime/head-ne-demek.html): kafa, baş; kanca HEDEF
+- [ask ne demek?](https://kelimekancasi.com/kelime/ask-ne-demek.html): sormak; kanca AŞK
+- [hold ne demek?](https://kelimekancasi.com/kelime/hold-ne-demek.html): tutmak; kanca HOL
+- [love ne demek?](https://kelimekancasi.com/kelime/love-ne-demek.html): sevgi, aşk; kanca LAV
+- [hard ne demek?](https://kelimekancasi.com/kelime/hard-ne-demek.html): zor, sert; kanca HARDAL
+- [friend ne demek?](https://kelimekancasi.com/kelime/friend-ne-demek.html): arkadaş; kanca FREN
+- [young ne demek?](https://kelimekancasi.com/kelime/young-ne-demek.html): genç; kanca YANGIN
+- [person ne demek?](https://kelimekancasi.com/kelime/person-ne-demek.html): kişi; kanca PERSONEL
+- [study ne demek?](https://kelimekancasi.com/kelime/study-ne-demek.html): ders çalışmak; kanca STADYUM
+- [lead ne demek?](https://kelimekancasi.com/kelime/lead-ne-demek.html): önderlik etmek, yönetmek; kanca LİDER
+- [sure ne demek?](https://kelimekancasi.com/kelime/sure-ne-demek.html): emin; kanca ŞUUR
+- [hang ne demek?](https://kelimekancasi.com/kelime/hang-ne-demek.html): asmak; kanca HANGAR
+- [secret ne demek?](https://kelimekancasi.com/kelime/secret-ne-demek.html): sır, gizli; kanca SEKRETER
+- [crash ne demek?](https://kelimekancasi.com/kelime/crash-ne-demek.html): çarpmak, kaza; kanca KREŞ
+- [miss ne demek?](https://kelimekancasi.com/kelime/miss-ne-demek.html): özlemek, kaçırmak; kanca MİS
+- [move ne demek?](https://kelimekancasi.com/kelime/move-ne-demek.html): hareket etmek, taşınmak; kanca MUAVİN
+- [jump ne demek?](https://kelimekancasi.com/kelime/jump-ne-demek.html): zıplamak, atlamak; kanca KAMP
+- [foot ne demek?](https://kelimekancasi.com/kelime/foot-ne-demek.html): ayak; kanca FUTBOL
 
 ## İletişim
 
