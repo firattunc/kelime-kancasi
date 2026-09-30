@@ -1,6 +1,9 @@
 {
-  "_aciklama": "Zorunlu güncelleme. Uygulamanın Android sürüm kodu (versionCode) minVersionCode'dan küçükse 'Güncelleme gerekli' ekranı çıkar. Artırınca: npm run site, sonra docs/surum.json'u GitHub'a yükle. Kontrolü içeren ilk sürüm versionCode 3.",
+  "_aciklama": "Zorunlu güncelleme. Uygulamanın derleme numarası en düşük değerden küçükse kapanmayan 'Güncelleme gerekli' ekranı çıkar ve mağazaya yönlendirir. Android: versionCode (kontrol vc3'ten beri). iPhone: CFBundleVersion, yani App Store Connect'teki derleme numarası (kontrol 1.2.2 (11) ile geldi; daha eski iPhone sürümleri zorlanamaz). Yükseltmeden önce o derleme ilgili platformun her kanalında herkese açık olmalı; iPhone'da incelemedeki sürümün derlemesinden yükseğe çekilmez (inceleyici bu ekranı görüp reddeder). Artırınca: npm run site, sonra docs/surum.json'u site deposuna yükle.",
   "android": {
     "minVersionCode": 14
+  },
+  "ios": {
+    "minBuildNumber": 1
   }
 }
