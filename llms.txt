@@ -1,6 +1,6 @@
 # Kelime Kancası
 
-> İngilizce kelimeleri hafıza kancalarıyla öğreten mobil uygulama (Android; iPhone sürümü yakında). Her kelime, Türkçede sesi ya da yazılışı benzeyen bir kelimeye (kanca) bağlanır, kısa bir hikâye ve resimle canlandırılır, aralıklı tekrarla (Leitner kutuları) pekiştirilir. İçerik: İngilizcede en sık kullanılan 1000 kelime (New General Service List). İlk 20 kelime ücretsiz, kalanı tek seferlik tam sürümle açılır. Hesap, reklam ve veri toplama yok.
+> İngilizce kelimeleri hafıza kancalarıyla öğreten mobil uygulama (Android; iPhone sürümü yakında). Her kelime, Türkçede sesi ya da yazılışı benzeyen bir kelimeye (kanca) bağlanır, kısa bir hikâye ve resimle canlandırılır, aralıklı tekrarla (Leitner kutuları) pekiştirilir. İçerik: İngilizcede en sık kullanılan 1000 kelime (New General Service List). İlk 20 kelime ücretsiz, kalanı tek seferlik tam sürümle açılır. Hesap ve reklam yok.
 
 ## Sayfalar
 
