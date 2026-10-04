@@ -1,7 +1,7 @@
 {
   "_aciklama": "Zorunlu güncelleme. Uygulamanın derleme numarası en düşük değerden küçükse kapanmayan 'Güncelleme gerekli' ekranı çıkar ve mağazaya yönlendirir; eşit ya da büyükse hiçbir şey olmaz. Android: versionCode (kontrol vc3'ten beri). iPhone: CFBundleVersion, yani App Store Connect'teki derleme numarası (kontrol 1.2.2 (11) ile geldi; daha eski iPhone sürümleri zorlanamaz). KESİN KURAL: hiçbir platformda mağaza inceleyicisi ya da testçi etkilenmez; değer, o platformda incelemedeki, testçilerdeki (TestFlight, Play dahili/kapalı test) ve yayındaki derlemelerin en küçüğünden asla büyük olamaz (AGENTS.md → Zorunlu güncelleme). Artırınca: npm run site, sonra docs/surum.json'u site deposuna yükle.",
   "android": {
-    "minVersionCode": 18
+    "minVersionCode": 19
   },
   "ios": {
     "minBuildNumber": 1
