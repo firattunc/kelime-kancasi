@@ -4,6 +4,6 @@
     "minVersionCode": 19
   },
   "ios": {
-    "minBuildNumber": 1
+    "minBuildNumber": 17
   }
 }

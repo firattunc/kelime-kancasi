@@ -1,6 +1,6 @@
 # Kelime Kancası
 
-> İngilizce kelimeleri hafıza kancalarıyla öğreten mobil uygulama (Android; iPhone sürümü yakında). Her kelime, Türkçede sesi ya da yazılışı benzeyen bir kelimeye (kanca) bağlanır, kısa bir hikâye ve resimle canlandırılır, aralıklı tekrarla (Leitner kutuları) pekiştirilir. İçerik: İngilizcede en sık kullanılan 1000 kelime (New General Service List). İlk 20 kelime ücretsiz, kalanı tek seferlik tam sürümle açılır. Hesap ve reklam yok.
+> İngilizce kelimeleri hafıza kancalarıyla öğreten mobil uygulama (iPhone'da App Store'da; Android'de Google Play'de kapalı testte). Her kelime, Türkçede sesi ya da yazılışı benzeyen bir kelimeye (kanca) bağlanır, kısa bir hikâye ve resimle canlandırılır, aralıklı tekrarla (Leitner kutuları) pekiştirilir. İçerik: İngilizcede en sık kullanılan 1000 kelime (New General Service List). İlk 20 kelime ücretsiz, kalanı tek seferlik tam sürümle açılır. Hesap ve reklam yok.
 
 ## Sayfalar
 
@@ -8,6 +8,7 @@
 - [İngilizce kelime nasıl ezberlenir?](https://kelimekancasi.com/ingilizce-kelime-ezberleme.html): kanca (anahtar kelime) yöntemi ve aralıklı tekrar rehberi, kaynaklarıyla
 - [En sık kullanılan 1000 İngilizce kelime](https://kelimekancasi.com/en-sik-kullanilan-1000-ingilizce-kelime.html): sıklık sırasıyla Türkçe anlamları ve okunuşları
 - [Erken erişim](https://kelimekancasi.com/erken-erisim.html): Android kapalı testine katılma adımları
+- [App Store](https://apps.apple.com/tr/app/id6816336789): iPhone uygulaması
 - [Gizlilik politikası](https://kelimekancasi.com/gizlilik.html)
 
 ## Kancası ve hikâyesi açık kelimeler
@@ -15,23 +16,23 @@
 - [money ne demek?](https://kelimekancasi.com/kelime/money-ne-demek.html): para; kanca MANİ
 - [month ne demek?](https://kelimekancasi.com/kelime/month-ne-demek.html): ay; kanca MONT
 - [car ne demek?](https://kelimekancasi.com/kelime/car-ne-demek.html): araba; kanca KAR
-- [speak ne demek?](https://kelimekancasi.com/kelime/speak-ne-demek.html): konuşmak; kanca SPİKER
-- [fish ne demek?](https://kelimekancasi.com/kelime/fish-ne-demek.html): balık; kanca FİŞ
-- [bone ne demek?](https://kelimekancasi.com/kelime/bone-ne-demek.html): kemik; kanca BONE
-- [store ne demek?](https://kelimekancasi.com/kelime/store-ne-demek.html): mağaza, depolamak; kanca STOR
-- [sell ne demek?](https://kelimekancasi.com/kelime/sell-ne-demek.html): satmak; kanca SEL
-- [court ne demek?](https://kelimekancasi.com/kelime/court-ne-demek.html): mahkeme, saha; kanca KORT
-- [cut ne demek?](https://kelimekancasi.com/kelime/cut-ne-demek.html): kesmek; kanca KAT
-- [fail ne demek?](https://kelimekancasi.com/kelime/fail-ne-demek.html): başarısız olmak; kanca FAİL
-- [eye ne demek?](https://kelimekancasi.com/kelime/eye-ne-demek.html): göz; kanca AY
-- [more ne demek?](https://kelimekancasi.com/kelime/more-ne-demek.html): daha fazla; kanca MOR
-- [run ne demek?](https://kelimekancasi.com/kelime/run-ne-demek.html): koşmak; kanca RANZA
-- [win ne demek?](https://kelimekancasi.com/kelime/win-ne-demek.html): kazanmak; kanca VİNÇ
-- [call ne demek?](https://kelimekancasi.com/kelime/call-ne-demek.html): aramak, çağırmak; kanca KOL
-- [pay ne demek?](https://kelimekancasi.com/kelime/pay-ne-demek.html): ödemek; kanca PAY
 - [fall ne demek?](https://kelimekancasi.com/kelime/fall-ne-demek.html): düşmek; kanca FAL
+- [miss ne demek?](https://kelimekancasi.com/kelime/miss-ne-demek.html): özlemek, kaçırmak; kanca MİS
+- [hard ne demek?](https://kelimekancasi.com/kelime/hard-ne-demek.html): zor, sert; kanca HARDAL
+- [speak ne demek?](https://kelimekancasi.com/kelime/speak-ne-demek.html): konuşmak; kanca SPİKER
+- [run ne demek?](https://kelimekancasi.com/kelime/run-ne-demek.html): koşmak; kanca RANZA
+- [judge ne demek?](https://kelimekancasi.com/kelime/judge-ne-demek.html): yargıç, hâkim; kanca CACIK
+- [sister ne demek?](https://kelimekancasi.com/kelime/sister-ne-demek.html): kız kardeş; kanca SİS TIR
+- [fish ne demek?](https://kelimekancasi.com/kelime/fish-ne-demek.html): balık; kanca FİŞ
+- [ring ne demek?](https://kelimekancasi.com/kelime/ring-ne-demek.html): yüzük, halka, çalmak (zil); kanca RİNG
+- [on ne demek?](https://kelimekancasi.com/kelime/on-ne-demek.html): üzerinde; kanca ON
+- [short ne demek?](https://kelimekancasi.com/kelime/short-ne-demek.html): kısa; kanca ŞORT
+- [call ne demek?](https://kelimekancasi.com/kelime/call-ne-demek.html): aramak, çağırmak; kanca KOL
 - [ask ne demek?](https://kelimekancasi.com/kelime/ask-ne-demek.html): sormak; kanca AŞK
-- [love ne demek?](https://kelimekancasi.com/kelime/love-ne-demek.html): sevgi, aşk; kanca LAV
+- [again ne demek?](https://kelimekancasi.com/kelime/again-ne-demek.html): tekrar, yine; kanca AĞA İN
+- [can ne demek?](https://kelimekancasi.com/kelime/can-ne-demek.html): -ebilmek; kanca CAN
+- [prize ne demek?](https://kelimekancasi.com/kelime/prize-ne-demek.html): ödül; kanca PRİZ
+- [still ne demek?](https://kelimekancasi.com/kelime/still-ne-demek.html): hâlâ; kanca STİL
 
 ## İletişim
 
