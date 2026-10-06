@@ -3,15 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Erken erişim · Kelime Kancası</title>
-<meta name="description" content="Kelime Kancası Android'de kapalı testte. Resimli, adım adım anlatım: 5 dakikada test kullanıcısı ol, uygulamayı herkesten önce dene.">
+<title>Kelime Kancası Google Play'de yayında</title>
+<meta name="description" content="Kelime Kancası artık Google Play'de ve App Store'da yayında.">
+<meta name="robots" content="noindex">
 <meta name="theme-color" content="#2346B8">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Kelime Kancası · Android erken erişim">
-<meta property="og:description" content="Resimli, adım adım: 5 dakikada test kullanıcısı ol, İngilizce kelimeleri hafıza kancalarıyla herkesten önce öğrenmeye başla.">
-<meta property="og:image" content="https://kelimekancasi.com/og.png">
-<meta property="og:url" content="https://kelimekancasi.com/erken-erisim.html">
-<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
 <link rel="apple-touch-icon" href="/favicon.png">
@@ -243,311 +238,31 @@
     .dugme { width: 100%; justify-content: center; }
   }
 
-
-  /* Erken erişim sayfasına özel (28 Eyl 2026: "arkadaşlarım tam anlayamadı", adımlar resimli ve tek tek anlatılıyor). */
-  .ust-alan { padding-block: 48px 16px; }
-  .ust-alan > * { max-width: 820px; }
-  .ust-alan h1 { font-size: clamp(32px, 5.2vw, 52px); }
-  .gereken { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
-  .gereken span { background: var(--yuzey); border: 1px solid var(--cizgi); border-radius: 999px; padding: 6px 14px; font-weight: 700; font-size: 15px; }
-
-  /* Kısaca: adımların tek satırlık özeti */
-  .kisaca { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 18px; font-weight: 800; font-size: 16px; }
-  .kisaca span { background: var(--yuzey); border: 1px solid var(--cizgi); border-radius: 12px; padding: 8px 12px; }
-  .kisaca i { font-style: normal; color: var(--soluk); }
-
-  .adim-listesi { display: grid; gap: 18px; max-width: 980px; list-style: none; padding: 0; margin: 0; }
-  .adim-kart { background: var(--yuzey); border: 1px solid var(--cizgi); border-radius: 22px; padding: 22px; display: grid;
-    grid-template-columns: 48px minmax(0, 1fr) 240px; gap: 20px; box-shadow: var(--golge); align-items: start; }
-  .adim-kart.uyari { border: 2px solid var(--isaret); }
-  .adim-kart .sayi { width: 48px; height: 48px; border-radius: 50%; background: var(--mavi); color: #fff; display: grid; place-items: center; font-size: 22px; font-weight: 900; }
-  @media (prefers-color-scheme: dark) { .adim-kart .sayi { color: #0E1220; } }
-  .adim-kart.uyari .sayi { background: var(--isaret); color: var(--isaret-yazi); }
-  .adim-kart h2 { font-size: 22px; margin: 4px 0 8px; }
-  .adim-kart p { margin: 0 0 12px; color: var(--soluk); }
-  .adim-kart p b { color: var(--yazi); }
-  .adim-kart ol.alt { margin: 0 0 14px; padding-left: 20px; color: var(--soluk); }
-  .adim-kart ol.alt li { margin-bottom: 6px; }
-  .adim-kart ol.alt b { color: var(--yazi); }
-  .adim-kart .ipucu { font-size: 15px; background: var(--cukur); border-radius: 12px; padding: 10px 12px; margin: 12px 0 0; color: var(--yazi); }
-
-  /* Telefon çizimi: o adımda ekranda ne görüleceği, basılacak düğme sarı çerçeveli ve yanıp söner. Gerçek ekranın
-     birebir kopyası değil, yol gösteren sade bir çizim. */
-  .telefon { width: 240px; border: 9px solid #1b2233; border-radius: 30px; background: #fff; color: #1b2233; padding: 12px 12px 18px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.18); font-size: 13px; line-height: 1.35; position: relative; }
-  .telefon .adres { background: #eef1f6; border-radius: 999px; padding: 5px 10px; font-size: 11.5px; color: #555; display: flex; justify-content: space-between; align-items: center; gap: 6px; }
-  .telefon .adres .nokta { font-weight: 900; font-size: 16px; line-height: 1; padding: 0 4px; border-radius: 6px; }
-  .telefon .baslik { font-weight: 800; font-size: 15px; margin: 12px 0 4px; }
-  .telefon .soluk { color: #6b7280; font-size: 12px; margin-bottom: 10px; }
-  .telefon .satir { height: 8px; background: #e5e7eb; border-radius: 4px; margin: 6px 0; }
-  .telefon .satir.kisa { width: 60%; }
-  .telefon .dugme { display: block; text-align: center; border-radius: 999px; padding: 9px 10px; font-weight: 800; font-size: 14px; margin-top: 10px; }
-  .telefon .mavi-dugme { background: #1a73e8; color: #fff; }
-  .telefon .yesil-dugme { background: #01875f; color: #fff; }
-  .telefon .acilir { border: 1px solid #e5e7eb; border-radius: 10px; margin-top: 8px; box-shadow: 0 6px 18px rgba(0,0,0,.12); overflow: hidden; }
-  .telefon .acilir div { padding: 8px 10px; border-bottom: 1px solid #f0f0f0; }
-  .telefon .acilir div:last-child { border-bottom: 0; }
-  .telefon .profil { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
-  .telefon .avatar { width: 30px; height: 30px; border-radius: 50%; background: #f4b400; color: #fff; display: grid; place-items: center; font-weight: 900; }
-  .telefon .hesap { margin-top: 10px; background: #f3f4f6; border-radius: 12px; padding: 8px 10px; }
-  .telefon .hesap b { display: block; font-size: 13px; }
-  .telefon .uyg { display: flex; gap: 10px; align-items: center; margin-top: 12px; }
-  .telefon .uyg img { width: 48px; height: 48px; border-radius: 12px; }
-  .telefon .tamam { color: #01875f; font-weight: 800; margin-top: 10px; }
-  .vurgu { outline: 3px solid #f4c20d; outline-offset: 3px; animation: nabiz 1.6s ease-in-out infinite; }
-  @keyframes nabiz { 0%, 100% { outline-color: #f4c20d; } 50% { outline-color: rgba(244,194,13,.25); } }
-  @media (prefers-reduced-motion: reduce) { .vurgu { animation: none; } }
-  .parmak { position: absolute; font-size: 28px; filter: drop-shadow(0 2px 2px rgba(0,0,0,.25)); }
-
-  .gorevler { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-  .gorev { background: var(--zemin); border: 1px solid var(--cizgi); border-radius: 18px; padding: 20px; }
-  .gorev b { display: block; font-size: 18px; margin-bottom: 4px; }
-  .gorev span { color: var(--soluk); font-size: 16px; }
-  .geri { display: inline-block; margin-top: 8px; font-weight: 700; }
-  /* iPhone'dan gelen (ör. Instagram linki) Android adımlarıyla boşuna uğraşmasın: en üstte açık bir not. */
-  .iphone-notu { background: var(--cukur); border: 1px solid var(--cizgi); border-radius: 18px; padding: 16px 18px; margin: 0 0 22px; font-size: 17px; }
-  .iphone-notu a { font-weight: 700; }
-  @media (max-width: 880px) { .gorevler { grid-template-columns: minmax(0, 1fr); } }
-  @media (max-width: 760px) {
-    .adim-kart { grid-template-columns: 48px minmax(0, 1fr); }
-    .adim-kart .telefon { grid-column: 1 / -1; justify-self: center; }
-  }
-  @media (max-width: 420px) { .adim-kart { grid-template-columns: minmax(0, 1fr); } .adim-kart .telefon { grid-column: auto; } }
 </style>
-<link rel="canonical" href="https://kelimekancasi.com/erken-erisim.html">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://kelimekancasi.com/#marka","name":"Kelime Kancası","alternateName":["KelimeKancasi","kelimekancasi"],"url":"https://kelimekancasi.com/","logo":"https://kelimekancasi.com/favicon.png","email":"info@kelimekancasi.com","sameAs":["https://www.youtube.com/@kelimekancasi","https://www.instagram.com/kelimekancasi","https://www.tiktok.com/@kelimekancasi"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Düğmelere dokununca \"oturum aç\" diyor ya da hiçbir şey olmuyor","acceptedAnswer":{"@type":"Answer","text":"Sayfa büyük ihtimalle Instagram, WhatsApp ya da TikTok'un kendi içinde açık. Sağ üstteki ⋮ (üç nokta) işaretine dokunup \"Tarayıcıda aç\" de, adımları Chrome'da baştan yap. Chrome'da Google hesabın zaten açıktır."}},{"@type":"Question","name":"\"Uygulama bulunamadı\" ya da \"Bu uygulama kullanılamıyor\" diyor","acceptedAnswer":{"@type":"Answer","text":"İki sebebi olur. Birincisi hesap farkı: gruba ve teste katıldığın Gmail ile Play Store'da açık Gmail aynı olmalı (1. adım). İkincisi zaman: yeni katıldıysan Google'ın seni tanıması 5-10 dakika sürebilir; bekleyip 4. adımdaki düğmeye tekrar dokun. Olmazsa Play Store'u tamamen kapatıp yeniden aç."}},{"@type":"Question","name":"Birden fazla Google hesabım var","acceptedAnswer":{"@type":"Answer","text":"Play Store'da hangi hesap seçiliyse 2. ve 3. adımı o hesapla yap. Chrome'da farklı bir hesap açıksa sayfanın sağ üstündeki profil resmine dokunup doğru hesaba geç, ya da gizli sekmede o hesapla giriş yap."}},{"@type":"Question","name":"Bilgisayardan yapabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Evet. 2. ve 3. adımı bilgisayarda, telefonundaki Play Store'da açık olan Gmail ile yap. Sonra 4. adımı telefonda yap ya da bilgisayarda Google Play sayfasındaki \"Yükle\"ye basıp telefonunu seç; uygulama telefonuna iner."}},{"@type":"Question","name":"iPhone'um var, katılabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Bu test yalnızca Android'de. iPhone sürümü App Store'da yayında: App Store'dan indir."}},{"@type":"Question","name":"Test ücretli mi? Satın alma yapmam gerekiyor mu?","acceptedAnswer":{"@type":"Answer","text":"Hayır. İlk 20 kelime ücretsiz ve test için fazlasıyla yeterli. Uygulamada tam sürüm satın alma seçeneği görebilirsin; test için satın alman gerekmez, dokunmasan da olur."}},{"@type":"Question","name":"Verilerim güvende mi?","acceptedAnswer":{"@type":"Answer","text":"Uygulama hesap istemez, reklam göstermez; ilerlemen yalnızca telefonunda saklanır. Uygulamayı geliştirmek için yalnızca adsız kullanım sayıları tutulur. Test grubunda yalnızca e-posta adresin Google Gruplar'da üye olarak görünür, başka bir bilgi paylaşılmaz. Ayrıntılar gizlilik politikasında."}},{"@type":"Question","name":"Testten nasıl çıkarım?","acceptedAnswer":{"@type":"Answer","text":"Uygulamayı silmen yeterli. İstersen test sayfasından \"Programdan ayrıl\" diyebilir, Google Gruplar'da gruptan çıkabilirsin."}},{"@type":"Question","name":"Yine olmadı, ne yapayım?","acceptedAnswer":{"@type":"Answer","text":"Hangi adımda takıldığını ve ekranda ne yazdığını (mümkünse ekran görüntüsüyle) info@kelimekancasi.com adresine yaz, birlikte çözelim."}}]}]}</script>
+<link rel="canonical" href="https://kelimekancasi.com/">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://kelimekancasi.com/#marka","name":"Kelime Kancası","alternateName":["KelimeKancasi","kelimekancasi"],"url":"https://kelimekancasi.com/","logo":"https://kelimekancasi.com/favicon.png","email":"info@kelimekancasi.com","sameAs":["https://www.youtube.com/@kelimekancasi","https://www.instagram.com/kelimekancasi","https://www.tiktok.com/@kelimekancasi"]}]}</script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a9b7e9092d5f446ebcebf6b8c338797f"}'></script>
 </head>
 <body>
 
 <header class="ust">
   <div class="kap">
-    <a class="marka" href="./"><img src="data:image/png;base64,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" alt="">Kelime Kancası</a>
-    <nav class="menu" aria-label="Sayfalar">
-      <a href="./#nasil">Nasıl çalışır?</a>
-      <a href="#sorunlar">Sorun mu var?</a>
-    </nav>
+    <a class="marka" href="./"><img src="/favicon.png" alt="">Kelime Kancası</a>
   </div>
 </header>
 
 <main>
-  <div class="kap ust-alan">
-    <p class="iphone-notu" id="iphone-notu" hidden><b>📱 iPhone'dan giriyorsun.</b> Bu erken erişim yalnızca Android telefonlar için. iPhone sürümü App Store'da yayında: <a href="https://apps.apple.com/tr/app/id6816336789" rel="noopener">App Store'dan indir</a>. <a href="./">Ana sayfaya dön</a></p>
-    <span class="etiket">Android erken erişim</span>
-    <h1>Kelime Kancası'nı telefonuna <mark>5 dakikada</mark> kur.</h1>
-    <p class="vaat">Uygulama şu an Google Play'de <b>kapalı testte</b>. Bu yüzden Play Store'da aratınca çıkmaz. Aşağıdaki adımları <b>sırayla, telefonundan</b> yap; her adımın yanındaki resim, ekranda ne göreceğini ve nereye dokunacağını gösteriyor.</p>
-    <div class="gereken" aria-label="Gerekenler">
-      <span>📱 Android telefon</span>
-      <span>✉️ Gmail hesabı</span>
-      <span>⏱️ 5 dakika</span>
-      <span>💸 Ücretsiz</span>
-    </div>
-    <div class="kisaca" aria-label="Kısaca adımlar">
-      <span>Chrome'da aç</span><i>→</i><span>Gmail'ini öğren</span><i>→</i><span>Gruba katıl</span><i>→</i><span>Test kullanıcısı ol</span><i>→</i><span>Yükle</span>
-    </div>
-  </div>
-
-  <section style="padding-top:24px">
+  <section class="acik kapanis">
     <div class="kap">
-      <ol class="adim-listesi">
-
-        <li class="adim-kart uyari">
-          <span class="sayi">!</span>
-          <div>
-            <h2>Önce: bu sayfayı Chrome'da aç</h2>
-            <p>Bu bağlantıya <b>Instagram, WhatsApp, TikTok ya da YouTube</b>'dan geldiysen sayfa o uygulamanın içinde açılmıştır. Orada Google hesabın açık olmadığı için sonraki adımlar çalışmaz. <b>En sık yaşanan sorun budur.</b></p>
-            <ol class="alt">
-              <li>Ekranın sağ üstündeki <b>⋮ (üç nokta)</b> işaretine dokun.</li>
-              <li><b>"Tarayıcıda aç"</b> ya da <b>"Chrome'da aç"</b> seçeneğine dokun.</li>
-              <li>Sayfa Chrome'da açılınca buradan devam et.</li>
-            </ol>
-            <p class="ipucu">Zaten Chrome'daysan (adres çubuğunda <b>kelimekancasi.com</b> görüyorsan) bu adımı atla.</p>
-          </div>
-          <div class="telefon" aria-hidden="true">
-            <div class="adres"><span>kelimekancasi.com</span><span class="nokta vurgu">⋮</span></div>
-            <div class="acilir">
-              <div>Bağlantıyı kopyala</div>
-              <div class="vurgu"><b>Tarayıcıda aç</b></div>
-              <div>Paylaş</div>
-            </div>
-            <div class="satir"></div><div class="satir kisa"></div>
-            <span class="parmak" style="right:14px;top:74px">👆</span>
-          </div>
-        </li>
-
-        <li class="adim-kart">
-          <span class="sayi">1</span>
-          <div>
-            <h2>Hangi Gmail'in açık, öğren</h2>
-            <p>Teste, telefonundaki <b>Play Store'da açık olan Gmail</b> ile katılman gerekiyor. Başka bir hesapla katılırsan uygulama "bulunamadı" der.</p>
-            <ol class="alt">
-              <li>Telefonunda <b>Play Store</b>'u aç.</li>
-              <li>Sağ üstteki <b>yuvarlak profil resmine</b> dokun.</li>
-              <li>En üstte yazan e-posta adresi senin hesabın. <b>Bunu aklında tut</b>; sonraki adımlarda Google hesap sorarsa hep bunu seç.</li>
-            </ol>
-          </div>
-          <div class="telefon" aria-hidden="true">
-            <div class="profil"><b>Google Play</b><span class="avatar vurgu">A</span></div>
-            <div class="hesap"><b>Ayşe Yılmaz</b>ayse.yilmaz@gmail.com</div>
-            <div class="satir"></div><div class="satir kisa"></div><div class="satir"></div>
-            <span class="parmak" style="right:6px;top:52px">👆</span>
-          </div>
-        </li>
-
-        <li class="adim-kart">
-          <span class="sayi">2</span>
-          <div>
-            <h2>Test grubuna katıl</h2>
-            <ol class="alt">
-              <li>Aşağıdaki <b>Gruba katıl</b> düğmesine dokun. Google Gruplar sayfası açılır.</li>
-              <li>Sayfadaki mavi <b>Gruba katıl</b> düğmesine dokun.</li>
-              <li>Google hesap seçmeni isterse <b>1. adımdaki Gmail'i</b> seç.</li>
-              <li>"Bu grubun üyesisiniz" ya da benzeri bir yazı görünce tamam. Grupta mesajlaşma yok, sadece bir üyelik listesi.</li>
-            </ol>
-            <a class="dugme ana" href="https://groups.google.com/g/kelimekancasi-test" rel="noopener" target="_blank">Gruba katıl ↗</a>
-          </div>
-          <div class="telefon" aria-hidden="true">
-            <div class="adres"><span>groups.google.com</span></div>
-            <div class="baslik">kelimekancasi-test</div>
-            <div class="soluk">Kelime Kancası test kullanıcıları</div>
-            <span class="dugme mavi-dugme vurgu">Gruba katıl</span>
-            <div class="satir"></div><div class="satir kisa"></div>
-            <span class="parmak" style="right:22px;top:118px">👆</span>
-          </div>
-        </li>
-
-        <li class="adim-kart">
-          <span class="sayi">3</span>
-          <div>
-            <h2>Test kullanıcısı ol</h2>
-            <ol class="alt">
-              <li>Aşağıdaki <b>Test kullanıcısı ol</b> düğmesine dokun. Google Play'in test sayfası açılır.</li>
-              <li>Sayfadaki <b>Test kullanıcısı ol</b> düğmesine dokun.</li>
-              <li><b>"Artık test kullanıcısısınız"</b> yazısını görünce tamam.</li>
-            </ol>
-            <a class="dugme ana" href="https://play.google.com/apps/testing/com.kelimekancasi.app" rel="noopener" target="_blank">Test kullanıcısı ol ↗</a>
-            <p class="ipucu">"Test kullanıcısı ol" düğmesini göremiyorsan ya da sayfa "bu programa katılamazsınız" diyorsa 2. adım henüz işlememiştir ya da farklı bir Gmail ile açıksın: 1-2 dakika bekleyip sayfayı yenile, sağ üstteki hesabı kontrol et.</p>
-          </div>
-          <div class="telefon" aria-hidden="true">
-            <div class="adres"><span>play.google.com</span></div>
-            <div class="baslik">Kelime Kancası</div>
-            <div class="soluk">Test programına katılın</div>
-            <span class="dugme mavi-dugme vurgu">Test kullanıcısı ol</span>
-            <div class="tamam">✓ Artık test kullanıcısısınız</div>
-            <span class="parmak" style="right:22px;top:118px">👆</span>
-          </div>
-        </li>
-
-        <li class="adim-kart">
-          <span class="sayi">4</span>
-          <div>
-            <h2>Uygulamayı yükle</h2>
-            <ol class="alt">
-              <li>Aşağıdaki <b>Google Play'de aç</b> düğmesine dokun. Play Store'da uygulamanın sayfası açılır.</li>
-              <li>Yeşil <b>Yükle</b> düğmesine dokun. Uygulama birkaç saniyede iner.</li>
-              <li>Açılınca kısa tanıtımı geç, ilk kelimelerine başla. 🎉</li>
-            </ol>
-            <a class="dugme ana" href="https://play.google.com/store/apps/details?id=com.kelimekancasi.app" rel="noopener" target="_blank">Google Play'de aç ↗</a>
-            <p class="ipucu">⏳ <b>"Uygulama bulunamadı" derse panik yok.</b> Google'ın seni test kullanıcısı olarak tanıması 5-10 dakika sürebilir. Biraz bekle, bu düğmeye tekrar dokun. Hâlâ olmuyorsa aşağıdaki "Sorun mu var?" bölümüne bak.</p>
-          </div>
-          <div class="telefon" aria-hidden="true">
-            <div class="profil"><b>Google Play</b><span class="avatar">A</span></div>
-            <div class="uyg"><img src="data:image/png;base64,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" alt=""><div><b>Kelime Kancası İngilizce Ezber</b><div class="soluk">Eğitim · Erken erişim</div></div></div>
-            <span class="dugme yesil-dugme vurgu">Yükle</span>
-            <div class="satir"></div><div class="satir kisa"></div>
-            <span class="parmak" style="right:22px;top:128px">👆</span>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="acik">
-    <div class="kap">
-      <p class="ust-baslik">Test sırasında</p>
-      <h2>Senden üç küçük rica</h2>
-      <p class="alt-baslik">Uygulamanın herkese açılabilmesi için Google, testçilerin uygulamayı <b>en az 14 gün</b> telefonda tutmasını istiyor.</p>
-      <div class="gorevler">
-        <div class="gorev"><b>🗓️ 14 gün silme</b><span>Uygulama telefonunda dursun. Kaldırırsan test süresi uzayabilir.</span></div>
-        <div class="gorev"><b>⏱️ Ara ara aç</b><span>Günde birkaç dakika kelime çalış. Gerçek kullanım en değerli geri bildirimdir.</span></div>
-        <div class="gorev"><b>✉️ Aklına geleni yaz</b><span>Hata, garip bir kanca ya da fikir: <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a></span></div>
+      <h2>Kelime Kancası artık yayında.</h2>
+      <p class="alt-baslik">Erken erişim dönemi bitti. Uygulamayı doğrudan mağazadan indirebilirsin.</p>
+      <div class="dugmeler">
+        <a class="dugme ana" href="https://play.google.com/store/apps/details?id=com.kelimekancasi.app" rel="noopener">▶ Google Play'den indir</a>
+        <a class="dugme yakinda" href="https://apps.apple.com/tr/app/id6816336789" rel="noopener">📱 App Store'dan indir</a>
       </div>
-    </div>
-  </section>
-
-  <section id="sorunlar">
-    <div class="kap">
-      <p class="ust-baslik">Sorun mu var?</p>
-      <h2>Sık karşılaşılanlar</h2>
-      <div class="sss">
-        <details>
-          <summary>Düğmelere dokununca "oturum aç" diyor ya da hiçbir şey olmuyor</summary>
-          <p>Sayfa büyük ihtimalle Instagram, WhatsApp ya da TikTok'un kendi içinde açık. Sağ üstteki ⋮ (üç nokta) işaretine dokunup "Tarayıcıda aç" de, adımları Chrome'da baştan yap. Chrome'da Google hesabın zaten açıktır.</p>
-        </details>
-        <details>
-          <summary>"Uygulama bulunamadı" ya da "Bu uygulama kullanılamıyor" diyor</summary>
-          <p>İki sebebi olur. Birincisi hesap farkı: gruba ve teste katıldığın Gmail ile Play Store'da açık Gmail aynı olmalı (1. adım). İkincisi zaman: yeni katıldıysan Google'ın seni tanıması 5-10 dakika sürebilir; bekleyip 4. adımdaki düğmeye tekrar dokun. Olmazsa Play Store'u tamamen kapatıp yeniden aç.</p>
-        </details>
-        <details>
-          <summary>Birden fazla Google hesabım var</summary>
-          <p>Play Store'da hangi hesap seçiliyse 2. ve 3. adımı o hesapla yap. Chrome'da farklı bir hesap açıksa sayfanın sağ üstündeki profil resmine dokunup doğru hesaba geç, ya da gizli sekmede o hesapla giriş yap.</p>
-        </details>
-        <details>
-          <summary>Bilgisayardan yapabilir miyim?</summary>
-          <p>Evet. 2. ve 3. adımı bilgisayarda, telefonundaki Play Store'da açık olan Gmail ile yap. Sonra 4. adımı telefonda yap ya da bilgisayarda Google Play sayfasındaki "Yükle"ye basıp telefonunu seç; uygulama telefonuna iner.</p>
-        </details>
-        <details>
-          <summary>iPhone'um var, katılabilir miyim?</summary>
-          <p>Bu test yalnızca Android'de. iPhone sürümü App Store'da yayında: <a href="https://apps.apple.com/tr/app/id6816336789" rel="noopener">App Store'dan indir</a>.</p>
-        </details>
-        <details>
-          <summary>Test ücretli mi? Satın alma yapmam gerekiyor mu?</summary>
-          <p>Hayır. İlk 20 kelime ücretsiz ve test için fazlasıyla yeterli. Uygulamada tam sürüm satın alma seçeneği görebilirsin; test için satın alman gerekmez, dokunmasan da olur.</p>
-        </details>
-        <details>
-          <summary>Verilerim güvende mi?</summary>
-          <p>Uygulama hesap istemez, reklam göstermez; ilerlemen yalnızca telefonunda saklanır. Uygulamayı geliştirmek için yalnızca adsız kullanım sayıları tutulur. Test grubunda yalnızca e-posta adresin Google Gruplar'da üye olarak görünür, başka bir bilgi paylaşılmaz. Ayrıntılar <a href="gizlilik.html">gizlilik politikasında</a>.</p>
-        </details>
-        <details>
-          <summary>Testten nasıl çıkarım?</summary>
-          <p>Uygulamayı silmen yeterli. İstersen <a href="https://play.google.com/apps/testing/com.kelimekancasi.app" rel="noopener">test sayfasından</a> "Programdan ayrıl" diyebilir, Google Gruplar'da gruptan çıkabilirsin.</p>
-        </details>
-        <details>
-          <summary>Yine olmadı, ne yapayım?</summary>
-          <p>Hangi adımda takıldığını ve ekranda ne yazdığını (mümkünse ekran görüntüsüyle) <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a> adresine yaz, birlikte çözelim.</p>
-        </details>
-      </div>
-      <a class="geri" href="./">← Ana sayfaya dön</a>
+      <p class="not"><a href="./">Ana sayfaya dön</a></p>
     </div>
   </section>
 </main>
-
-<footer>
-  <div class="kap satirlar">
-    <div>
-      <b>Kelime Kancası</b>
-      <p>İngilizce kelimeleri hafıza kancaları, hikâyeler ve resimlerle öğreten, Türkiye'de bağımsız olarak geliştirilen bir uygulama.</p>
-    </div>
-    <div>
-      <b>İletişim</b>
-      <p><a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a></p>
-      <p><a href="https://www.youtube.com/@kelimekancasi" rel="noopener">YouTube: @kelimekancasi</a></p>
-    </div>
-    <div>
-      <b>Bilgi</b>
-      <p><a href="./">Ana sayfa</a></p>
-      <p><a href="gizlilik.html">Gizlilik politikası</a></p>
-      <p><a href="ingilizce-kelime-ezberleme.html">İngilizce kelime nasıl ezberlenir?</a></p>
-    </div>
-  </div>
-</footer>
-<script>
-  // Ana sayfadaki algılamanın aynısı (iPad'ler kendini Mac gibi tanıtıyor). Blok içinde: sayfadaki başka betiklerle ad çakışmasın.
-  {
-    const ua = navigator.userAgent;
-    const ios = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
-    if (ios) document.getElementById('iphone-notu').hidden = false;
-  }
-</script>
 </body>
 </html>
