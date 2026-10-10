@@ -4,7 +4,7 @@
     "minVersionCode": 24
   },
   "ios": {
-    "minBuildNumber": 25
+    "minBuildNumber": 28
   },
   "kampanya": {
     "eskiFiyat": 499.99,
