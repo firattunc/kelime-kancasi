@@ -627,6 +627,11 @@
     : '';
   const html = ios ? tiktokNotu + iosDugmesi('ana') + nasilDugmesi : android ? playDugmesi() + nasilDugmesi : playDugmesi() + iosDugmesi('yakinda');
   document.querySelectorAll('[data-indir]').forEach((el) => { el.innerHTML = html; });
+  // TikTok'tan gelen iPhone'u bir kez Safari'ye atmayı dene; TikTok engellerse yukarıdaki not kalır.
+  if (ios && tiktokIci && !sessionStorage.getItem('safariDenendi')) {
+    sessionStorage.setItem('safariDenendi', '1');
+    location.href = 'x-safari-' + location.href;
+  }
   // Erken erişim bölümüne bağlantı hedefi.
   document.querySelector('.erken')?.closest('section')?.setAttribute('id', 'erken');
 </script>
