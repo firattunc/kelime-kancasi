@@ -66,6 +66,9 @@
   /* Bilgisayardan girene gösterilen App Store düğmesi: göze çarpsın. */
   .dugme.yakinda { background: var(--isaret); color: var(--isaret-yazi); border-color: transparent; opacity: 1; }
   .not { font-size: 14px; color: var(--soluk); margin: 14px 0 0; }
+  /* TikTok içi tarayıcı App Store'u açamaz: Safari'ye geçiş tarifi. */
+  .tiktok-ici { flex-basis: 100%; margin: 0; font-size: 16px; line-height: 1.45; padding: 12px 16px; border-radius: 14px;
+    background: var(--isaret); color: var(--isaret-yazi); }
 
   /* Zincir (giriş görseli) */
   .zincir { background: var(--yuzey); border: 1px solid var(--cizgi); border-radius: 26px; padding: 26px; display: grid; gap: 4px; box-shadow: var(--golge); }
@@ -483,8 +486,8 @@
         <li>İngilizcede en sık kullanılan 1000 kelime</li>
         <li>Her kelime için kanca, hikâye, resim ve örnek cümle</li>
         <li>Kelime ve örnek cümleler için sesli telaffuz</li>
-        <li>Günlük yeni kelime, tekrar ve mini test</li>
-        <li>Soru sayısını seçtiğin, yanlışta kancayı hatırlatan mini test</li>
+        <li>Günlük yeni kelime, tekrar ve testler</li>
+        <li>11 soru şekli, eşleştirme, süreli tur ve haftalık sınavla testler</li>
         <li>Tekrar zamanı geldiğinde hatırlatma bildirimi</li>
         <li>Seri takibi ve ilerleme göstergesi</li>
         <li>Nasıl çalıştığını adım adım anlatan tanıtım</li>
@@ -499,7 +502,7 @@
           <span class="buyuk">20 kelime</span>
           <ul>
             <li>Kancasıyla öğrendiğin ilk 20 kelime; bildiklerini atlaman bu sayıdan düşmez</li>
-            <li>Tekrar, mini test ve hatırlatmalar sınırsız</li>
+            <li>Tekrar, testler ve hatırlatmalar sınırsız</li>
             <li>Hesap açmadan, kart bilgisi vermeden</li>
           </ul>
         </div>
@@ -609,6 +612,8 @@
   const ua = navigator.userAgent;
   const android = /Android/i.test(ua);
   const ios = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  // TikTok'un kendi tarayıcısı iPhone'da App Store'a geçmeye izin vermiyor ("İşlem tamamlanamadı"); Instagram'da sorun yok.
+  const tiktokIci = /musical_ly|BytedanceWebview|TikTok/i.test(ua);
 
   const playDugmesi = () => PLAY_YAYINDA
     ? `<a class="dugme ana" href="${PLAY_URL}" rel="noopener">▶ Google Play'den indir</a>`
@@ -617,7 +622,10 @@
   const iosDugmesi = (sinif) => `<a class="dugme ${sinif}" href="${APP_STORE_URL}" rel="noopener">📱 App Store'dan indir</a>`;
 
   // Cihaza göre doğru düğme önde; bilgisayardan girenler iki telefonun durumunu da görsün.
-  const html = ios ? iosDugmesi('ana') + nasilDugmesi : android ? playDugmesi() + nasilDugmesi : playDugmesi() + iosDugmesi('yakinda');
+  const tiktokNotu = ios && tiktokIci
+    ? `<p class="tiktok-ici">👉 İndirmek için önce sağ üstteki <b>•••</b> simgesine dokun, sonra <b>Tarayıcıda aç</b>'ı seç. Safari'de açılınca App Store düğmesine bas.</p>`
+    : '';
+  const html = ios ? tiktokNotu + iosDugmesi('ana') + nasilDugmesi : android ? playDugmesi() + nasilDugmesi : playDugmesi() + iosDugmesi('yakinda');
   document.querySelectorAll('[data-indir]').forEach((el) => { el.innerHTML = html; });
   // Erken erişim bölümüne bağlantı hedefi.
   document.querySelector('.erken')?.closest('section')?.setAttribute('id', 'erken');
