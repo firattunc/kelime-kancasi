@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word Hook · Learn Spanish words with memory hooks</title>
+<meta name="description" content="Learn the 1000 most common Spanish words by hooking each one to an English word you already know. Hook, story, picture and audio. No ads, no account, works offline.">
+<meta name="theme-color" content="#2346B8">
+<link rel="canonical" href="https://kelimekancasi.com/en/">
+<link rel="alternate" hreflang="tr" href="https://kelimekancasi.com/">
+<link rel="alternate" hreflang="es" href="https://kelimekancasi.com/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://kelimekancasi.com/pt/">
+<link rel="alternate" hreflang="it" href="https://kelimekancasi.com/it/">
+<link rel="alternate" hreflang="fr" href="https://kelimekancasi.com/fr/">
+<link rel="alternate" hreflang="id" href="https://kelimekancasi.com/id/">
+<link rel="alternate" hreflang="ja" href="https://kelimekancasi.com/ja/">
+<link rel="alternate" hreflang="ko" href="https://kelimekancasi.com/ko/">
+<link rel="alternate" hreflang="en" href="https://kelimekancasi.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://kelimekancasi.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Word Hook · Learn Spanish words with memory hooks">
+<meta property="og:description" content="Learn the 1000 most common Spanish words by hooking each one to an English word you already know. Hook, story, picture and audio. No ads, no account, works offline.">
+<meta property="og:image" content="https://kelimekancasi.com/og.png">
+<meta property="og:url" content="https://kelimekancasi.com/en/">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<style>
+  :root { color-scheme: light dark; --ink:#151C2E; --muted:#566077; --ground:#F3F5F9; --card:#FFFFFF; --line:#D2D8E3; --blue:#2346B8; --hl:#FBE35A; --hlink:#151C2E; --green:#1D7349; --greensoft:#DDF3E6; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#E6E9F1; --muted:#9AA3B9; --ground:#0E1220; --card:#161C2C; --line:#2A3350; --blue:#93AAFF; --hl:#E5CF47; --hlink:#10131C; --green:#70D3A0; --greensoft:#16342A; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--ground); color:var(--ink); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans CJK JP", "Noto Sans CJK KR", "Noto Sans JP", "Noto Sans KR", sans-serif; -webkit-font-smoothing:antialiased; }
+  a { color:var(--blue); }
+  mark { background:var(--hl); color:var(--hlink); padding:0 .25em; border-radius:.25em; font-weight:800; }
+  .wrap { width:100%; max-width:960px; margin:0 auto; padding-inline:20px; }
+  header.top { border-bottom:1px solid var(--line); }
+  header.top .wrap { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px 16px; padding-block:12px; }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:900; font-size:19px; text-decoration:none; color:var(--ink); }
+  .brand img { width:34px; height:34px; border-radius:9px; }
+  .langs { font-size:14px; color:var(--muted); }
+  .langs a { text-decoration:none; }
+  .langs [aria-current] { color:var(--ink); font-weight:800; }
+  .hero { padding-block:48px 40px; }
+  .tag { display:inline-block; background:color-mix(in srgb, var(--blue) 14%, transparent); color:var(--blue); font-weight:800; font-size:14px; padding:6px 12px; border-radius:999px; }
+  h1 { font-size:clamp(32px, 6vw, 56px); line-height:1.12; letter-spacing:-0.01em; margin:16px 0; font-weight:900; }
+  h2 { font-size:clamp(22px, 3.4vw, 30px); line-height:1.25; margin:0 0 16px; }
+  .promise { font-size:20px; color:var(--muted); margin:0 0 24px; max-width:40ch; }
+  .btns { display:flex; flex-wrap:wrap; gap:12px; }
+  .btn { display:inline-flex; align-items:center; gap:10px; font-weight:800; font-size:17px; text-decoration:none; padding:13px 20px; border-radius:14px; border:2px solid transparent; }
+  .btn.main { background:var(--blue); color:#fff; }
+  @media (prefers-color-scheme: dark) { .btn.main { color:#0E1220; } }
+  .btn.alt { background:var(--card); color:var(--ink); border-color:var(--line); }
+  .note { color:var(--muted); font-size:15px; margin:16px 0 0; }
+  .chain { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:12px; margin-top:36px; }
+  .link { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; }
+  .link small { display:block; color:var(--muted); font-size:13px; margin-bottom:4px; }
+  .link b { font-size:26px; line-height:1.2; display:block; }
+  .link span { color:var(--muted); font-size:14px; }
+  .link.hook b { background:var(--hl); color:var(--hlink); display:inline-block; padding:0 .3em; border-radius:.25em; }
+  .story { margin:14px 0 0; font-size:18px; font-style:italic; color:var(--muted); }
+  .trust { display:flex; flex-wrap:wrap; gap:8px; padding:0; margin:0; list-style:none; }
+  .trust li { background:var(--card); border:1px solid var(--line); border-radius:999px; padding:6px 14px; font-weight:700; font-size:15px; }
+  section { padding-block:36px; }
+  .steps { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:16px; }
+  .step { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px; }
+  .step h3 { margin:0 0 6px; font-size:19px; }
+  .step p { margin:0; color:var(--muted); }
+  ul.inside { padding-left:1.2em; margin:0; }
+  ul.inside li { margin-bottom:8px; }
+  .plans { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:16px; }
+  .plan { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px; }
+  .plan.hl { border-color:var(--blue); }
+  .badge { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:999px; background:var(--line); color:var(--muted); }
+  .plan.free .badge { background:var(--greensoft); color:var(--green); }
+  .plan h3 { margin:8px 0; font-size:24px; }
+  .plan ul { padding-left:1.1em; margin:0; color:var(--muted); font-size:15px; }
+  .cta { text-align:center; padding-block:40px 48px; }
+  .cta p { font-size:20px; font-weight:700; margin:0 0 20px; }
+  .cta .btns { justify-content:center; }
+  footer { border-top:1px solid var(--line); color:var(--muted); font-size:14px; padding-block:28px 40px; }
+  footer p { margin:0 0 8px; }
+  @media (max-width:720px) { .chain, .steps, .plans { grid-template-columns:minmax(0, 1fr); } .btn { width:100%; justify-content:center; } }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/en/"><img src="/favicon.png" alt="">Word Hook</a>
+  <nav class="langs" aria-label="Language"><a href="/" hreflang="tr" lang="tr">Türkçe</a> · <a href="/es/" hreflang="es" lang="es">Español</a> · <a href="/pt/" hreflang="pt-BR" lang="pt-BR">Português</a> · <a href="/it/" hreflang="it" lang="it">Italiano</a> · <a href="/fr/" hreflang="fr" lang="fr">Français</a> · <a href="/id/" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/ja/" hreflang="ja" lang="ja">日本語</a> · <a href="/ko/" hreflang="ko" lang="ko">한국어</a> · <span aria-current="true">English</span></nav>
+</div></header>
+<main>
+  <div class="wrap hero">
+    <span class="tag">Spanish vocabulary with a memory technique</span>
+    <h1>Don’t drill the word, <mark>hook it</mark>.</h1>
+    <p class="promise">Every Spanish word is tied to an English word you already know. A short story and a picture make it stick.</p>
+    <div class="btns"><a class="btn main" href="https://play.google.com/store/apps/details?id=com.kelimekancasi.app&amp;hl=en" rel="noopener">▶ Get it on Google Play</a><a class="btn alt" href="https://apps.apple.com/app/id6816336789" rel="noopener">📱 Download on the App Store</a></div>
+    <p class="note">20 words free · No ads · No account · Works offline</p>
+    <div class="chain" aria-label="Example: dormir → DORM → sleep">
+      <div class="link"><small>new word</small><b>dormir</b><span>pronounced “dohr-MEER”</span></div>
+      <div class="link hook"><small>hook you already know</small><b>DORM</b></div>
+      <div class="link"><small>meaning</small><b>sleep</b></div>
+    </div>
+    <p class="story">“Dorm roommates snore, so nobody can sleep.”</p>
+  </div>
+  <div class="wrap"><ul class="trust"><li>No ads</li><li>No account</li><li>Works offline</li><li>20 words free</li><li>No subscription</li></ul></div>
+  <section><div class="wrap">
+    <h2>How does it work?</h2>
+    <div class="steps"><div class="step"><h3>1. The hook</h3><p>Most words have a hook: an English word you already know that looks or sounds like the Spanish word.</p></div><div class="step"><h3>2. The story and the picture</h3><p>A short story joins the hook and the meaning in one scene, and the picture puts that scene right in front of you.</p></div><div class="step"><h3>3. Spaced repetition</h3><p>Each word comes back just before you’d forget it: the next day, after 3 days, after a week, after a month. After a few reviews, you won’t need the hook at all.</p></div></div>
+  </div></section>
+  <section><div class="wrap">
+    <h2>What’s inside</h2>
+    <ul class="inside"><li>The 1000 most common Spanish words in one pack</li><li>Cards with the hook, story, picture and an example sentence with its English translation</li><li>Written pronunciation and Spanish audio for every word and example sentence</li><li>Today’s words and daily review; if you’re stuck, tap “See the hook”</li><li>Tests: simple test, mixed test, match, a 60-second round, Letter wheel and the words you find hard</li><li>My words, day streak and progress for each word</li></ul>
+  </div></section>
+  <section><div class="wrap">
+    <h2>Free, then a one-time purchase</h2>
+    <div class="plans"><div class="plan free"><span class="badge">Free</span><h3>20 words</h3><ul><li>The first 20 words you learn with their hooks, no time limit</li><li>Unlimited review, tests and reminders</li><li>No account and no card details</li></ul></div><div class="plan hl"><span class="badge">One-time purchase</span><h3>All 1000 words</h3><ul><li>Pay once and it’s yours: no subscription</li><li>The purchase is tied to your Google Play or App Store account and can be restored if you change phones</li><li>The store handles the payment; your card details never reach us</li></ul></div></div>
+  </div></section>
+  <div class="wrap cta"><p>Start with ten words and see if you still remember them tomorrow.</p><div class="btns"><a class="btn main" href="https://play.google.com/store/apps/details?id=com.kelimekancasi.app&amp;hl=en" rel="noopener">▶ Get it on Google Play</a><a class="btn alt" href="https://apps.apple.com/app/id6816336789" rel="noopener">📱 Download on the App Store</a></div></div>
+</main>
+<footer><div class="wrap">
+  <p>An app for learning Spanish words with memory hooks, developed independently by Fırat Tunç.</p>
+  <p><a href="privacy.html">Privacy policy</a> · Contact: <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a></p>
+  <p class="langs">Language: <a href="/" hreflang="tr" lang="tr">Türkçe</a> · <a href="/es/" hreflang="es" lang="es">Español</a> · <a href="/pt/" hreflang="pt-BR" lang="pt-BR">Português</a> · <a href="/it/" hreflang="it" lang="it">Italiano</a> · <a href="/fr/" hreflang="fr" lang="fr">Français</a> · <a href="/id/" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/ja/" hreflang="ja" lang="ja">日本語</a> · <a href="/ko/" hreflang="ko" lang="ko">한국어</a> · <span aria-current="true">English</span></p>
+</div></footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a9b7e9092d5f446ebcebf6b8c338797f"}'></script>
+</body>
+</html>
