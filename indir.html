@@ -25,61 +25,50 @@
   h1 { font-size: 30px; margin: 14px 0 4px; }
   .durum { color: var(--soluk); margin: 0 0 24px; }
   .dugmeler { display: grid; gap: 12px; }
-  .dugme { display: block; padding: 16px 18px; border-radius: 16px; font-weight: 800; font-size: 19px; text-decoration: none; border: 0; cursor: pointer; font-family: inherit; }
+  .dugme { display: block; padding: 16px 18px; border-radius: 16px; font-weight: 800; font-size: 19px; text-decoration: none; border: 0; cursor: pointer; font-family: inherit; text-align: center; width: 100%; }
   .ana { background: var(--mavi); color: #fff; }
   @media (prefers-color-scheme: dark) { .ana { color: #0E1220; } }
   .ikinci { background: var(--yuzey); color: var(--yazi); border: 1px solid var(--cizgi); }
-  .rehber { position: relative; background: var(--yuzey); border: 2px solid var(--isaret); border-radius: 20px; padding: 18px 18px 14px; margin: 0 0 22px; text-align: left; }
+  .rehber { background: var(--yuzey); border: 2px solid var(--isaret); border-radius: 20px; padding: 18px 18px 14px; margin: 0 0 22px; text-align: left; }
   .rehber h2 { font-size: 21px; margin: 0 0 8px; }
   .rehber ol { margin: 0 0 12px; padding-left: 24px; }
   .rehber li { margin: 4px 0; }
   .ok { position: fixed; top: 6px; right: 14px; font-size: 44px; line-height: 1; color: var(--isaret); animation: zipla 1s ease-in-out infinite; }
   @keyframes zipla { 50% { transform: translate(4px, -6px); } }
   .kucuk { color: var(--soluk); font-size: 15px; margin: 8px 0 0; }
+  .dene { margin-top: 28px; text-align: left; display: grid; gap: 8px; }
+  .dene a, .dene button { display: block; padding: 12px 14px; border-radius: 12px; background: var(--yuzey); border: 1px solid var(--cizgi); color: var(--yazi); text-decoration: none; font: inherit; font-size: 16px; text-align: left; width: 100%; }
+  .dene code { font-size: 12px; color: var(--soluk); word-break: break-all; }
   [hidden] { display: none !important; }
 </style>
 <script>
-// Uygulama içi tarayıcıdan (TikTok, Instagram) mağazaya geçiş (838, 23 Eki 2026). TikTok kendi tarayıcısında App Store
-// linkini açmıyor; sayfa önce telefonun asıl tarayıcısına geçer (iPhone: x-safari-https, Android: Play Store intent),
-// mağaza oradan açılır. Geçiş olmazsa "••• → Tarayıcıda aç" rehberi ve linki kopyala düğmesi çıkar.
-// ?k=<kampanya> → Play'de utm_campaign, App Store'da ct (ör. /indir?k=tiktok-fall). ?s=1 = geçiş zaten denendi.
+// /indir (838, 23 Eki 2026): TikTok / Instagram içinden mağazaya geçiş. Sayfa ÖNCE çizilir, geçiş sonra denenir
+// (head içinde yönlendirme engellenince sayfa bembeyaz kalıyordu). TikTok iPhone x-safari-https'i "İşlem tamamlanamıyor"
+// diyerek engelliyor (23 Eki, Fırat'ın denemesi): orada otomatik deneme yok, "••• → Tarayıcıda aç" rehberi hemen çıkar.
+// ?k=<kampanya> → Play'de utm_campaign, App Store'da ct. ?s=1 = geçişten gelindi. Logoya 3 kez dokun ya da ?dene=1 → deneme paneli.
 (function () {
   var PLAY_ID = 'com.kelimekancasi.app', APP_ID = '6816336789', PT = '', SITE = 'https://kelimekancasi.com/';
   var q = new URLSearchParams(location.search);
   var k = (q.get('k') || 'site').replace(/[^a-z0-9-]/gi, '').slice(0, 40).toLowerCase() || 'site';
-  var denendi = q.get('s') === '1';
   var ua = navigator.userAgent;
   var ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   var android = /Android/.test(ua);
   var tiktok = /musical_ly|Bytedance|TikTok|trill_/i.test(ua);
   var instagram = /Instagram/.test(ua);
   var uygulamaIci = tiktok || instagram || /FBAN|FBAV|FB_IAB|FBIOS|Snapchat|Line\/|Twitter|LinkedInApp|Pinterest/i.test(ua);
-  var kaynak = tiktok ? 'tiktok' : instagram ? 'instagram' : uygulamaIci ? 'uygulama' : 'web';
-  if (denendi && kaynak === 'web') kaynak = 'tiktok-gecis';
-
+  var kaynak = tiktok ? 'tiktok' : instagram ? 'instagram' : uygulamaIci ? 'uygulama' : q.get('s') === '1' ? 'gecis' : 'web';
   var ref = encodeURIComponent('utm_source=' + kaynak + '&utm_medium=link&utm_campaign=' + k);
   var play = 'https://play.google.com/store/apps/details?id=' + PLAY_ID + '&referrer=' + ref;
   var appStore = 'https://apps.apple.com/tr/app/id' + APP_ID + '?ct=' + k + '&mt=8' + (PT ? '&pt=' + PT : '');
   var gecis = SITE + 'indir?k=' + k + '&s=1';
-  var safari = 'x-safari-' + gecis;
   var playIntent = 'intent://details?id=' + PLAY_ID + '&referrer=' + ref +
     '#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=' + encodeURIComponent(play) + ';end';
-  window.kk = { ios: ios, android: android, uygulamaIci: uygulamaIci, play: play, appStore: appStore, safari: safari, gecis: gecis };
-
-  // Sayfa arka plana geçtiyse (mağaza ya da Safari açıldı) rehberi gösterme.
-  var gitti = false;
-  document.addEventListener('visibilitychange', function () { if (document.hidden) gitti = true; });
-  window.kkRehber = function () { if (!gitti) document.documentElement.classList.add('rehber-goster'); };
-
   var hedef = null;
-  if (ios && uygulamaIci && !denendi) hedef = instagram ? 'instagram://extbrowser/?url=' + encodeURIComponent(gecis) : safari;
-  else if (ios) hedef = appStore;
-  else if (android && uygulamaIci && !denendi) hedef = playIntent;
+  if (ios && !uygulamaIci) hedef = appStore;
+  else if (android && uygulamaIci) hedef = playIntent;
   else if (android) hedef = play;
-  if (!hedef) return;
-  if (instagram) document.write('<meta http-equiv="refresh" content="0;url=' + hedef.replace(/"/g, '&quot;') + '">');
-  else location.href = hedef;
-  setTimeout(window.kkRehber, uygulamaIci ? 1800 : 2500);
+  window.kk = { PLAY_ID: PLAY_ID, APP_ID: APP_ID, k: k, ios: ios, android: android, uygulamaIci: uygulamaIci, instagram: instagram,
+    play: play, appStore: appStore, gecis: gecis, playIntent: playIntent, hedef: hedef, dene: q.get('dene') === '1' };
 })();
 </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a9b7e9092d5f446ebcebf6b8c338797f"}'></script>
@@ -87,16 +76,17 @@
 <body>
 <span class="ok" id="ok" hidden aria-hidden="true">↗</span>
 <main>
-  <img class="logo" src="/favicon.png" alt="" width="84" height="84">
+  <img class="logo" id="logo" src="/favicon.png" alt="" width="84" height="84">
   <h1>Kelime Kancası</h1>
   <p class="durum" id="durum">Mağaza açılıyor…</p>
 
   <section class="rehber" id="rehber" hidden>
-    <h2>Mağaza açılmadı mı?</h2>
+    <h2>Uygulamayı indirmek için</h2>
     <ol>
       <li>Sağ üstteki <b>•••</b> (üç nokta) düğmesine bas.</li>
       <li><b>Tarayıcıda aç</b> yazısına bas.</li>
     </ol>
+    <p class="kucuk" style="margin:0 0 12px">Sayfa Safari'de açılınca mağaza kendiliğinden gelir.</p>
     <button class="dugme ikinci" id="kopyala" type="button">🔗 Linki kopyala</button>
     <p class="kucuk" id="kopyala-not">Kopyalayıp Safari'ye ya da Chrome'a yapıştırabilirsin.</p>
   </section>
@@ -106,21 +96,32 @@
     <a class="dugme ana" id="android" href="https://play.google.com/store/apps/details?id=com.kelimekancasi.app" rel="noopener">▶ Google Play'den indir</a>
   </div>
   <p class="kucuk">İlk 20 kelime ücretsiz.</p>
+
+  <div class="dene" id="dene" hidden>
+    <p class="kucuk">Deneme: her birine sırayla bas, App Store / Safari / Play açılanların harfini yaz. Açılmazsa geri dön, sıradakine geç.</p>
+  </div>
 </main>
 <script>
 (function () {
   var kk = window.kk, $ = function (id) { return document.getElementById(id); };
-  $('ios').href = kk.uygulamaIci ? kk.safari : kk.appStore;
+  $('ios').href = kk.appStore;
   $('android').href = kk.play;
-  // Telefon belliyse yalnız onun düğmesi; bilgisayarda ikisi de.
   if (kk.ios) $('android').hidden = true;
   if (kk.android) $('ios').hidden = true;
   if (!kk.ios && !kk.android) $('durum').textContent = 'Telefonunla bu sayfayı aç ya da mağazadan "Kelime Kancası" diye ara.';
 
-  function rehberiAc() { $('rehber').hidden = !kk.uygulamaIci; $('ok').hidden = !kk.uygulamaIci; $('durum').textContent = 'Aşağıdaki düğmeyle indirebilirsin.'; }
-  if (document.documentElement.classList.contains('rehber-goster')) rehberiAc();
-  new MutationObserver(function () { if (document.documentElement.classList.contains('rehber-goster')) rehberiAc(); })
-    .observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+  var gitti = false;
+  document.addEventListener('visibilitychange', function () { if (document.hidden) gitti = true; });
+  function rehberiAc() {
+    if (gitti) return;
+    $('rehber').hidden = !kk.uygulamaIci; $('ok').hidden = !kk.uygulamaIci;
+    $('durum').textContent = kk.uygulamaIci ? 'TikTok içinden mağaza açılmıyor, bir adım kaldı:' : 'Aşağıdaki düğmeyle indirebilirsin.';
+  }
+  if (kk.ios && kk.uygulamaIci) rehberiAc();
+  else if (kk.hedef) {
+    setTimeout(function () { location.href = kk.hedef; }, 150);
+    setTimeout(rehberiAc, 2500);
+  } else if (kk.ios || kk.android) rehberiAc();
 
   $('kopyala').onclick = function () {
     var link = kk.gecis, tamam = function () { $('kopyala-not').textContent = 'Kopyalandı ✓ Şimdi Safari\'ye ya da Chrome\'a yapıştır.'; };
@@ -131,6 +132,42 @@
       t.remove();
     }
   };
+
+  // Deneme paneli: hangi yolun TikTok içinden geçtiğini gerçek telefonda bulmak için (838).
+  var a = kk.APP_ID, g = function (h) { return kk.gecis.replace('k=' + kk.k, 'k=dene-' + h); };
+  var yollar = kk.android ? [
+    ['A', 'Play intent (market)', kk.playIntent],
+    ['B', 'market://', 'market://details?id=' + kk.PLAY_ID],
+    ['C', 'Play https', kk.play],
+    ['D', 'Play https yeni sekme', kk.play, '_blank'],
+    ['E', 'Chrome intent', 'intent://' + g('e').replace('https://', '') + '#Intent;scheme=https;package=com.android.chrome;end'],
+    ['F', 'Sayfa yeni sekme', g('f'), '_blank']
+  ] : [
+    ['A', 'x-safari (dokunarak)', 'x-safari-' + g('a')],
+    ['B', 'itms-apps://', 'itms-apps://apps.apple.com/tr/app/id' + a],
+    ['C', 'itms-appss://', 'itms-appss://apps.apple.com/tr/app/id' + a],
+    ['D', 'App Store https', 'https://apps.apple.com/tr/app/id' + a],
+    ['E', 'App Store https yeni sekme', 'https://apps.apple.com/tr/app/id' + a, '_blank'],
+    ['F', 'eski itunes adresi', 'https://itunes.apple.com/tr/app/id' + a + '?mt=8'],
+    ['G', 'Sayfa yeni sekme', g('g'), '_blank'],
+    ['H', 'window.open x-safari', 'x-safari-' + g('h'), 'acik'],
+    ['I', 'Chrome (yüklüyse)', 'googlechrome://' + g('i').replace('https://', '')],
+    ['J', 'window.open App Store', 'https://apps.apple.com/tr/app/id' + a, 'acik']
+  ];
+  yollar.forEach(function (y) {
+    var el;
+    if (y[3] === 'acik') { el = document.createElement('button'); el.type = 'button'; el.onclick = function () { window.open(y[2], '_blank'); }; }
+    else { el = document.createElement('a'); el.href = y[2]; if (y[3]) { el.target = y[3]; el.rel = 'noopener'; } }
+    el.innerHTML = '<b>' + y[0] + '</b> · ' + y[1] + '<br><code></code>';
+    el.querySelector('code').textContent = y[2];
+    $('dene').appendChild(el);
+  });
+  var dokunma = 0, son = 0;
+  $('logo').onclick = function () {
+    var simdi = Date.now(); dokunma = simdi - son < 600 ? dokunma + 1 : 1; son = simdi;
+    if (dokunma >= 3) $('dene').hidden = false;
+  };
+  if (kk.dene) $('dene').hidden = false;
 })();
 </script>
 </body>
