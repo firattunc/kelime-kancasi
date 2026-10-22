@@ -40,8 +40,8 @@
 </style>
 <script>
 // /indir (838, 23 Eki 2026): TikTok / Instagram içinden mağazaya geçiş. Sayfa ÖNCE çizilir, geçiş sonra denenir
-// (head içinde yönlendirme engellenince sayfa bembeyaz kalıyordu). TikTok (23 Eki, Fırat iPhone denemesi) dokunmadan yapılan her
-// geçişi "İşlem tamamlanamıyor" diye engelliyor (x-safari, App Store, itms-apps); düğmeye dokununca hepsi açılıyor → iPhone'da tek düğme.
+// (head içinde yönlendirme engellenince sayfa bembeyaz kalıyordu). TikTok iPhone (23 Eki, Fırat'ın denemesi) mağazaya geçişin
+// her yolunu engelliyor ("İşlem tamamlanamıyor"): otomatik ya da dokunarak, x-safari / App Store / itms-apps. Orada tek yol rehber.
 // ?k=<kampanya> → Play'de utm_campaign, App Store'da ct. ?s=1 = geçişten gelindi.
 (function () {
   var PLAY_ID = 'com.kelimekancasi.app', APP_ID = '6816336789', PT = '', SITE = 'https://kelimekancasi.com/';
@@ -92,9 +92,7 @@
     <a class="dugme ana" id="ios" href="https://apps.apple.com/tr/app/id6816336789" rel="noopener">📱 App Store'dan indir</a>
     <a class="dugme ana" id="android" href="https://play.google.com/store/apps/details?id=com.kelimekancasi.app" rel="noopener">▶ Google Play'den indir</a>
   </div>
-  <p class="kucuk" id="yedek" hidden>Açılmazsa: sağ üstteki <b>•••</b> → <b>Tarayıcıda aç</b>.</p>
   <p class="kucuk">İlk 20 kelime ücretsiz.</p>
-  <div id="dene" style="margin-top:28px;display:grid;gap:10px;text-align:left"><p class="kucuk">🧪 DENEME (geçici): TikTok İÇİNDEYKEN, Tarayıcıda aç DEMEDEN 1-4 düğmelerine sırayla bas; App Store açılanın numarasını yaz.</p></div>
 </main>
 <script>
 (function () {
@@ -112,10 +110,9 @@
     $('rehber').hidden = !kk.uygulamaIci; $('ok').hidden = !kk.uygulamaIci;
     $('durum').textContent = kk.uygulamaIci ? 'TikTok içinden mağaza açılmıyor, bir adım kaldı:' : 'Aşağıdaki düğmeyle indirebilirsin.';
   }
-  // TikTok iPhone (23 Eki denemesi): dokunmadan geçiş engelleniyor, düğmeye dokununca App Store açılıyor → tek düğme.
+  // TikTok iPhone: mağaza linki dokunarak da açılmıyor (838) → düğme gizli, "••• → Tarayıcıda aç" rehberi + ok hemen.
   if (kk.ios && kk.uygulamaIci && !kk.hedef) {
-    $('durum').textContent = 'Aşağıdaki düğmeye bas, App Store açılır 👇';
-    $('yedek').hidden = false;
+    $('ios').hidden = true; rehberiAc();
   } else if (kk.hedef) {
     setTimeout(function () { location.href = kk.hedef; }, 150);
     setTimeout(rehberiAc, 2500);
@@ -130,11 +127,6 @@
       t.remove();
     }
   };
-  // GEÇİCİ deneme (838): TikTok içinden dokunarak hangi link geçiyor; sonuç gelince silinir.
-  var A = 'https://apps.apple.com/tr/app/id' + kk.APP_ID;
-  [['1', 'Düz App Store linki (etiketsiz)', A], ['2', 'App Store linki + etiket', kk.appStore],
-   ['3', 'Safari ile aç (x-safari)', 'x-safari-' + kk.gecis], ['4', 'App Store uygulaması (itms-apps)', A.replace('https://', 'itms-apps://')]]
-    .forEach(function (y) { var el = document.createElement('a'); el.className = 'dugme ikinci'; el.href = y[2]; el.textContent = y[0] + ' · ' + y[1]; $('dene').appendChild(el); });
 })();
 </script>
 </body>
