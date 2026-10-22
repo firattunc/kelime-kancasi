@@ -98,7 +98,7 @@
   <p class="kucuk">İlk 20 kelime ücretsiz.</p>
 
   <div class="dene" id="dene" hidden>
-    <p class="kucuk">Deneme: her birine sırayla bas, App Store / Safari / Play açılanların harfini yaz. Açılmazsa geri dön, sıradakine geç.</p>
+    <p class="kucuk">🧪 DENEME (Fırat için): her birine sırayla bas, App Store / Safari / Play açılanların harfini yaz. Açılmazsa geri dön, sıradakine geç.</p>
   </div>
 </main>
 <script>
@@ -167,7 +167,8 @@
     var simdi = Date.now(); dokunma = simdi - son < 600 ? dokunma + 1 : 1; son = simdi;
     if (dokunma >= 3) $('dene').hidden = false;
   };
-  if (kk.dene) $('dene').hidden = false;
+  // GEÇİCİ (838): deneme bitene kadar panel herkese açık; sonra bu satır silinir.
+  $('dene').hidden = false;
 })();
 </script>
 </body>
