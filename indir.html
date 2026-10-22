@@ -94,6 +94,7 @@
   </div>
   <p class="kucuk" id="yedek" hidden>Açılmazsa: sağ üstteki <b>•••</b> → <b>Tarayıcıda aç</b>.</p>
   <p class="kucuk">İlk 20 kelime ücretsiz.</p>
+  <div id="dene" style="margin-top:28px;display:grid;gap:10px;text-align:left"><p class="kucuk">🧪 DENEME (geçici): TikTok İÇİNDEYKEN, Tarayıcıda aç DEMEDEN 1-4 düğmelerine sırayla bas; App Store açılanın numarasını yaz.</p></div>
 </main>
 <script>
 (function () {
@@ -129,6 +130,11 @@
       t.remove();
     }
   };
+  // GEÇİCİ deneme (838): TikTok içinden dokunarak hangi link geçiyor; sonuç gelince silinir.
+  var A = 'https://apps.apple.com/tr/app/id' + kk.APP_ID;
+  [['1', 'Düz App Store linki (etiketsiz)', A], ['2', 'App Store linki + etiket', kk.appStore],
+   ['3', 'Safari ile aç (x-safari)', 'x-safari-' + kk.gecis], ['4', 'App Store uygulaması (itms-apps)', A.replace('https://', 'itms-apps://')]]
+    .forEach(function (y) { var el = document.createElement('a'); el.className = 'dugme ikinci'; el.href = y[2]; el.textContent = y[0] + ' · ' + y[1]; $('dene').appendChild(el); });});
 })();
 </script>
 </body>
