@@ -11,7 +11,7 @@
 <meta property="og:title" content="Kelime Kancası · İngilizce kelime ezberle">
 <meta property="og:description" content="İngilizce kelimeleri gözünde canlanan sahnelerle ezberle. App Store ve Google Play'de.">
 <meta property="og:image" content="https://kelimekancasi.com/og.png">
-<meta property="og:url" content="https://kelimekancasi.com/indir">
+<meta property="og:url" content="https://kelimekancasi.com/download">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
 <link rel="apple-touch-icon" href="/favicon.png">
@@ -43,6 +43,8 @@
 // (head içinde yönlendirme engellenince sayfa bembeyaz kalıyordu). TikTok iPhone (23 Eki, Fırat'ın denemesi) mağazaya geçişin
 // her yolunu engelliyor ("İşlem tamamlanamıyor"): otomatik ya da dokunarak, x-safari / App Store / itms-apps. Orada tek yol rehber.
 // ?k=<kampanya> → Play'de utm_campaign, App Store'da ct. ?s=1 = geçişten gelindi.
+// 883 (26 Eki): aynı sayfa /download olarak da yazılır (her dilde tek link); yazılar telefonun dilinde (T, yoksa en),
+// App Store linkinde ülke yok (herkes kendi mağazası), Instagram vb. iPhone'da da mağazayı hemen dener (yalnız TikTok rehberde).
 (function () {
   var PLAY_ID = 'com.kelimekancasi.app', APP_ID = '6816336789', PT = '', SITE = 'https://kelimekancasi.com/';
   var q = new URLSearchParams(location.search);
@@ -56,15 +58,82 @@
   var kaynak = tiktok ? 'tiktok' : instagram ? 'instagram' : uygulamaIci ? 'uygulama' : q.get('s') === '1' ? 'gecis' : 'web';
   var ref = encodeURIComponent('utm_source=' + kaynak + '&utm_medium=link&utm_campaign=' + k);
   var play = 'https://play.google.com/store/apps/details?id=' + PLAY_ID + '&referrer=' + ref;
-  var appStore = 'https://apps.apple.com/tr/app/id' + APP_ID + '?ct=' + k + '&mt=8' + (PT ? '&pt=' + PT : '');
-  var gecis = SITE + 'indir?k=' + k + '&s=1';
+  var appStore = 'https://apps.apple.com/app/id' + APP_ID + '?ct=' + k + '&mt=8' + (PT ? '&pt=' + PT : '');
+  var gecis = SITE + 'download?k=' + k + '&s=1';
   var playIntent = 'intent://details?id=' + PLAY_ID + '&referrer=' + ref +
     '#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=' + encodeURIComponent(play) + ';end';
   var hedef = null;
-  if (ios && !uygulamaIci) hedef = appStore;
+  if (ios && !tiktok) hedef = appStore;
   else if (android && uygulamaIci) hedef = playIntent;
   else if (android) hedef = play;
-  window.kk = { PLAY_ID: PLAY_ID, APP_ID: APP_ID, k: k, ios: ios, android: android, uygulamaIci: uygulamaIci, instagram: instagram,
+  var T = {
+    tr: { ad: 'Kelime Kancası', acilis: 'Mağaza açılıyor…', rehber: 'Uygulamayı indirmek için',
+      adim1: 'Sağ üstteki <b>•••</b> (üç nokta) düğmesine bas.', adim2: '<b>Tarayıcıda aç</b> yazısına bas.',
+      rehberNot: 'Sayfa tarayıcıda açılınca mağaza kendiliğinden gelir.', kopyala: '🔗 Linki kopyala',
+      kopyalaNot: 'Kopyalayıp Safari\'ye ya da Chrome\'a yapıştırabilirsin.', kopyalandi: 'Kopyalandı ✓ Şimdi Safari\'ye ya da Chrome\'a yapıştır.',
+      ios: '📱 App Store\'dan indir', android: '▶ Google Play\'den indir', ucretsiz: 'İlk 20 kelime ücretsiz.',
+      masaustu: 'Telefonunla bu sayfayı aç ya da mağazadan "Kelime Kancası" diye ara.',
+      engel: 'Bu uygulamanın içinden mağaza açılmıyor, bir adım kaldı:', dugme: 'Aşağıdaki düğmeyle indirebilirsin.' },
+    en: { ad: 'Word Hook', acilis: 'Opening the store…', rehber: 'To download the app',
+      adim1: 'Tap the <b>•••</b> (three dots) button at the top right.', adim2: 'Tap <b>Open in browser</b>.',
+      rehberNot: 'Once the page opens in your browser, the store opens by itself.', kopyala: '🔗 Copy link',
+      kopyalaNot: 'Copy it and paste it into Safari or Chrome.', kopyalandi: 'Copied ✓ Now paste it into Safari or Chrome.',
+      ios: '📱 Download on the App Store', android: '▶ Get it on Google Play', ucretsiz: 'Your first 20 words are free.',
+      masaustu: 'Open this page on your phone, or search the store for "Word Hook".',
+      engel: 'The store can\'t open inside this app. One step left:', dugme: 'Use the button below to download.' },
+    es: { ad: 'Gancho de Palabras', acilis: 'Abriendo la tienda…', rehber: 'Para descargar la app',
+      adim1: 'Toca el botón <b>•••</b> (tres puntos) de arriba a la derecha.', adim2: 'Toca <b>Abrir en el navegador</b>.',
+      rehberNot: 'Cuando la página se abra en el navegador, la tienda se abrirá sola.', kopyala: '🔗 Copiar enlace',
+      kopyalaNot: 'Cópialo y pégalo en Safari o Chrome.', kopyalandi: 'Copiado ✓ Ahora pégalo en Safari o Chrome.',
+      ios: '📱 Descargar en el App Store', android: '▶ Disponible en Google Play', ucretsiz: 'Las primeras 20 palabras son gratis.',
+      masaustu: 'Abre esta página en tu móvil o busca «Gancho de Palabras» en la tienda.',
+      engel: 'La tienda no se abre dentro de esta app. Falta un paso:', dugme: 'Descárgala con el botón de abajo.' },
+    pt: { ad: 'Gancho de Palavras', acilis: 'Abrindo a loja…', rehber: 'Para baixar o app',
+      adim1: 'Toque no botão <b>•••</b> (três pontos) no canto superior direito.', adim2: 'Toque em <b>Abrir no navegador</b>.',
+      rehberNot: 'Quando a página abrir no navegador, a loja abre sozinha.', kopyala: '🔗 Copiar link',
+      kopyalaNot: 'Copie e cole no Safari ou no Chrome.', kopyalandi: 'Copiado ✓ Agora cole no Safari ou no Chrome.',
+      ios: '📱 Baixar na App Store', android: '▶ Disponível no Google Play', ucretsiz: 'As primeiras 20 palavras são grátis.',
+      masaustu: 'Abra esta página no celular ou procure "Gancho de Palavras" na loja.',
+      engel: 'A loja não abre dentro deste app. Falta um passo:', dugme: 'Baixe pelo botão abaixo.' },
+    it: { ad: 'Gancio di Parole', acilis: 'Apertura dello store…', rehber: 'Per scaricare l’app',
+      adim1: 'Tocca il pulsante <b>•••</b> (tre puntini) in alto a destra.', adim2: 'Tocca <b>Apri nel browser</b>.',
+      rehberNot: 'Quando la pagina si apre nel browser, lo store si apre da solo.', kopyala: '🔗 Copia il link',
+      kopyalaNot: 'Copialo e incollalo in Safari o Chrome.', kopyalandi: 'Copiato ✓ Ora incollalo in Safari o Chrome.',
+      ios: '📱 Scarica su App Store', android: '▶ Disponibile su Google Play', ucretsiz: 'Le prime 20 parole sono gratis.',
+      masaustu: 'Apri questa pagina sul telefono o cerca «Gancio di Parole» nello store.',
+      engel: 'Lo store non si apre dentro questa app. Manca un passo:', dugme: 'Scaricala con il pulsante qui sotto.' },
+    fr: { ad: 'Accroche-Mots', acilis: 'Ouverture de la boutique…', rehber: 'Pour télécharger l’app',
+      adim1: 'Touche le bouton <b>•••</b> (trois points) en haut à droite.', adim2: 'Touche <b>Ouvrir dans le navigateur</b>.',
+      rehberNot: 'Une fois la page ouverte dans le navigateur, la boutique s’ouvre toute seule.', kopyala: '🔗 Copier le lien',
+      kopyalaNot: 'Copie-le et colle-le dans Safari ou Chrome.', kopyalandi: 'Copié ✓ Colle-le maintenant dans Safari ou Chrome.',
+      ios: '📱 Télécharger dans l’App Store', android: '▶ Disponible sur Google Play', ucretsiz: 'Les 20 premiers mots sont gratuits.',
+      masaustu: 'Ouvre cette page sur ton téléphone ou cherche « Accroche-Mots » dans la boutique.',
+      engel: 'La boutique ne s’ouvre pas dans cette app. Encore une étape :', dugme: 'Télécharge-la avec le bouton ci-dessous.' },
+    id: { ad: 'Kait Kata', acilis: 'Membuka toko aplikasi…', rehber: 'Untuk mengunduh aplikasi',
+      adim1: 'Ketuk tombol <b>•••</b> (tiga titik) di kanan atas.', adim2: 'Ketuk <b>Buka di browser</b>.',
+      rehberNot: 'Setelah halaman terbuka di browser, toko aplikasi akan terbuka sendiri.', kopyala: '🔗 Salin tautan',
+      kopyalaNot: 'Salin lalu tempel di Safari atau Chrome.', kopyalandi: 'Tersalin ✓ Sekarang tempel di Safari atau Chrome.',
+      ios: '📱 Unduh di App Store', android: '▶ Dapatkan di Google Play', ucretsiz: '20 kata pertama gratis.',
+      masaustu: 'Buka halaman ini di ponselmu, atau cari "Kait Kata" di toko aplikasi.',
+      engel: 'Toko aplikasi tidak bisa dibuka di dalam aplikasi ini. Tinggal satu langkah:', dugme: 'Unduh lewat tombol di bawah.' },
+    ja: { ad: '単語フック', acilis: 'ストアを開いています…', rehber: 'アプリをダウンロードするには',
+      adim1: '右上の <b>•••</b>(3つの点)をタップします。', adim2: '<b>ブラウザで開く</b> をタップします。',
+      rehberNot: 'ブラウザでページが開くと、ストアが自動で開きます。', kopyala: '🔗 リンクをコピー',
+      kopyalaNot: 'コピーして Safari か Chrome に貼り付けてください。', kopyalandi: 'コピーしました ✓ Safari か Chrome に貼り付けてください。',
+      ios: '📱 App Store でダウンロード', android: '▶ Google Play で手に入れよう', ucretsiz: '最初の20単語は無料です。',
+      masaustu: 'スマホでこのページを開くか、ストアで「単語フック」を検索してください。',
+      engel: 'このアプリの中ではストアを開けません。あと1ステップです:', dugme: '下のボタンからダウンロードできます。' },
+    ko: { ad: '단어 갈고리', acilis: '스토어를 여는 중…', rehber: '앱을 다운로드하려면',
+      adim1: '오른쪽 위의 <b>•••</b>(점 세 개) 버튼을 누르세요.', adim2: '<b>브라우저에서 열기</b>를 누르세요.',
+      rehberNot: '브라우저에서 페이지가 열리면 스토어가 자동으로 열립니다.', kopyala: '🔗 링크 복사',
+      kopyalaNot: '복사해서 Safari나 Chrome에 붙여 넣으세요.', kopyalandi: '복사됨 ✓ 이제 Safari나 Chrome에 붙여 넣으세요.',
+      ios: '📱 App Store에서 다운로드', android: '▶ Google Play에서 다운로드', ucretsiz: '처음 20개 단어는 무료입니다.',
+      masaustu: '휴대폰에서 이 페이지를 열거나 스토어에서 "단어 갈고리"를 검색하세요.',
+      engel: '이 앱 안에서는 스토어가 열리지 않습니다. 한 단계만 더:', dugme: '아래 버튼으로 다운로드하세요.' }
+  };
+  var dil = 'en', diller = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+  for (var i = 0; i < diller.length; i++) { var d = String(diller[i]).slice(0, 2).toLowerCase(); if (T[d]) { dil = d; break; } }
+  window.kk = { dil: dil, t: T[dil], PLAY_ID: PLAY_ID, APP_ID: APP_ID, k: k, ios: ios, android: android, uygulamaIci: uygulamaIci, instagram: instagram,
     play: play, appStore: appStore, gecis: gecis, playIntent: playIntent, hedef: hedef };
 })();
 </script>
@@ -74,41 +143,44 @@
 <span class="ok" id="ok" hidden aria-hidden="true">↗</span>
 <main>
   <img class="logo" id="logo" src="/favicon.png" alt="" width="84" height="84">
-  <h1>Kelime Kancası</h1>
-  <p class="durum" id="durum">Mağaza açılıyor…</p>
+  <h1 data-t="ad">Kelime Kancası</h1>
+  <p class="durum" id="durum" data-t="acilis">Mağaza açılıyor…</p>
 
   <section class="rehber" id="rehber" hidden>
-    <h2>Uygulamayı indirmek için</h2>
+    <h2 data-t="rehber">Uygulamayı indirmek için</h2>
     <ol>
-      <li>Sağ üstteki <b>•••</b> (üç nokta) düğmesine bas.</li>
-      <li><b>Tarayıcıda aç</b> yazısına bas.</li>
+      <li data-t="adim1">Sağ üstteki <b>•••</b> (üç nokta) düğmesine bas.</li>
+      <li data-t="adim2"><b>Tarayıcıda aç</b> yazısına bas.</li>
     </ol>
-    <p class="kucuk" style="margin:0 0 12px">Sayfa Safari'de açılınca mağaza kendiliğinden gelir.</p>
-    <button class="dugme ikinci" id="kopyala" type="button">🔗 Linki kopyala</button>
-    <p class="kucuk" id="kopyala-not">Kopyalayıp Safari'ye ya da Chrome'a yapıştırabilirsin.</p>
+    <p class="kucuk" style="margin:0 0 12px" data-t="rehberNot">Sayfa tarayıcıda açılınca mağaza kendiliğinden gelir.</p>
+    <button class="dugme ikinci" id="kopyala" type="button" data-t="kopyala">🔗 Linki kopyala</button>
+    <p class="kucuk" id="kopyala-not" data-t="kopyalaNot">Kopyalayıp Safari'ye ya da Chrome'a yapıştırabilirsin.</p>
   </section>
 
   <div class="dugmeler">
-    <a class="dugme ana" id="ios" href="https://apps.apple.com/tr/app/id6816336789" rel="noopener">📱 App Store'dan indir</a>
-    <a class="dugme ana" id="android" href="https://play.google.com/store/apps/details?id=com.kelimekancasi.app" rel="noopener">▶ Google Play'den indir</a>
+    <a class="dugme ana" id="ios" href="https://apps.apple.com/app/id6816336789" rel="noopener" data-t="ios">📱 App Store'dan indir</a>
+    <a class="dugme ana" id="android" href="https://play.google.com/store/apps/details?id=com.kelimekancasi.app" rel="noopener" data-t="android">▶ Google Play'den indir</a>
   </div>
-  <p class="kucuk">İlk 20 kelime ücretsiz.</p>
+  <p class="kucuk" data-t="ucretsiz">İlk 20 kelime ücretsiz.</p>
 </main>
 <script>
 (function () {
-  var kk = window.kk, $ = function (id) { return document.getElementById(id); };
+  var kk = window.kk, t = kk.t, $ = function (id) { return document.getElementById(id); };
+  document.documentElement.lang = kk.dil;
+  document.title = t.ad;
+  document.querySelectorAll('[data-t]').forEach(function (el) { el.innerHTML = t[el.getAttribute('data-t')]; });
   $('ios').href = kk.appStore;
   $('android').href = kk.android && kk.uygulamaIci ? kk.playIntent : kk.play;
   if (kk.ios) $('android').hidden = true;
   if (kk.android) $('ios').hidden = true;
-  if (!kk.ios && !kk.android) $('durum').textContent = 'Telefonunla bu sayfayı aç ya da mağazadan "Kelime Kancası" diye ara.';
+  if (!kk.ios && !kk.android) $('durum').textContent = t.masaustu;
 
   var gitti = false;
   document.addEventListener('visibilitychange', function () { if (document.hidden) gitti = true; });
   function rehberiAc() {
     if (gitti) return;
     $('rehber').hidden = !kk.uygulamaIci; $('ok').hidden = !kk.uygulamaIci;
-    $('durum').textContent = kk.uygulamaIci ? 'TikTok içinden mağaza açılmıyor, bir adım kaldı:' : 'Aşağıdaki düğmeyle indirebilirsin.';
+    $('durum').textContent = kk.uygulamaIci ? t.engel : t.dugme;
   }
   // TikTok iPhone: mağaza linki dokunarak da açılmıyor (838) → düğme gizli, "••• → Tarayıcıda aç" rehberi + ok hemen.
   if (kk.ios && kk.uygulamaIci && !kk.hedef) {
@@ -119,12 +191,12 @@
   } else if (kk.ios || kk.android) rehberiAc();
 
   $('kopyala').onclick = function () {
-    var link = kk.gecis, tamam = function () { $('kopyala-not').textContent = 'Kopyalandı ✓ Şimdi Safari\'ye ya da Chrome\'a yapıştır.'; };
+    var link = kk.gecis, tamam = function () { $('kopyala-not').textContent = t.kopyalandi; };
     if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(link).then(tamam, eski); else eski();
     function eski() {
-      var t = document.createElement('textarea'); t.value = link; document.body.appendChild(t); t.select();
+      var alan = document.createElement('textarea'); alan.value = link; document.body.appendChild(alan); alan.select();
       try { document.execCommand('copy'); tamam(); } catch (e) { $('kopyala-not').textContent = link; }
-      t.remove();
+      alan.remove();
     }
   };
 })();
