@@ -5,10 +5,5 @@
   },
   "ios": {
     "minBuildNumber": 32
-  },
-  "kampanya": {
-    "eskiFiyat": 499.99,
-    "paraBirimi": "TRY",
-    "tur": "lansman"
   }
 }
