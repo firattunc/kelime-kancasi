@@ -4,6 +4,6 @@
     "minVersionCode": 33
   },
   "ios": {
-    "minBuildNumber": 32
+    "minBuildNumber": 35
   }
 }
