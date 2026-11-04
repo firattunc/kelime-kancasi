@@ -5,5 +5,22 @@
   },
   "ios": {
     "minBuildNumber": 35
-  }
+  },
+  "_duvar": "932: \"günde 1\" düzenindeki (ücretsiz 20 kelime bitti, paket yok) kullanıcıya günlük ödeme ekranı bu günlerde açılır (1. gün = ücretsiz kelimelerin bittiği gün), son günden sonra her duvarAralik günde bir. Alan yoksa uygulama 2, 5, 12, 30 ve 30 kullanır (1.5.0 ve sonrası).",
+  "duvarGunleri": [
+    2,
+    5,
+    12,
+    30
+  ],
+  "duvarAralik": 30,
+  "_sinavPaketi": "783: true olunca uygulamada \"Sınav İngilizcesi\" paketi (yalnızca Türkçe) Paketler ekranında görünür. Önce iki mağazada sinav_paketi (ve isteğe bağlı sinav_paketi_ikinci) ürünü açılıp onaylanmalı; sonra true yapılıp site yayınlanır. Paketi bir kez açmış (alan) kullanıcıda anahtar kapansa da paket kalır.",
+  "sinavPaketi": true,
+  "_yz": "969: yapay zekâ yardımı. yzKapali true = uygulamada hikâye ve resim düğmeleri gizlenir (sunucudaki YZ_KAPALI asıl kapatma anahtarıdır; bu yalnız düğmeleri gizler). yzResim true = \"Resmini çiz\" görünür (telefonda denenene kadar false; resim ayrıca cihaz doğrulaması ister). Geliştirmede (Expo Go) resim her zaman açık.",
+  "yzKapali": false,
+  "yzResim": false,
+  "_baskaOnerDiller": "1016: \"✨ Başka öner\" satırının göründüğü arayüz dilleri (tr, es, pt, it, fr, id, ja, ko, en-es). Alan yoksa uygulama [\"tr\"] sayar. Bir dili açmak için sunucudaki YZ_ONERI_DILLER'e de eklenir (sunucu/wrangler.jsonc → npm run deploy); yalnız burada açılırsa sunucu reddeder.",
+  "baskaOnerDiller": [
+    "tr"
+  ]
 }
