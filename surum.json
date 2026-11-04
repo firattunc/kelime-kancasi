@@ -18,7 +18,7 @@
   "sinavPaketi": true,
   "_yz": "969: yapay zekâ yardımı. yzKapali true = uygulamada hikâye ve resim düğmeleri gizlenir (sunucudaki YZ_KAPALI asıl kapatma anahtarıdır; bu yalnız düğmeleri gizler). yzResim true = \"Resmini çiz\" görünür (telefonda denenene kadar false; resim ayrıca cihaz doğrulaması ister). Geliştirmede (Expo Go) resim her zaman açık.",
   "yzKapali": false,
-  "yzResim": false,
+  "yzResim": true,
   "_baskaOnerDiller": "1016: \"✨ Başka öner\" satırının göründüğü arayüz dilleri (tr, es, pt, it, fr, id, ja, ko, en-es). Alan yoksa uygulama [\"tr\"] sayar. Bir dili açmak için sunucudaki YZ_ONERI_DILLER'e de eklenir (sunucu/wrangler.jsonc → npm run deploy); yalnız burada açılırsa sunucu reddeder.",
   "baskaOnerDiller": [
     "tr"
