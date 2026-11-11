@@ -47,77 +47,157 @@
 <main>
   <p class="langs" aria-label="Bahasa"><a href="/gizlilik.html" hreflang="tr" lang="tr">Türkçe</a> · <a href="/es/privacidad.html" hreflang="es" lang="es">Español</a> · <a href="/pt/privacidade.html" hreflang="pt-BR" lang="pt-BR">Português</a> · <a href="/it/privacy.html" hreflang="it" lang="it">Italiano</a> · <a href="/fr/confidentialite.html" hreflang="fr" lang="fr">Français</a> · <span aria-current="true">Bahasa Indonesia</span> · <a href="/ja/privacy.html" hreflang="ja" lang="ja">日本語</a> · <a href="/ko/privacy.html" hreflang="ko" lang="ko">한국어</a> · <a href="/en/privacy.html" hreflang="en" lang="en">English</a></p>
   <h1>Kebijakan Privasi</h1>
-  <p class="date">Kait Kata · Terakhir diperbarui: 10 November 2026</p>
+  <p class="date">Kait Kata · Terakhir diperbarui: 11 November 2026</p>
 
-  <p>Kait Kata adalah aplikasi seluler yang mengajarkan kata-kata bahasa Inggris dengan teknik mengingat. Halaman ini menjelaskan bagaimana aplikasi memperlakukan datamu. Singkatnya: <strong>kami tidak mengumpulkan namamu, e-mailmu, atau informasi apa pun yang mengenali dirimu; kami hanya menyimpan statistik penggunaan anonim untuk meningkatkan aplikasi; dan, jika kamu mengizinkan, kami menerima kaitmu sendiri secara anonim.</strong></p>
+  <p>Kait Kata adalah aplikasi seluler yang mengajarkan kata-kata bahasa Inggris dengan teknik mengingat. Halaman ini menjelaskan data apa yang disimpan aplikasi dan di mana, kepada siapa data dikirim dan untuk apa, serta bagaimana kamu bisa menghapusnya. Halaman ini juga merupakan pemberitahuan privasi kami menurut Undang-Undang Perlindungan Data Pribadi Turki No. 6698 (KVKK) dan Peraturan Perlindungan Data Umum Uni Eropa (GDPR).</p>
 
-  <h2>Data yang kami kumpulkan</h2>
-  <p>Aplikasi ini tidak memiliki pendaftaran, login, atau iklan. Kami tidak mengumpulkan namamu, alamat e-mail, lokasi, kontak, atau ID iklanmu, dan kami tidak melacakmu di aplikasi atau situs lain.</p>
-  <p>Untuk meningkatkan aplikasi, kami hanya mengumpulkan <strong>statistik penggunaan anonim</strong>:</p>
+  <h2 id="summary">Singkatnya</h2>
   <ul>
-    <li>Langkah mana yang diselesaikan (pengenalan, kata hari ini, ulangan, tes, laporan ingatan) dan jumlahnya (berapa kata, berapa jawaban benar, hari keberapa).</li>
-    <li>Level yang kamu pilih, jumlah kata per hari, dan apakah kamu menyalakan pengingat.</li>
-    <li>Apakah layar pembelian dibuka dan hasil pembelian (dimulai, selesai, gagal). Data pembayaran tidak sampai ke kami.</li>
-    <li>Versi aplikasi, model ponsel, versi sistem operasi, dan catatan teknis kesalahan aplikasi.</li>
-    <li>Teks yang kamu tulis atas kemauan sendiri di kotak “Tulis komentar”. Nama dan e-mailmu tidak diminta; kami sarankan untuk tidak menulis informasi pribadi di dalam teks.</li>
+    <li>Tidak ada akun, login, atau iklan. Kami tidak meminta namamu, e-mail, nomor telepon, lokasi, atau kontakmu.</li>
+    <li>Kemajuanmu dan apa yang kamu tulis sendiri dicadangkan di server kami supaya kembali kalau kamu memasang ulang aplikasi. Cadangan ini terhubung ke nomor perangkat yang acak; cadangan itu tidak tahu siapa dirimu.</li>
+    <li>Kalau kamu memakai bantuan cerita dan gambar (kami meminta izinmu dulu), kata, kait, dan ceritamu dikirim ke model pembuat teks dan gambar (Anthropic, Cloudflare).</li>
+    <li>Kami mengumpulkan statistik penggunaan anonim untuk meningkatkan aplikasi (PostHog).</li>
+    <li>Kami tidak menjual datamu, tidak memakainya untuk iklan, dan tidak melacakmu di aplikasi atau situs lain.</li>
+    <li>Kamu bisa menghapus datamu dari ponsel dan dari server kami lewat Pengaturan → “Hapus dataku”.</li>
   </ul>
-  <p>Kata apa yang kamu pelajari serta apa yang kamu ketik atau cari tidak termasuk dalam statistik ini (cadangan kemajuan dijelaskan terpisah di bawah). Statistik ini disimpan dengan nomor instalasi acak yang dibuat di ponselmu; nomor ini tidak dihubungkan dengan nama, e-mail, atau akunmu, dan terhapus dari ponsel saat kamu mencopot aplikasi. Alamat IP-mu tidak disimpan bersama statistik.</p>
-  <p>Statistik diproses atas nama kami oleh PostHog di server yang berada di Uni Eropa (<a href="https://posthog.com/privacy">kebijakan privasi PostHog</a>). Statistik ini tidak dipakai untuk iklan atau pemasaran dan tidak dijual kepada siapa pun.</p>
 
-  <h2 id="cadangan-kemajuan">Cadangan kemajuan (akun perangkat)</h2>
-  <p>Agar kamu bisa melanjutkan dari posisi terakhir setelah memasang ulang aplikasi atau pindah ke ponsel baru, kemajuan belajarmu dicadangkan di server kami. Tidak ada pendaftaran, login, atau kode; cadangan terhubung dengan <strong>nomor perangkat</strong> acak yang diterima aplikasi saat pertama kali dibuka. Nomor ini tidak dihubungkan dengan nama, e-mail, akun toko, atau statistik penggunaan di atas.</p>
+  <h2 id="controller">Pengendali data</h2>
+  <p>Fırat Tunç, yang mengembangkan Kait Kata secara independen di Turki, adalah pengendali data menurut KVKK dan GDPR. Kamu bisa menghubungi kami di <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a>. Data dikumpulkan secara otomatis lewat aplikasi, seperti dijelaskan di bawah.</p>
+
+  <h2 id="on-your-phone">Yang tetap ada di ponselmu</h2>
+  <p>Kartu kata, gambarnya, dan audio rekaman ada di dalam aplikasi (paket bahasa diunduh satu kali). Teks yang tidak punya rekaman dibacakan oleh mesin teks-ke-suara bawaan ponselmu; aplikasi tidak mengirim data apa pun untuk ini, dan mesin itu tunduk pada ketentuan produsen ponselmu. Jika kamu mengaktifkan pengingat harian, notifikasi dijadwalkan oleh ponselmu sendiri; tidak ada server yang dipakai, dan kamu bisa mematikan izinnya di pengaturan ponsel kapan saja. Kami membuka kamera atau galeri hanya saat kamu mengetuk untuk menambahkan foto ke kaitmu sendiri. Jika cadangan bawaan ponselmu (Google atau iCloud) aktif, data aplikasi juga bisa ikut masuk ke cadangan itu; kami tidak bisa mengakses cadangan tersebut.</p>
+
+  <h2 id="progress-backup">Cadangan kemajuan (akun perangkat)</h2>
+  <p>Agar kamu bisa melanjutkan dari posisi terakhir setelah memasang ulang aplikasi atau pindah ke ponsel baru, kemajuan belajarmu dicadangkan di server kami. Tidak ada pendaftaran, login, atau kode; cadangan terhubung dengan <strong>nomor perangkat</strong> acak yang diterima aplikasi saat pertama kali dibuka. Nomor ini tidak dihubungkan dengan nama, e-mail, akun toko, atau statistik penggunaanmu.</p>
   <ul>
-    <li><strong>Yang dicadangkan:</strong> kata yang sudah kamu pelajari dan tanggal ulangannya, tanda “Sudah tahu”, penghitung beruntun, albummu, pengaturan aplikasi, dan nomor kata yang kamu buka dengan jatah gratismu; kait dan cerita yang kamu tulis sendiri serta kata yang kamu tambahkan (teks dan emoji). Informasi pembelian tidak dicadangkan (paket kembali dari akun tokomu). Foto milikmu sendiri dan gambar yang dibuat untukmu juga dicadangkan (salinan yang diperkecil, masing-masing paling besar 120 KB); hanya kamu yang bisa mengunduhnya.</li>
+    <li><strong>Yang dicadangkan:</strong> kata yang sudah kamu pelajari dan tanggal ulangannya, tanda “Sudah tahu”, penghitung beruntun, albummu, pengaturan aplikasi, dan nomor kata yang kamu buka dengan jatah gratismu; kait dan cerita yang kamu tulis sendiri serta kata yang kamu tambahkan (teks dan emoji); salinan yang diperkecil dari fotomu sendiri dan dari gambar yang dibuat untukmu (masing-masing paling besar 120 KB, paling banyak 200; hanya kamu yang bisa mengunduhnya). Pembelian paket tidak termasuk dalam cadangan (kembali dari akun tokomu); catatan pembelian yang disimpan di server kami dijelaskan di bawah.</li>
+    <li><strong>Disimpan bersama catatan:</strong> platform (Android atau iPhone), versi dan bahasa aplikasi, kapan catatan dibuat, dan kapan aplikasi terakhir dibuka.</li>
     <li><strong>ID ponsel:</strong> untuk mengenali pemasangan ulang di ponsel yang sama, ID ponsel yang khusus untuk aplikasi ini (ANDROID_ID di Android, identifierForVendor di iPhone) dikirim; server tidak menyimpan ID itu sendiri, hanya ringkasannya yang tidak bisa dibalik (hash).</li>
-    <li><strong>Di ponselmu:</strong> nomor perangkat juga disimpan di Keychain pada iPhone dan, di Android, di Block Store milik Google. Block Store adalah bagian terenkripsi dari cadangan Google ponselmu; jika kamu menyiapkan ponsel baru dari cadangan ini atau dengan transfer dari ponsel lama, kemajuanmu kembali. Kami tidak bisa mengakses tempat ini.</li>
-    <li><strong>Untuk apa:</strong> memulihkan kemajuanmu, menggabungkan beberapa ponsel, dan mencegah jatah kata gratis dimulai ulang dengan menghapus dan memasang ulang aplikasi atau mengubah jam ponsel (penggunaan yang adil). Karena itu, “hari ini” di aplikasi dihitung menurut jam server.</li>
-    <li><strong>Di mana:</strong> di server Cloudflare (basis data di Eropa Barat), atas nama kami. Koneksinya terenkripsi (HTTPS). Tidak dipakai untuk iklan, pelacakan, atau pemasaran, tidak dijual, dan tidak dibagikan kepada siapa pun.</li>
-    <li><strong>Penghapusan:</strong> Pengaturan → “Hapus dataku” langsung menghapus cadanganmu dan semua yang ada di ponsel; kamu juga bisa memintanya dengan menulis ke info@kelimekancasi.com. Untuk mencegah penyalahgunaan, hanya ringkasan ID ponsel dan nomor kata gratis yang sudah kamu pakai yang disimpan selama 24 bulan (selama itu jatah gratis tidak dimulai ulang). “Hapus kemajuan” hanya menghapus kemajuan; daftar kata gratis yang sudah dipakai tetap ada.</li>
-    <li><strong>Lama penyimpanan:</strong> cadangan aplikasi yang tidak dibuka selama 24 bulan terhapus otomatis.</li>
+    <li><strong>Di ponselmu:</strong> nomor perangkat juga disimpan di Keychain pada iPhone dan, di Android, di Block Store milik Google. Block Store adalah bagian terenkripsi dari cadangan Google ponselmu; jika kamu menyiapkan ponsel baru dari cadangan ini atau dengan transfer dari ponsel lama, kemajuanmu kembali. Kami tidak bisa mengakses tempat-tempat ini.</li>
+    <li><strong>Untuk apa:</strong> memulihkan kemajuanmu, menggabungkan beberapa ponsel, dan mencegah jatah kata gratis dimulai ulang dengan memasang ulang aplikasi atau mengubah jam ponsel (penggunaan yang adil). Karena itu, “hari ini” di aplikasi dihitung menurut jam server.</li>
+    <li><strong>Di mana:</strong> di server Cloudflare (basis data di Eropa Barat), atas nama kami. Tidak dipakai untuk iklan, pelacakan, atau pemasaran, dan tidak dijual.</li>
   </ul>
-  <p>Tanpa internet, aplikasi tetap berjalan seperti biasa; cadangan dibuat saat koneksi kembali. Jika cadangan bawaan ponselmu (Google atau iCloud) aktif, basis data aplikasi juga bisa ikut masuk ke cadangan itu; kami tidak bisa mengakses cadangan tersebut.</p>
+  <p>Tanpa internet, aplikasi tetap berjalan seperti biasa; cadangan dibuat saat koneksi kembali. Lama penyimpanan dan penghapusan dijelaskan di bawah pada <a href="#deletion">“Menghapus datamu”</a>.</p>
 
-  <h2 id="kait-sendiri">Kait, cerita, dan fotomu sendiri</h2>
-  <p>Kamu bisa menulis kaitmu sendiri untuk sebuah kartu, menambahkan katamu sendiri, dan memberinya emoji atau fotomu sendiri. Kait, cerita, dan foto yang dibuat pengguna hanya ada di ponselnya dan di cadangannya sendiri; tidak ditampilkan kepada orang lain dan tidak masuk ke statistik. Teks, emoji, dan foto (salinan yang diperkecil) masuk ke cadangan kemajuan di atas; semuanya kembali saat kamu memasang ulang aplikasi. Kami tidak menyaring atau membaca apa yang kamu tulis, dan tidak memasukkannya ke statistik atau video promosi. Kami membuka kamera atau galeri hanya saat kamu sendiri mengetuk untuk memilih foto; izin kamera hanya untuk itu. “Hapus dataku” menghapus semuanya; “Hapus kemajuan” tidak menghapus kait dan katamu sendiri. Satu-satunya pengecualian adalah “Bantu dengan kaitmu” yang kamu nyalakan sendiri: jika aktif, salinan anonim dari kait dan ceritamu sampai ke kami (lihat di bawah).</p>
+  <h2 id="own-hook">Kait, cerita, kata, dan fotomu sendiri</h2>
+  <p>Kamu bisa mengubah kait sebuah kartu dengan “✎ Ubah” atau menulis kaitmu sendiri, menambahkan katamu sendiri, dan memberinya emoji atau fotomu sendiri. Semua ini hanya ada di ponselmu dan di cadanganmu sendiri; tidak pernah ditampilkan kepada pengguna lain dan tidak masuk ke statistik. Kami tidak menyaring, membaca, atau memakai tulisanmu dalam promosi. Kami membuka kamera atau galeri hanya saat kamu mengetuk; izin kamera hanya untuk ini. Satu-satunya pengecualian adalah “Bantu dengan kaitmu” yang kamu nyalakan sendiri: jika aktif, salinan anonim dari kait dan ceritamu sampai ke kami (lihat di bawah).</p>
+
+  <h2 id="purchases">Pembelian</h2>
+  <p>Sebagian aplikasi gratis. Paket kata dan paket “Kataku sendiri” dibeli sekali bayar; paket gambar bersifat habis pakai (setiap gambar memakai satu kredit). Tidak ada langganan. Google Play (Android) atau App Store (iPhone) menerima pembayaran; data kartu atau pembayaranmu tidak pernah sampai ke kami.</p>
+  <ul>
+    <li><strong>Di ponsel:</strong> aplikasi mengetahui dari toko paket mana yang dibeli dengan akun tokomu dan menyimpannya di ponsel.</li>
+    <li><strong>Di server kami:</strong> agar jatah cerita dan gambar dihitung dengan benar dan kredit gambar yang kamu beli bisa ditambahkan, bukti pembelian dari toko dikirim ke server kami dan diverifikasi ke toko. Catatan pembelian yang kami simpan berisi: ringkasan nomor transaksi toko yang tidak bisa dibalik (bukan nomornya sendiri), produk, platform, dan tanggal. Catatan ini terhubung ke nomor perangkatmu. Sisa kredit gambar yang kamu beli juga disimpan bersama catatan perangkatmu.</li>
+    <li><strong>Pengembalian dana:</strong> untuk menemukan pembelian yang dikembalikan dananya, ringkasan ini dicocokkan dengan informasi refund dari Apple dan Google; tambahan yang datang bersama paket atau kredit gambar yang di-refund akan dicabut. Satu pembelian paket membuka jatah paket untuk bantuan cerita dan gambar di paling banyak 5 catatan perangkat.</li>
+    <li><strong>Statistik:</strong> dibukanya layar pembelian dan hasil pembelian (dimulai, selesai, dibatalkan, gagal) juga termasuk dalam statistik penggunaan anonim.</li>
+  </ul>
+  <p>Pembelian juga tunduk pada kebijakan privasi <a href="https://policies.google.com/privacy">Google</a> atau <a href="https://www.apple.com/legal/privacy/">Apple</a>.</p>
+
+  <h2 id="help">Bantuan cerita, gambar, dan pelafalan</h2>
+  <p>Saat menulis kaitmu sendiri, kamu bisa mendapat bantuan dari model pembuat teks dan gambar dengan tombol “Tuliskan ceritanya” dan “Gambarkan”. Saat pertama kali dipakai, kami meminta izinmu satu kali; kamu bisa mematikannya di Pengaturan → “Bantuan cerita dan gambar”. Selama mati, kata, kait, dan ceritamu tidak dikirim ke mana pun.</p>
+  <ul>
+    <li><strong>Yang dikirim:</strong> kata, artinya, kaitmu, dan (jika ada) cerita yang kamu tulis. Nama, e-mail, kontak, lokasi, atau nomor perangkatmu tidak dikirim ke perusahaan-perusahaan ini. Permintaan lewat server kami.</li>
+    <li><strong>Kepada siapa:</strong> untuk cerita, <strong>Anthropic</strong> (model Claude). Untuk gambar, Anthropic lebih dulu menulis deskripsi singkat adegan yang akan digambar dari ceritamu dan memeriksa kelayakannya; lalu model gambar milik <strong>Cloudflare</strong> menggambar dari deskripsi itu (model gambar tidak pernah melihat apa yang kamu tulis). Keduanya bekerja atas nama kami sebagai layanan berbayar dan tidak memakai apa yang dikirim untuk melatih model; sesuai ketentuan mereka sendiri, permintaan bisa disimpan sebentar untuk memeriksa penyalahgunaan.</li>
+    <li><strong>Pelafalan:</strong> saat kamu menambahkan katamu sendiri, hanya kata yang kamu ketik dan bahasa aplikasi yang dikirim ke Anthropic lewat server kami untuk mengisi kolom pelafalan. Permintaan ini bisa dikirim sebelum jendela izin muncul; permintaan ini tidak dikirim jika kamu mematikan bantuan cerita dan gambar atau mengetuk “Batal” di jendela izin. Server kami tidak menyimpan kata itu, dan tidak ada jatah yang terpakai.</li>
+    <li><strong>Yang disimpan:</strong> cerita dan gambar hanya ada di ponselmu dan di cadanganmu sendiri, dan tidak ditampilkan kepada siapa pun; server kami tidak menulis teks cerita ke catatan log. Cerita dan gambar untuk kait bawaan yang kami siapkan (bukan tulisanmu) bisa disimpan bersama dalam cache bersama agar siap untuk pengguna berikutnya. Agar gambar sudah siap, jika bantuan ini aktif, gambar bisa dibuat dari cerita yang kamu simpan bahkan sebelum kamu memintanya; jika tidak terpakai, gambar itu segera dihapus dari server. Untuk menghitung jatah, server hanya menyimpan angka (berapa cerita dan gambar, dan kapan).</li>
+    <li><strong>Jatah:</strong> cerita dan gambar punya jatah harian; aplikasi menunjukkan berapa yang tersisa.</li>
+    <li><strong>Laporkan:</strong> jika hasilnya tidak pantas, beri tahu kami dengan “⚑ Laporkan”; hasil itu langsung disembunyikan. Laporan hanya mengirim nomor hasil dan alasan yang kamu pilih, bukan apa yang kamu tulis.</li>
+  </ul>
 
   <h2 id="bantu">Bantu dengan kaitmu (opsional)</h2>
   <p>Saat pertama kali kamu menyimpan kait atau ceritamu sendiri, kami bertanya satu kali: bolehkah yang kamu tulis dipakai secara anonim untuk memperbaiki kait di Kait Kata? Bawaannya mati; jika kamu tidak mengetuk “Ya, silakan pakai”, tidak ada yang dikirim. Kamu bisa menyalakan atau mematikannya kapan saja di Pengaturan → “Bantu dengan kaitmu”.</p>
   <ul>
     <li><strong>Yang dikirim:</strong> bahasa aplikasi, paket dan nomor kata (untuk kata yang kamu tambahkan sendiri: kata dan artinya), kait dan ceritamu, jenis gambar (tidak ada, emoji, foto, atau gambar buatan; gambarnya sendiri tidak pernah dikirim), hari penyimpanan, dan jumlah total seberapa baik kamu mengingat kata itu dalam 5 ulangan berikutnya (berapa kali langsung, dengan kait, atau salah).</li>
-    <li><strong>Yang tidak dikirim:</strong> nama, e-mail, ID ponsel, nomor perangkat, alamat IP, dan fotomu. Server melihat nomor perangkat untuk mengetahui bahwa permintaan datang dari aplikasi terdaftar dan untuk membatasi penyalahgunaan, tetapi tidak menyimpannya bersama kontribusi. Catatan yang disimpan berisi hari, bukan jam.</li>
-    <li><strong>Untuk apa:</strong> belajar dari kait yang paling banyak diingat dan paling sering diganti, lalu memperbaiki kait di aplikasi. Yang kamu tulis tidak ditampilkan apa adanya kepada pengguna lain, tidak dijual, tidak dipakai untuk iklan, dan tidak dibagikan kepada siapa pun.</li>
-    <li><strong>Di mana:</strong> di basis data Cloudflare yang sama dengan cadangan kemajuan (Eropa Barat), di tabel yang terpisah dari cadangan. Cadangan cloud-mu tidak dipakai untuk ini.</li>
-    <li><strong>Mematikan dan menghapus:</strong> saat kamu mematikannya, tidak ada lagi yang dikirim dan yang masih menunggu dikirim di ponsel dihapus. Yang sudah dikirim sebelumnya bersifat anonim dan tidak bisa dihubungkan denganmu; karena itu tidak bisa dipisahkan dan dihapus per orang (“Hapus dataku” tidak mencakupnya).</li>
+    <li><strong>Yang tidak dikirim:</strong> nama, e-mail, ID ponsel, nomor perangkat, alamat IP, dan fotomu. Server melihat nomor perangkat untuk memastikan permintaan datang dari aplikasi terdaftar dan untuk membatasi penyalahgunaan, tetapi tidak menyimpannya bersama kontribusi. Catatan yang disimpan hanya berisi hari, tanpa jam.</li>
+    <li><strong>Untuk apa:</strong> belajar dari kait yang diingat dengan baik atau sering diganti, lalu memperbaiki kait di aplikasi. Yang kamu tulis tidak ditampilkan apa adanya kepada pengguna lain, tidak dijual, tidak dipakai untuk iklan, dan tidak dibagikan kepada siapa pun.</li>
+    <li><strong>Di mana:</strong> di basis data Cloudflare yang sama dengan cadangan kemajuan (Eropa Barat), di tabel yang terpisah.</li>
+    <li><strong>Mematikan dan menghapus:</strong> begitu kamu mematikannya, tidak ada lagi yang dikirim dan yang masih menunggu dikirim di ponsel dihapus. Yang sudah dikirim sebelumnya bersifat anonim dan tidak bisa dihubungkan denganmu; karena itu tidak bisa dipisahkan dan dihapus per orang (“Hapus dataku” tidak mencakupnya).</li>
   </ul>
 
-  <h2 id="bantuan-ai">Bantuan cerita dan gambar</h2>
-  <p>Saat menulis kaitmu sendiri, jika mau, kamu bisa mendapat bantuan dari model pembuat teks dan gambar dengan tombol “Tuliskan ceritanya” dan “Gambarkan”. Saat pertama kali dipakai, kami meminta izinmu satu kali; kamu bisa mematikannya di Pengaturan → “Bantuan cerita dan gambar”. Jika mati, tidak ada yang dikirim.</p>
+  <h2 id="statistics">Statistik penggunaan</h2>
+  <p>Untuk meningkatkan aplikasi dan memperbaiki kesalahan, kami mengumpulkan <strong>statistik penggunaan anonim</strong>:</p>
   <ul>
-    <li><strong>Yang dikirim:</strong> kata, artinya, kaitmu, dan (jika ada) cerita yang kamu tulis. Nama, e-mail, kontak, lokasi, atau informasi pribadi lain tidak dikirim.</li>
-    <li><strong>Kepada siapa:</strong> untuk cerita <strong>Anthropic</strong> (model Claude), untuk gambar <strong>Cloudflare</strong>. Keduanya membuat konten atas nama kami sebagai layanan berbayar dan tidak memakai apa yang dikirim untuk melatih model. Permintaan lewat server kami; nomor perangkatmu tidak dikirim ke perusahaan-perusahaan ini.</li>
-    <li><strong>Yang disimpan:</strong> cerita hanya ada di ponselmu dan di cadanganmu sendiri; server kami tidak menyimpan teks cerita. Gambar kaitmu ada di ponselmu dan di cadangan fotomu sendiri, dan tidak ditampilkan kepada orang lain. Gambar untuk kait cadangan yang kami siapkan (bukan tulisanmu) bisa disimpan bersama agar siap untuk pengguna berikutnya. Untuk menghitung jatah pemakaian, server hanya menyimpan angka (berapa cerita / gambar, dan kapan); kata, kait, atau cerita tidak ditulis ke catatan log. Agar gambar sudah siap, jika kamu menyalakan bantuan ini, gambar bisa dibuat dari cerita yang kamu simpan bahkan sebelum kamu memintanya; gambar yang tidak terpakai seperti ini segera dihapus dari server.</li>
-    <li><strong>Jatah dan keamanan:</strong> jatah cerita dan gambarmu (berapa yang tersisa) tertulis di aplikasi. Kepemilikan paket diverifikasi di server dengan catatan pembelian toko (Google Play / App Store). Sebelum gambar dibuat, verifikasi bawaan ponsel (Google Play Integrity di Android, Apple App Attest di iPhone) memeriksa bahwa aplikasi tidak diubah; verifikasi ini tidak berisi identitasmu. Verifikasi perangkat yang sama juga dilihat pada permintaan cerita, saran kait, dan pelafalan; permintaan tanpa verifikasi mendapat batas pemakaian yang lebih ketat.</li>
-    <li><strong>Laporkan:</strong> jika muncul hasil yang tidak pantas, kamu bisa memberi tahu kami dengan “⚑ Laporkan”; kontennya langsung dihapus. Laporan hanya mengirim nomor hasil dan alasan yang kamu pilih, bukan apa yang kamu tulis.</li>
-    <li><strong>Penghapusan:</strong> “Hapus dataku” menghapus salinan di server, termasuk gambar yang dibuat untukmu. Untuk mencegah penyalahgunaan, jumlah jatah gambar gratis tetap disimpan selama 24 bulan bersama ringkasan ID ponsel.</li>
+    <li>Pemasangan, pembukaan, dan pembaruan aplikasi; langkah mana yang diselesaikan (pengenalan, kata hari ini, ulangan, tes, album, laporan ingatan) dan jumlahnya (berapa kata, berapa jawaban benar, hari keberapa).</li>
+    <li>Level dan paket yang kamu pilih, jumlah kata per hari, apakah kamu menyalakan pengingat, sudah berapa hari sejak pemasangan, apakah kamu memiliki paket, dan negara tokomu.</li>
+    <li>Dibukanya layar pembelian dan hasil pembelian. Data pembayaran tidak pernah sampai ke kami.</li>
+    <li>Angka yang menunjukkan bahwa kamu menambahkan kait atau katamu sendiri (bukan teksnya). Saat kamu mengubah kait sebuah kartu, kata kartu itu dan kait bawaan yang kamu pilih juga dikirim; kait yang kamu ketik sendiri tidak dikirim.</li>
+    <li>Kode hasil bantuan cerita dan gambar (selesai, jatah habis, kesalahan, dan sebagainya); tanpa kata, kait, atau cerita.</li>
+    <li>Versi aplikasi, model dan produsen ponsel, versi sistem operasi, pengaturan bahasa dan zona waktu ponsel, serta catatan teknis kesalahan aplikasi (layar, nama fungsi, pesan kesalahan).</li>
+    <li>Teks yang kamu tulis atas kemauan sendiri di kotak “Tulis komentar”. Kami tidak meminta nama atau e-mailmu; mohon jangan menulis informasi pribadi di dalamnya.</li>
+  </ul>
+  <p>Statistik ini disimpan dengan nomor instalasi acak yang dibuat PostHog di ponselmu; nomor ini tidak dihubungkan dengan nama, e-mail, nomor perangkat (cadangan), atau akun tokomu, dan dihapus dari ponsel saat kamu menghapus aplikasi. Aplikasi mematikan penentuan lokasi dari alamat IP-mu. Statistik diproses atas nama kami oleh PostHog di server yang berada di Uni Eropa (<a href="https://posthog.com/privacy">kebijakan privasi PostHog</a>). Statistik ini tidak dipakai untuk iklan atau pemasaran dan tidak dijual.</p>
+  <p><strong>Mematikannya:</strong> saat ini aplikasi tidak punya pengaturan untuk mematikan statistik. Karena statistik tidak mengenali dirimu, kami tidak bisa memisahkan dan menghapus apa yang sudah dikirim dari ponselmu; menghapus aplikasi akan menghapus nomor instalasi dari ponsel. Untuk keberatan atau pertanyaan, tulis ke <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a>.</p>
+
+  <h2 id="attestation">Verifikasi perangkat</h2>
+  <p>Sebelum gambar dibuat, dan untuk permintaan cerita dan pelafalan, verifikasi bawaan ponsel dipakai untuk memastikan permintaan datang dari aplikasi yang tidak diubah: Google Play Integrity di Android, Apple App Attest di iPhone. Aplikasi menerima hasil bertanda tangan dari Google atau Apple, dan server kami memeriksanya; hasil ini tidak berisi namamu atau akunmu. Di iPhone, untuk keperluan ini bagian publik dari kunci yang dibuat di ponsel disimpan bersama catatan perangkatmu. Permintaan tanpa verifikasi mendapat batas pemakaian yang lebih ketat.</p>
+
+  <h2 id="updates">Pembaruan dan unduhan</h2>
+  <ul>
+    <li><strong>Pembaruan aplikasi:</strong> saat dibuka, aplikasi bertanya ke server pembaruan Expo (u.expo.dev) apakah ada pembaruan. Permintaan ini memuat versi aplikasi, platform, dan nomor instalasi acak yang dibuat Expo di ponselmu; alamat IP-mu sampai ke Expo sebagai bagian dari sambungan. Nomor ini tidak dihubungkan dengan nomor perangkatmu atau statistik.</li>
+    <li><strong>Pemeriksaan versi:</strong> saat dibuka, aplikasi membaca sebuah berkas kecil di <a href="https://kelimekancasi.com/surum.json">kelimekancasi.com/surum.json</a> untuk memastikan versimu masih didukung. Tidak ada data pribadi atau informasi kemajuan yang dikirim; hanya alamat IP-mu yang bisa tercatat di log server GitHub, yang menjadi host situs ini, sebagai bagian dari sambungan.</li>
+    <li><strong>Unduhan konten:</strong> paket bahasa, daftar kait bawaan, dan gambar kartu diunduh dari dil.kelimekancasi.com (Cloudflare). Tidak ada data pribadi yang dikirim bersama permintaan ini.</li>
+  </ul>
+  <p>Tanpa internet, pemeriksaan ini dilewati dan aplikasi berjalan seperti biasa.</p>
+
+  <h2 id="website">Situs web</h2>
+  <p>Situs web ini (kelimekancasi.com) memakai Cloudflare Web Analytics hanya untuk melihat berapa banyak orang yang berkunjung. Alat ini tidak memakai cookie dan tidak melacakmu antarsitus; yang disimpan hanya data gabungan seperti jumlah tampilan halaman, negara, jenis peramban, dan tautan asal kunjungan.</p>
+
+  <h2 id="providers">Penyedia layanan</h2>
+  <p>Hanya perusahaan-perusahaan ini yang memproses datamu, untuk keperluan di atas dan atas nama kami:</p>
+  <ul>
+    <li><strong>Cloudflare, Inc.</strong> (Amerika Serikat; basis data di Eropa Barat): server kami, cadangan kemajuan dan foto, catatan pembelian, kontribusi, pembuatan gambar, unduhan konten, dan statistik situs web.</li>
+    <li><strong>Anthropic, PBC</strong> (Amerika Serikat): penulisan cerita, deskripsi dan pemeriksaan adegan gambar, pelafalan.</li>
+    <li><strong>PostHog, Inc.</strong> (server di Uni Eropa): statistik penggunaan dan catatan kesalahan.</li>
+    <li><strong>Expo</strong> (650 Industries, Inc., Amerika Serikat): pembaruan aplikasi.</li>
+    <li><strong>GitHub, Inc.</strong> (Amerika Serikat): hosting situs web dan berkas versi.</li>
+  </ul>
+  <p>Aplikasi didistribusikan melalui Google Play dan App Store. Unduhan, pembayaran, verifikasi perangkat (Play Integrity, App Attest), dan cadangan bawaan ponsel (Block Store, Keychain, cadangan Google dan iCloud) tunduk pada kebijakan privasi Google dan Apple masing-masing. Selain itu, kami tidak membagikan atau menjual datamu; jika hukum mewajibkan, kami hanya membagikan yang diperlukan.</p>
+
+  <h2 id="transfers">Transfer ke luar negeri</h2>
+  <p>Server para penyedia di atas berada di luar Turki (di Uni Eropa dan Amerika Serikat). Saat kamu memakai aplikasi, data yang dijelaskan di halaman ini dikirim ke negara-negara tersebut hanya untuk keperluan yang disebutkan. Transfer dilakukan berdasarkan ketentuan pemrosesan data perusahaan-perusahaan ini. Transfer untuk bantuan cerita dan gambar juga didasarkan pada persetujuanmu, yang bisa kamu tarik di Pengaturan.</p>
+
+  <h2 id="legal-basis">Dasar hukum</h2>
+  <ul>
+    <li><strong>Menyediakan layanan</strong> (KVKK Pasal 5(2)(c); GDPR Pasal 6(1)(b)): cadangan kemajuan, cadangan kontenmu sendiri, catatan pembelian dan penambahan kredit gambar, pelafalan.</li>
+    <li><strong>Kepentingan sah kami</strong> (KVKK Pasal 5(2)(f); GDPR Pasal 6(1)(f)): penggunaan jatah gratis yang adil, verifikasi perangkat, pemeriksaan refund dan pencegahan penyalahgunaan; statistik penggunaan untuk meningkatkan aplikasi dan memperbaiki kesalahan; pembaruan aplikasi.</li>
+    <li><strong>Persetujuanmu</strong> (KVKK Pasal 5(1); GDPR Pasal 6(1)(a)): bantuan cerita dan gambar, serta Bantu dengan kaitmu. Kamu bisa menarik persetujuan kapan saja di Pengaturan; ini tidak memengaruhi apa yang sudah dilakukan sebelumnya.</li>
+    <li><strong>Kewajiban hukum</strong> (KVKK Pasal 5(2)(ç); GDPR Pasal 6(1)(c)): permintaan yang sah dari pihak berwenang.</li>
   </ul>
 
-  <h2>Notifikasi</h2>
-  <p>Jika kamu mengaktifkan pengingat harian, notifikasi dijadwalkan oleh ponselmu sendiri. Tidak ada server yang dipakai untuk ini; kamu bisa mematikan izinnya kapan saja lewat pengaturan ponsel.</p>
-  <h2>Pelafalan</h2>
-  <p>Kata-kata dibunyikan dengan rekaman yang ada di dalam aplikasi, dan untuk teks tanpa rekaman dengan mesin teks-ke-suara bawaan ponselmu. Aplikasi tidak mengirim data apa pun untuk ini; perilaku mesin teks-ke-suara tunduk pada ketentuan privasi produsen ponselmu.</p>
-  <h2>Pemeriksaan versi</h2>
-  <p>Saat dibuka, aplikasi (Android dan iPhone) membaca sebuah berkas kecil di <a href="https://kelimekancasi.com/surum.json">kelimekancasi.com/surum.json</a> untuk mengetahui apakah versi yang kamu pakai masih didukung. Permintaan ini tidak mengirim data pribadi atau informasi kemajuan; hanya, karena sifat sambungan internet, alamat IP-mu bisa tercatat di log server GitHub yang menjadi host situs ini. Jika tidak ada internet, pemeriksaan dilewati dan aplikasi berjalan seperti biasa.</p>
-  <h2>Pembelian</h2>
-  <p>Sebagian aplikasi gratis; kata-kata selebihnya dibuka dengan sekali pembelian lewat Google Play (Android) atau App Store (iPhone). Pembayaran sepenuhnya diproses oleh toko aplikasi yang bersangkutan; data kartu atau pembayaranmu tidak sampai ke kami. Aplikasi hanya menerima dari toko informasi apakah akun ini sudah melakukan pembelian, dan menyimpannya di ponselmu. Agar jatah cerita dan gambar dihitung dengan benar di server, bukti pembelian (nomor transaksi toko) dikirim ke server kami; nomor itu tidak disimpan apa adanya, hanya sebagai ringkasan yang tidak bisa dibalik (hash). Untuk menemukan pembelian yang dikembalikan dananya (refund), ringkasan ini dicocokkan dengan informasi refund dari Apple dan Google; tambahan dari paket atau jatah gambar yang di-refund akan dicabut. Tidak ada informasi lain yang dikumpulkan untuk ini. Pembelian tunduk pada kebijakan privasi <a href="https://policies.google.com/privacy">Google</a> atau <a href="https://www.apple.com/legal/privacy/">Apple</a>.</p>
-  <h2>Situs web</h2>
-  <p>Situs web ini (kelimekancasi.com) memakai Cloudflare Web Analytics hanya untuk melihat berapa banyak orang yang berkunjung. Alat ini tidak memakai cookie, tidak melacakmu antarsitus, dan tidak mengumpulkan data pribadi; yang disimpan hanya informasi gabungan yang tidak menunjukkan identitasmu, seperti jumlah tampilan halaman, negara, jenis peramban, dan tautan asal kunjungan ke situs. Statistik anonim di dalam aplikasi dijelaskan di atas, pada bagian “Data yang kami kumpulkan”.</p>
-  <h2>Pihak ketiga</h2>
-  <p>Statistik penggunaan anonim diproses atas nama kami oleh PostHog, seperti dijelaskan di atas. Jika kamu memakai bantuan cerita dan gambar, yang kamu kirim diproses atas nama kami oleh Anthropic dan Cloudflare (lihat di atas). Selain itu, aplikasi tidak membagikan datamu kepada pihak ketiga mana pun. Aplikasi didistribusikan melalui Google Play dan App Store; unduhan dan pembaruan tunduk pada kebijakan privasi Google dan Apple.</p>
-  <h2>Usia</h2>
-  <p>Aplikasi ini dirancang untuk pengguna berusia 13 tahun ke atas dan tidak mengumpulkan data yang mengidentifikasi dari kelompok usia mana pun.</p>
+  <h2 id="retention">Berapa lama kami menyimpan data</h2>
+  <ul>
+    <li><strong>Cadangan dan catatan perangkat:</strong> sampai kamu menghapusnya. Catatan dan cadangan aplikasi yang tidak dibuka selama 24 bulan dihapus otomatis.</li>
+    <li><strong>Catatan pembelian:</strong> selama catatan perangkat masih ada. Ringkasan pembelian paket gambar disimpan tanpa hubungan ke perangkat, supaya pembelian yang sama tidak pernah ditambahkan dua kali; ringkasan pembelian yang di-refund disimpan untuk pemeriksaan refund.</li>
+    <li><strong>Hitungan pemakaian cerita dan gambar:</strong> jatah harian dihapus saat hari berakhir; catatan teknis pemakaian (jenis, hasil, durasi; bukan tulisanmu) disimpan selama 90 hari.</li>
+    <li><strong>Penghitung penyalahgunaan:</strong> penghitung yang disimpan dengan ringkasan alamat IP yang tidak bisa dibalik dihapus paling lama dalam satu hari.</li>
+    <li><strong>Laporan:</strong> catatan “⚑ Laporkan” (nomor hasil dan alasannya) disimpan untuk meninjau konten.</li>
+    <li><strong>Kontribusi:</strong> anonim, sehingga tidak bisa dihubungkan dengan seseorang; disimpan untuk memperbaiki kait.</li>
+    <li><strong>Statistik:</strong> disimpan di PostHog selama dibutuhkan untuk meningkatkan aplikasi.</li>
+  </ul>
+
+  <h2 id="deletion">Menghapus datamu</h2>
+  <p>Pengaturan → <strong>“Hapus dataku”</strong> (perlu internet):</p>
+  <ul>
+    <li><strong>Di ponsel:</strong> kemajuan, pengaturan, dan pengingatmu dihapus; aplikasi terbuka seperti hari pertama. Kait, kata, dan fotomu sendiri dihapus jika kamu mencentang “Hapus juga kait, kata, dan foto buatanku sendiri”; jika tidak, semuanya tetap ada di ponsel dan masuk lagi ke cadangan barumu kalau kamu terus memakai aplikasi.</li>
+    <li><strong>Langsung dihapus dari server kami:</strong> cadanganmu, cadangan foto dan gambarmu, catatan pembelian milik catatan perangkat ini, kredit gambar yang kamu beli (tidak akan kembali), kunci verifikasi perangkat, dan gambar yang sudah dibuat lebih dulu.</li>
+    <li><strong>Yang tetap ada:</strong> untuk mencegah penyalahgunaan, ringkasan ID ponsel dan nomor kata gratis yang sudah kamu pakai disimpan selama 24 bulan (selama itu jatah gratis tidak dimulai ulang). Ringkasan pembelian paket gambar tetap ada tanpa hubungan ke perangkat. Paket yang kamu beli tetap ada di akun tokomu dan kembali lewat “Sudah pernah membeli”. Kontribusi anonim tidak bisa dihubungkan denganmu, sehingga tidak bisa dihapus.</li>
+  </ul>
+  <p>“Hapus kemajuan” hanya menghapus kemajuanmu; daftar kata gratis yang sudah dipakai tetap ada. Menghapus aplikasi dari ponsel hanya menghapus data di ponsel; cadangan di server kami dihapus otomatis setelah 24 bulan. Jika ingin cadangan segera dihapus, gunakan “Hapus dataku” lebih dulu atau tulis ke <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a>.</p>
+
+  <h2 id="rights">Hak-hakmu</h2>
+  <p>Menurut Pasal 11 KVKK, kamu berhak mengetahui apakah datamu diproses, meminta informasi tentangnya, mengetahui tujuan pemrosesan dan apakah data dipakai sesuai tujuan itu, mengetahui kepada siapa data dikirim di Turki atau di luar negeri, meminta agar data yang tidak lengkap atau salah diperbaiki, meminta agar data dihapus atau dimusnahkan dan agar tindakan ini diberitahukan kepada pihak yang menerima data, menolak hasil yang merugikanmu yang hanya berasal dari analisis otomatis, dan menuntut ganti rugi jika kamu mengalami kerugian akibat pemrosesan yang melanggar hukum.</p>
+  <p>Jika kamu tinggal di Uni Eropa, menurut GDPR kamu berhak untuk mengakses, memperbaiki, dan menghapus datamu, membatasi pemrosesan, menerima datamu dalam format yang dapat dipindahkan, menolak pemrosesan yang didasarkan pada kepentingan yang sah, dan menarik persetujuan.</p>
+  <p>Untuk menggunakan hak-hak ini, tulis ke <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a>; kami menjawab tanpa biaya paling lambat dalam 30 hari. Karena tidak ada akun, kami tidak bisa menemukanmu lewat nama; kami akan memberi tahu langkah yang kami perlukan untuk menemukan catatanmu. Cara tercepat untuk menghapus adalah “Hapus dataku” di aplikasi. Jika kamu tidak puas dengan jawaban kami, kamu bisa mengadu ke Otoritas Perlindungan Data Pribadi Turki (KVKK) atau, di Uni Eropa, ke otoritas perlindungan data di negaramu.</p>
+
+  <h2 id="age">Batas usia</h2>
+  <p>Aplikasi ini untuk pengguna berusia 13 tahun ke atas. Anak di bawah 13 tahun sebaiknya tidak memakainya, dan kami tidak dengan sengaja mengumpulkan data mereka. Jika kamu mengira ada anak di bawah 13 tahun yang memakai aplikasi ini, tulis ke kami dan kami akan menghapus datanya.</p>
+
+  <h2 id="security">Keamanan</h2>
+  <p>Semua sambungan antara aplikasi dan server kami dienkripsi (HTTPS), dan permintaan ditandatangani dengan kunci khusus aplikasi. ID ponsel, alamat IP, dan nomor transaksi toko disimpan di server hanya sebagai ringkasan yang tidak bisa dibalik. Apa yang kamu tulis tidak ditulis ke log server.</p>
+
   <h2>Perubahan</h2>
   <p>Jika kebijakan ini berubah, versi terbarunya akan dipublikasikan di halaman ini dan tanggal di atas akan diperbarui. Jika cakupan data yang dikumpulkan berubah, halaman ini akan diperbarui lebih dulu.</p>
-  <h2>Kontak</h2>
+
+  <h2 id="contact">Kontak</h2>
   <p>Kait Kata dikembangkan secara independen oleh Fırat Tunç.</p>
   <p>Untuk pertanyaan: <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a></p>
 

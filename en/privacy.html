@@ -47,77 +47,157 @@
 <main>
   <p class="langs" aria-label="Language"><a href="/gizlilik.html" hreflang="tr" lang="tr">Türkçe</a> · <a href="/es/privacidad.html" hreflang="es" lang="es">Español</a> · <a href="/pt/privacidade.html" hreflang="pt-BR" lang="pt-BR">Português</a> · <a href="/it/privacy.html" hreflang="it" lang="it">Italiano</a> · <a href="/fr/confidentialite.html" hreflang="fr" lang="fr">Français</a> · <a href="/id/privasi.html" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/ja/privacy.html" hreflang="ja" lang="ja">日本語</a> · <a href="/ko/privacy.html" hreflang="ko" lang="ko">한국어</a> · <span aria-current="true">English</span></p>
   <h1>Privacy Policy</h1>
-  <p class="date">Word Hook · Last updated: November 10, 2026</p>
+  <p class="date">Word Hook · Last updated: November 11, 2026</p>
 
-  <p>Word Hook is a mobile app that teaches Spanish words with memory techniques. This page explains how the app handles your data. In short: <strong>we do not collect your name, your e-mail or anything that identifies you; we only keep anonymous usage statistics to improve the app; and, if you allow it, we receive your own hooks anonymously.</strong></p>
+  <p>Word Hook is a mobile app that teaches words with memory techniques. This page explains which data the app keeps and where, whom it sends data to and why, and how you can delete it. It is also our privacy notice under Türkiye's Personal Data Protection Law No. 6698 (KVKK) and the EU General Data Protection Regulation (GDPR).</p>
 
-  <h2>Data we collect</h2>
-  <p>The app has no accounts, sign-in or ads. We do not collect your name, e-mail address, location, contacts or advertising ID, and we do not track you across other apps or websites.</p>
-  <p>To improve the app we collect only <strong>anonymous usage statistics</strong>:</p>
+  <h2 id="summary">In short</h2>
   <ul>
-    <li>Which step was completed (introduction, daily words, review, tests, memory report) and their counts (how many words, how many correct answers, which day).</li>
-    <li>The level and daily word count you choose, and whether you turn reminders on.</li>
-    <li>Whether the purchase screen was opened and the result of a purchase (started, completed, failed). Payment details never reach us.</li>
-    <li>App version, phone model, operating system version and technical error logs of the app.</li>
-    <li>Any text you choose to write in the “Write feedback” box. Your name or e-mail address is not requested; we recommend not writing personal information in the text.</li>
+    <li>There are no accounts, logins or ads. We don't ask for your name, email, phone number, location or contacts.</li>
+    <li>Your progress and what you write yourself are backed up on our server so that they come back if you reinstall the app. The backup is tied to a random device number; it doesn't know who you are.</li>
+    <li>If you use story and picture help (we ask for your consent first), the word, your hook and your story are sent to text and image generation models (Anthropic, Cloudflare).</li>
+    <li>We collect anonymous usage statistics to improve the app (PostHog).</li>
+    <li>We don't sell your data, use it for ads, or track you across other apps or websites.</li>
+    <li>You can delete your data from the phone and from our server with Settings → “Delete my data”.</li>
   </ul>
-  <p>Which words you learn, and what you type or search for, is not part of these statistics (the progress backup is described separately below). These statistics are kept under a random installation number generated on your phone; this number is not linked to your name, e-mail or account, and it is deleted from the phone when you uninstall the app. Your IP address is not stored with the statistics.</p>
-  <p>The statistics are processed on our behalf by PostHog on servers in the European Union (<a href="https://posthog.com/privacy">PostHog privacy policy</a>). They are not used for advertising or marketing and are not sold to anyone.</p>
+
+  <h2 id="controller">Data controller</h2>
+  <p>Fırat Tunç, who develops Word Hook independently in Türkiye, is the data controller under KVKK and the GDPR. You can reach us at <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a>. Data is collected automatically through the app, as described below.</p>
+
+  <h2 id="on-your-phone">What stays on your phone</h2>
+  <p>The word cards, their pictures and recorded audio are inside the app (language packs are downloaded once). Text without a recording is read aloud by your phone's own text-to-speech engine; the app sends no data for this, and the engine is subject to your phone maker's terms. If you turn on the daily reminder, your phone schedules the notification itself; no server is involved, and you can turn the permission off in your phone settings at any time. We open the camera or photo library only when you tap to add a photo to your own hook. If your phone's own backup (Google or iCloud) is on, the app's data may also be included in it; we have no access to that backup.</p>
 
   <h2 id="progress-backup">Progress backup (device account)</h2>
-  <p>So that you can continue where you left off after reinstalling the app or moving to a new phone, your learning progress is backed up on our server. There are no accounts, logins or codes; the backup is tied to a random <strong>device number</strong> the app receives on first launch. This number is not linked to your name, e-mail, store account or the usage statistics above.</p>
+  <p>So that you can pick up where you left off after reinstalling the app or moving to a new phone, your learning progress is backed up on our server. There is no sign-up, login or code; the backup is tied to a random <strong>device number</strong> the app gets on first launch. This number is not linked to your name, email, store account or usage statistics.</p>
   <ul>
-    <li><strong>What is backed up:</strong> the words you have learned and their review dates, “I know it” marks, your streak counter, your album, your app settings and the numbers of the words opened with your free allowance; the hooks and stories you write yourself and the words you add (text and emoji). Purchase information is not backed up (packs come back from your store account). Your own photos and the pictures drawn for you are also backed up (a reduced copy, at most 120 KB each); only you can download them.</li>
-    <li><strong>Phone identifier:</strong> to recognise a reinstall on the same phone, the phone’s identifier specific to this app (ANDROID_ID on Android, identifierForVendor on iPhone) is sent; the server does not store the identifier itself, only a one-way summary (hash) of it.</li>
-    <li><strong>On your phone:</strong> the device number is also kept in the Keychain on iPhone and in Google’s Block Store on Android. Block Store is an encrypted part of your phone’s Google backup; if you set up a new phone from this backup or by transferring from the old phone, your progress comes back. We cannot access this storage.</li>
-    <li><strong>Why:</strong> to restore your progress, to merge several phones, and to prevent the free word allowance from being restarted by reinstalling the app or changing the phone’s clock (fair use). For this reason the app’s “today” is counted by the server’s clock.</li>
-    <li><strong>Where:</strong> on Cloudflare’s servers (database in Western Europe), on our behalf. The connection is encrypted (HTTPS). It is not used for advertising, tracking or marketing, and it is not sold or shared with anyone.</li>
-    <li><strong>Deletion:</strong> Settings → “Delete my data” immediately deletes your backup and everything on the phone; you can also request it by writing to info@kelimekancasi.com. To prevent abuse, only the summary of the phone identifier and the numbers of the free words you used are kept for 24 months (during this time the free allowance does not start over). “Reset progress” deletes only your progress; the list of free words used remains.</li>
-    <li><strong>Retention:</strong> the backup of an app that has not been opened for 24 months is deleted automatically.</li>
+    <li><strong>What is backed up:</strong> the words you have learned and their review dates, “I know it” marks, your streak, your album, your app settings and the numbers of the words you unlocked with your free allowance; the hooks and stories you write and the words you add (text and emoji); reduced copies of your own photos and of pictures drawn for you (up to 120 KB each, up to 200; only you can download them). Pack purchases are not part of the backup (they come back from your store account); the purchase record kept on our server is described below.</li>
+    <li><strong>Stored with the record:</strong> the platform (Android or iPhone), the app's version and language, when the record was created and when the app was last opened.</li>
+    <li><strong>Phone ID:</strong> to recognise a reinstall on the same phone, the phone's app-specific ID (ANDROID_ID on Android, identifierForVendor on iPhone) is sent; the server stores only an irreversible hash of it, not the ID itself.</li>
+    <li><strong>On your phone:</strong> the device number is also stored in the iPhone Keychain or in Google's Block Store on Android. Block Store is an encrypted part of your phone's Google backup; if you set up a new phone from that backup or by transferring from the old phone, your progress comes back. We cannot access these areas.</li>
+    <li><strong>Why:</strong> to restore your progress, to merge several phones and to stop the free word allowance from being restarted by reinstalling or changing the phone's clock (fair use). That is why the app's “today” follows the server's clock.</li>
+    <li><strong>Where:</strong> on Cloudflare's servers (database in Western Europe), on our behalf. It is not used for ads, tracking or marketing, and it is not sold.</li>
   </ul>
-  <p>Without internet the app works as usual; the backup is made when the connection returns. If your phone’s own backup (Google or iCloud) is on, the app’s database may also be included in that backup; we cannot access that backup.</p>
+  <p>The app works as usual without internet; the backup is made once you're back online. Retention and deletion are described below under <a href="#deletion">“Deleting your data”</a>.</p>
 
-  <h2 id="own-hook">Your own hook, story and photo</h2>
-  <p>You can write your own hook for a card, add your own word, and give them an emoji or your own photo. The hook, story and photo you create stay only on your phone and in your own backup; they are not shown to anyone else and are not part of the statistics. Text, emoji and photos (a reduced copy) are included in the progress backup above; they come back when you reinstall. We do not filter or read what you write, and we do not put it in statistics or promotional videos. We open the camera or gallery only when you tap for a photo; the camera permission is only for this. “Delete my data” deletes all of these; “Reset progress” does not delete your own hooks and words. The only exception is “Contribute your hooks”, which you turn on yourself: when it is on, an anonymous copy of your hooks and stories reaches us (below).</p>
+  <h2 id="own-hook">Your own hook, story, words and photos</h2>
+  <p>You can change a card's hook with “✎ Edit” or write your own, add your own words, and give them an emoji or your own photo. These stay only on your phone and in your own backup; they are never shown to other users and are not part of the statistics. We don't filter, read or use what you write in promotions. We open the camera or photo library only when you tap; the camera permission is only for this. The one exception is “Contribute your hooks”, which you turn on yourself: when it is on, an anonymous copy of your hooks and stories reaches us (see below).</p>
+
+  <h2 id="purchases">Purchases</h2>
+  <p>Part of the app is free. Word packs and the “My own words” pack are one-time purchases; picture packs are consumable (each picture uses one credit). There are no subscriptions. Google Play (Android) or the App Store (iPhone) takes the payment; your card or payment details never reach us.</p>
+  <ul>
+    <li><strong>On the phone:</strong> the app learns from the store which packs were bought with your store account and keeps this on the phone.</li>
+    <li><strong>On our server:</strong> so that story and picture allowances are counted correctly and bought picture credits can be added, the store's proof of purchase is sent to our server and verified with the store. The purchase record we keep is: an irreversible hash of the store's transaction number (not the number itself), the product, the platform and the date. The record is tied to your device number. The number of bought picture credits you have left is also kept with your device record.</li>
+    <li><strong>Refunds:</strong> to find refunded purchases, these hashes are compared with Apple's and Google's refund data; the extras that came with a refunded pack or picture credits are removed. One pack purchase unlocks the pack allowances of story and picture help on at most 5 device records.</li>
+    <li><strong>Statistics:</strong> opening the purchase screen and the result of a purchase (started, completed, cancelled, failed) are also part of the anonymous usage statistics.</li>
+  </ul>
+  <p>Purchases are also subject to <a href="https://policies.google.com/privacy">Google's</a> or <a href="https://www.apple.com/legal/privacy/">Apple's</a> privacy policy.</p>
+
+  <h2 id="help">Story, picture and pronunciation help</h2>
+  <p>When you write your own hook, you can get help from text and image generation models with the “Write my story” and “Draw my picture” buttons. The first time you use them we ask for your consent once; you can turn this off in Settings → “Story and picture help”. While it is off, your word, hook and story are not sent anywhere.</p>
+  <ul>
+    <li><strong>What is sent:</strong> the word, its meaning, your hook and (if any) the story you wrote. Your name, email, contacts, location and device number are not sent to these companies. Requests go through our server.</li>
+    <li><strong>To whom:</strong> for stories, <strong>Anthropic</strong> (the Claude model). For pictures, Anthropic first writes a short description of the scene to draw from your story and checks that it is suitable; <strong>Cloudflare</strong>'s image model then draws the picture from that description (the image model never sees what you wrote). Both work on our behalf as a paid service and do not use what is sent to train models; they may keep requests for a short time under their own terms to check for abuse.</li>
+    <li><strong>Pronunciation:</strong> when you add your own word, only the word you typed and the app's language are sent to Anthropic through our server to fill in the pronunciation field. This request can be made before the consent window has appeared; it is not sent if you have turned story and picture help off or tapped “Not now” in the consent window. Our server does not store the word, and it uses no allowance.</li>
+    <li><strong>What is kept:</strong> the story and picture stay only on your phone and in your own backup and are shown to no one else; our server does not write the story text to its logs. Stories and pictures for our own ready-made hooks (not your text) may be kept in a shared cache so that they are ready for the next user. To have a picture ready, if help is on, a picture may be drawn from a story you saved before you ask for it; if it isn't used, it is deleted from the server shortly. To count allowances, the server keeps only numbers (how many stories and pictures, and when).</li>
+    <li><strong>Allowances:</strong> stories and pictures have daily allowances; the app shows how many are left.</li>
+    <li><strong>Report:</strong> if a result is inappropriate, tell us with “⚑ Report”; that result is hidden at once. A report sends only the result's number and the reason you chose, not what you wrote.</li>
+  </ul>
 
   <h2 id="contribute">Contribute your hooks (optional)</h2>
-  <p>The first time you save your own hook or story, we ask once: may what you write be used anonymously to improve Word Hook’s hooks? It is off by default; unless you tap “Yes, use them”, nothing is sent. You can turn it on or off at any time in Settings → “Contribute your hooks”.</p>
+  <p>The first time you save your own hook or story, we ask once whether what you write may be used anonymously to improve Word Hook's hooks. It is off by default; nothing is sent unless you tap “Yes, use them”. You can turn it on or off at any time in Settings → “Contribute your hooks”.</p>
   <ul>
-    <li><strong>What is sent:</strong> the app language, the word’s pack and number (for a word you added yourself: the word and its meaning), your hook and story, the kind of picture (none, emoji, photo or drawing; never the picture itself), the day of the save and total counts of how well you remembered the word in the next 5 reviews (how many times directly, with the hook, or wrong).</li>
-    <li><strong>What is not sent:</strong> your name, e-mail, phone identifier, device number, IP address or photos. The server checks the device number to know that the request comes from a registered app and to limit abuse, but it does not store it with the contribution. The stored record has a day, not a time.</li>
-    <li><strong>Why:</strong> to learn from the hooks that are remembered and changed most, and to improve the hooks in the app. What you write is not shown to other users as is, not sold, not used for advertising and not shared with anyone.</li>
-    <li><strong>Where:</strong> in the same Cloudflare database as the progress backup (Western Europe), in a table separate from the backup. Your cloud backup is not used for this.</li>
-    <li><strong>Turning off and deletion:</strong> when you turn it off, nothing more is sent and items still waiting on the phone are deleted. What was sent before is anonymous and cannot be linked to you, so it cannot be singled out and deleted per person (“Delete my data” does not cover it).</li>
+    <li><strong>What is sent:</strong> the app language, the word's pack and number (for a word you added yourself, the word and its meaning), your hook and story, the type of picture (none, emoji, photo or drawing; never the picture itself), the day it was saved, and totals of how well you remembered the word in the next 5 reviews (how many times directly, with the hook, or wrong).</li>
+    <li><strong>What is not sent:</strong> your name, email, phone ID, device number, IP address or photos. The server looks at the device number to check that the request comes from a registered app and to limit abuse, but does not store it with the contribution. The stored record has no time of day, only the day.</li>
+    <li><strong>What for:</strong> to learn from hooks that are remembered well or changed often and improve the hooks in the app. What you write is not shown to other users as it is, not sold, not used for ads and not shared with anyone.</li>
+    <li><strong>Where:</strong> in the same Cloudflare database as the progress backup (Western Europe), in a separate table.</li>
+    <li><strong>Turning it off and deletion:</strong> once you turn it off, nothing more is sent and anything waiting on the phone is deleted. What was sent before is anonymous and cannot be linked to you, so it cannot be singled out and deleted (“Delete my data” does not cover it).</li>
   </ul>
 
-  <h2 id="ai-help">Story and picture help</h2>
-  <p>While writing your own hook you can, if you wish, get help from text and image generation models with the “Write my story” and “Draw my picture” buttons. We ask for your permission once, on first use; you can turn it off in Settings → “Story and picture help”. When it is off, nothing is sent.</p>
+  <h2 id="statistics">Usage statistics</h2>
+  <p>To improve the app and fix errors, we collect <strong>anonymous usage statistics</strong>:</p>
   <ul>
-    <li><strong>What is sent:</strong> the word, its meaning, your hook and (if any) the story you wrote. Your name, e-mail, contacts, location or any other personal information are not sent.</li>
-    <li><strong>To whom:</strong> for stories <strong>Anthropic</strong> (the Claude model), for pictures <strong>Cloudflare</strong>. Both generate on our behalf as a paid service and do not use what is sent to train models. Requests go through our server; your device number is not sent to these companies.</li>
-    <li><strong>What is stored:</strong> the story stays only on your phone and in your own backup; our server does not store the text of the story. The picture of your hook stays on your phone and in your own photo backup and is not shown to anyone else. Pictures of the backup hooks we prepared (not your text) may be stored in common so that they are ready for the next user. To count usage allowances the server keeps only numbers (how many stories / pictures, and when); the word, hook or story is not written to logs. To have the picture ready, if you turned the help on, a drawing may be made from a story you saved before you ask for it; such an unused picture is deleted from the server shortly.</li>
-    <li><strong>Allowance and security:</strong> your story and picture allowances (how many are left) are shown in the app. Pack ownership is verified on the server with the store’s purchase record (Google Play / App Store). Before a picture is drawn, the phone’s own verification (Google Play Integrity on Android, Apple App Attest on iPhone) checks that the app has not been modified; this verification does not contain your identity. The same device verification is checked for story, hook suggestion and pronunciation requests; requests without verification get a stricter usage limit.</li>
-    <li><strong>Report:</strong> if an inappropriate result appears, you can tell us with “⚑ Report”; the content is removed immediately. A report only sends us the result’s number and the reason you choose, not what you wrote.</li>
-    <li><strong>Deletion:</strong> “Delete my data” deletes the copies on the server, including the pictures drawn for you. To prevent abuse, the count of the free picture allowance is kept for 24 months together with the summary of the phone identifier.</li>
+    <li>App installs, launches and updates; which steps were completed (intro, today's words, review, tests, album, memory report) and their counts (how many words, how many correct answers, which day).</li>
+    <li>The level and pack you chose, your daily word count, whether you turned on reminders, how many days since install, whether you own a pack, and your store country.</li>
+    <li>Opening the purchase screen and the result of a purchase. Payment details never reach us.</li>
+    <li>Counts showing that you added your own hook or word (not the text itself). When you change a card's hook, the card's word and the ready-made hook you picked are also sent; a hook you typed yourself is not sent.</li>
+    <li>Result codes of story and picture help (completed, allowance used up, error and so on); no word, hook or story.</li>
+    <li>App version, phone model and maker, operating system version, the phone's language and time zone setting, and a technical record of app errors (screen, function name, error message).</li>
+    <li>The text you choose to write in the “Write feedback” box. We don't ask for your name or email; please don't include personal details.</li>
+  </ul>
+  <p>These statistics are kept under a random installation number that PostHog creates on your phone; it is not linked to your name, email, device number (backup) or store account, and it is deleted from the phone when you delete the app. The app turns off deriving a location from your IP address. The statistics are processed on our behalf by PostHog on servers in the European Union (<a href="https://posthog.com/privacy">PostHog privacy policy</a>). They are not used for ads or marketing and are not sold.</p>
+  <p><strong>Turning it off:</strong> at the moment the app has no setting to turn the statistics off. Because the statistics don't identify you, we cannot single out and delete what was sent from your phone; deleting the app removes the installation number from the phone. For objections or questions, write to <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a>.</p>
+
+  <h2 id="attestation">Device check</h2>
+  <p>Before a picture is drawn, and for story and pronunciation requests, the phone's own check is used to confirm that the request comes from an unmodified app: Google Play Integrity on Android, Apple App Attest on iPhone. The app gets a signed result from Google or Apple and our server checks it; the result does not contain your name or account. On iPhone, the public part of a key created on the phone is stored with your device record for this. Requests without a check get stricter limits.</p>
+
+  <h2 id="updates">Updates and downloads</h2>
+  <ul>
+    <li><strong>App updates:</strong> when the app opens, it asks Expo's update server (u.expo.dev) whether there is an update. This request includes the app version, the platform and a random installation number created on the phone by Expo; your IP address reaches Expo as part of the connection. This number is not linked to your device number or the statistics.</li>
+    <li><strong>Version check:</strong> when the app opens, it reads a small file at <a href="https://kelimekancasi.com/surum.json">kelimekancasi.com/surum.json</a> to check that your version is still supported. No personal data or progress is sent; only your IP address may appear in the server logs of GitHub, which hosts the site, as part of the connection.</li>
+    <li><strong>Content downloads:</strong> language packs, ready-made hook lists and card pictures are downloaded from dil.kelimekancasi.com (Cloudflare). No personal data is sent with these requests.</li>
+  </ul>
+  <p>Without internet these checks are skipped and the app works normally.</p>
+
+  <h2 id="website">Website</h2>
+  <p>This website (kelimekancasi.com) uses Cloudflare Web Analytics only to see how many people visit. It uses no cookies and doesn't track you across sites; it keeps only aggregate data such as page views, country, browser type and the referring link.</p>
+
+  <h2 id="providers">Service providers</h2>
+  <p>Only these companies process your data, for the purposes above and on our behalf:</p>
+  <ul>
+    <li><strong>Cloudflare, Inc.</strong> (USA; database in Western Europe): our server, progress and photo backup, purchase records, contributions, picture drawing, content downloads and website statistics.</li>
+    <li><strong>Anthropic, PBC</strong> (USA): story writing, describing and checking picture scenes, pronunciation.</li>
+    <li><strong>PostHog, Inc.</strong> (servers in the European Union): usage statistics and error records.</li>
+    <li><strong>Expo</strong> (650 Industries, Inc., USA): app updates.</li>
+    <li><strong>GitHub, Inc.</strong> (USA): hosting of the website and the version file.</li>
+  </ul>
+  <p>The app is distributed through Google Play and the App Store. Downloads, payments, the device check (Play Integrity, App Attest) and the phone's own backups (Block Store, Keychain, Google and iCloud backups) are subject to Google's and Apple's own privacy policies. Apart from these, we don't share or sell your data; if the law requires it, we share only what is needed.</p>
+
+  <h2 id="transfers">International transfers</h2>
+  <p>The servers of the providers above are outside Türkiye (in the European Union and the USA). When you use the app, the data described on this page is transferred to these countries only for the purposes stated. Transfers are made under these companies' data processing terms. Transfers for story and picture help are also based on your consent, which you can withdraw in Settings.</p>
+
+  <h2 id="legal-basis">Legal bases</h2>
+  <ul>
+    <li><strong>Providing the service</strong> (KVKK Art. 5(2)(c); GDPR Art. 6(1)(b)): progress backup, backup of your own content, purchase records and adding picture credits, pronunciation.</li>
+    <li><strong>Our legitimate interests</strong> (KVKK Art. 5(2)(f); GDPR Art. 6(1)(f)): fair use of free allowances, the device check, refund checks and preventing abuse; usage statistics to improve the app and fix errors; app updates.</li>
+    <li><strong>Your consent</strong> (KVKK Art. 5(1); GDPR Art. 6(1)(a)): story and picture help, and Contribute your hooks. You can withdraw consent at any time in Settings; this does not affect what was done before.</li>
+    <li><strong>Legal obligations</strong> (KVKK Art. 5(2)(ç); GDPR Art. 6(1)(c)): lawful requests from authorities.</li>
   </ul>
 
-  <h2>Notifications</h2>
-  <p>If you turn on the daily reminder, the notification is scheduled by your phone itself. No server is used for this; you can turn the permission off at any time in your phone settings.</p>
-  <h2>Pronunciation</h2>
-  <p>Words are played with the recordings inside the app and, for text without a recording, with your phone’s own text-to-speech engine. The app sends no data for this; the behavior of the text-to-speech engine is subject to the privacy terms of your phone’s manufacturer.</p>
-  <h2>Version check</h2>
-  <p>When it opens, the app (Android and iPhone) reads a small file at <a href="https://kelimekancasi.com/surum.json">kelimekancasi.com/surum.json</a> to find out whether the version you use is still supported. No personal data or progress information is sent with this request; only, by the nature of an internet connection, your IP address may appear in the server logs of GitHub, which hosts the site. If there is no internet, the check is skipped and the app works normally.</p>
-  <h2>Purchase</h2>
-  <p>Part of the app is free; the remaining words are unlocked with a one-time purchase on Google Play (Android) or the App Store (iPhone). The payment is handled entirely by the respective store; your card or payment details never reach us. The app only receives from the store whether this account has made the purchase and stores that on your phone. So that story and picture allowances are counted correctly on the server, the purchase proof (the store’s transaction number) is sent to our server; it is not stored as is, only as a one-way summary (hash). To find refunded purchases, these summaries are compared with Apple’s and Google’s refund information; the extras given by a refunded pack or picture allowance are removed. No other information is collected for this. Purchases are subject to the privacy policy of <a href="https://policies.google.com/privacy">Google</a> or <a href="https://www.apple.com/legal/privacy/">Apple</a>.</p>
-  <h2>Website</h2>
-  <p>This website (kelimekancasi.com) uses Cloudflare Web Analytics only to see how many people visit. This tool does not use cookies, does not track you across sites and does not collect personal data; only aggregate information that does not reveal your identity is kept, such as page view counts, country, browser type and the link from which the site was reached. The anonymous statistics inside the app are described above, in the “Data we collect” section.</p>
-  <h2>Third parties</h2>
-  <p>The anonymous usage statistics are processed on our behalf by PostHog, as described above. If you use story and picture help, what you send is processed on our behalf by Anthropic and Cloudflare (above). Other than that, the app does not share your data with any third party. The app is distributed through Google Play and the App Store; downloads and updates are subject to Google’s and Apple’s own privacy policies.</p>
-  <h2>Age</h2>
-  <p>The app is designed for users aged 13 and over and does not collect identifying data from any age group.</p>
+  <h2 id="retention">How long we keep data</h2>
+  <ul>
+    <li><strong>Backup and device record:</strong> until you delete them. The record and backup of an app that hasn't been opened for 24 months are deleted automatically.</li>
+    <li><strong>Purchase records:</strong> as long as the device record exists. Hashes of picture-pack purchases are kept, without the link to the device, so the same purchase is never added twice; hashes of refunded purchases are kept for refund checks.</li>
+    <li><strong>Story and picture usage counts:</strong> daily allowances are deleted when the day ends; technical usage records (type, result, duration; not your text) are kept for 90 days.</li>
+    <li><strong>Abuse counters:</strong> counters kept with an irreversible hash of the IP address are deleted within a day at most.</li>
+    <li><strong>Reports:</strong> a “⚑ Report” record (the result's number and the reason) is kept to review the content.</li>
+    <li><strong>Contributions:</strong> anonymous, so they cannot be linked to a person; kept to improve the hooks.</li>
+    <li><strong>Statistics:</strong> kept in PostHog as long as needed to improve the app.</li>
+  </ul>
+
+  <h2 id="deletion">Deleting your data</h2>
+  <p>Settings → <strong>“Delete my data”</strong> (needs internet):</p>
+  <ul>
+    <li><strong>On the phone:</strong> your progress, settings and reminders are deleted; the app opens as on the first day. Your own hooks, words and photos are deleted if you tick “Also delete my own hooks, words and photos”; if you don't, they stay on the phone and go back into your new backup if you keep using the app.</li>
+    <li><strong>Deleted from our server at once:</strong> your backup, your photo and picture backups, the purchase records of this device record, the picture credits you bought (they don't come back), the device-check key and pre-drawn pictures.</li>
+    <li><strong>What remains:</strong> to prevent abuse, a hash of the phone ID and the numbers of the free words you used are kept for 24 months (the free allowance does not restart in that time). Hashes of picture-pack purchases remain without a link to the device. Packs you bought stay with your store account and come back with “I already bought it”. Anonymous contributions cannot be linked to you, so they cannot be deleted.</li>
+  </ul>
+  <p>“Reset progress” deletes only your progress; the list of free words used stays. Deleting the app from the phone deletes only the data on the phone; the backup on our server is deleted automatically after 24 months. If you want it deleted right away, use “Delete my data” first or write to <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a>.</p>
+
+  <h2 id="rights">Your rights</h2>
+  <p>Under Article 11 of KVKK you have the right to learn whether your data is processed, to request information about it, to learn the purpose of processing and whether it is used accordingly, to know to whom it is transferred in Türkiye or abroad, to ask for it to be corrected if incomplete or wrong, to ask for it to be erased or destroyed and for these actions to be notified to those it was transferred to, to object to a result against you that comes only from automated analysis, and to claim compensation if you suffer damage from unlawful processing.</p>
+  <p>If you live in the European Union, under the GDPR you have the right to access, rectify and erase your data, to restrict processing, to receive your data in a portable format, to object to processing based on legitimate interests, and to withdraw consent.</p>
+  <p>To use these rights, write to <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a>; we answer free of charge within 30 days at the latest. Because there are no accounts, we cannot find you by name; we will tell you the steps we need to find your record. The fastest way to delete is “Delete my data” in the app. If you are not satisfied with our answer, you can complain to Türkiye's Personal Data Protection Authority (KVKK) or, in the European Union, to the data protection authority of your country.</p>
+
+  <h2 id="age">Age limit</h2>
+  <p>The app is for people aged 13 and over. Children under 13 should not use it, and we don't knowingly collect data from them. If you think a child under 13 is using the app, write to us and we will delete their data.</p>
+
+  <h2 id="security">Security</h2>
+  <p>All connections between the app and our server are encrypted (HTTPS), and requests are signed with an app-specific key. The phone ID, IP address and store transaction number are kept on the server only as irreversible hashes. What you write is not written to server logs.</p>
+
   <h2>Changes</h2>
-  <p>If this policy changes, the current version will be published on this page and the date above will be updated. If the scope of the data collected changes, this page will be updated beforehand.</p>
-  <h2>Contact</h2>
+  <p>If this policy changes, the current version is published on this page and the date above is updated. If the scope of the data collected changes, this page is updated in advance.</p>
+
+  <h2 id="contact">Contact</h2>
   <p>Word Hook is developed independently by Fırat Tunç.</p>
   <p>For questions: <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a></p>
 

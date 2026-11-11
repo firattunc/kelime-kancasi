@@ -47,77 +47,157 @@
 <main>
   <p class="langs" aria-label="Idioma"><a href="/gizlilik.html" hreflang="tr" lang="tr">Türkçe</a> · <a href="/es/privacidad.html" hreflang="es" lang="es">Español</a> · <span aria-current="true">Português</span> · <a href="/it/privacy.html" hreflang="it" lang="it">Italiano</a> · <a href="/fr/confidentialite.html" hreflang="fr" lang="fr">Français</a> · <a href="/id/privasi.html" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/ja/privacy.html" hreflang="ja" lang="ja">日本語</a> · <a href="/ko/privacy.html" hreflang="ko" lang="ko">한국어</a> · <a href="/en/privacy.html" hreflang="en" lang="en">English</a></p>
   <h1>Política de privacidade</h1>
-  <p class="date">Gancho de Palavras · Última atualização: 10 de novembro de 2026</p>
+  <p class="date">Gancho de Palavras · Última atualização: 11 de novembro de 2026</p>
 
-  <p>O Gancho de Palavras é um app para celular que ensina palavras em inglês com técnicas de memória. Esta página explica como o app trata os seus dados. Resumindo: <strong>não coletamos seu nome, seu e-mail nem qualquer informação que identifique você; guardamos apenas estatísticas de uso anônimas para melhorar o app; e, se você permitir, recebemos seus próprios ganchos de forma anônima.</strong></p>
+  <p>O Gancho de Palavras é um app para celular que ensina palavras com técnicas de memória. Esta página explica quais dados o app guarda e onde, para quem os envia e por quê, e como você pode apagá-los. Ela também é o nosso aviso de privacidade conforme a Lei n.º 6698 de Proteção de Dados Pessoais da Turquia (KVKK) e o Regulamento Geral de Proteção de Dados da União Europeia (GDPR).</p>
 
-  <h2>Dados que coletamos</h2>
-  <p>O app não tem cadastro, login nem anúncios. Não coletamos seu nome, seu endereço de e-mail, sua localização, seus contatos nem seu identificador de publicidade, e não rastreamos você em outros apps ou sites.</p>
-  <p>Para melhorar o app, coletamos apenas <strong>estatísticas de uso anônimas</strong>:</p>
+  <h2 id="summary">Resumindo</h2>
   <ul>
-    <li>Qual etapa foi concluída (introdução, palavras do dia, revisão, testes, relatório de memória) e suas quantidades (quantas palavras, quantas respostas certas, qual dia).</li>
-    <li>O nível que você escolhe, o número de palavras por dia e se você ativa o lembrete.</li>
-    <li>Se a tela de compra foi aberta e o resultado da compra (iniciada, concluída, com erro). Os dados de pagamento não chegam até nós.</li>
-    <li>A versão do app, o modelo do celular, a versão do sistema operacional e o registro técnico de erros do app.</li>
-    <li>O texto que você escreve por conta própria na caixa “Escrever um comentário”. Seu nome e seu e-mail não são pedidos; recomendamos não escrever informações pessoais no texto.</li>
+    <li>Não há contas, logins nem anúncios. Não pedimos seu nome, e-mail, número de telefone, localização nem contatos.</li>
+    <li>Seu progresso e o que você escreve ficam salvos em backup no nosso servidor, para voltarem se você reinstalar o app. O backup fica ligado a um número de dispositivo aleatório; ele não sabe quem você é.</li>
+    <li>Se você usar a ajuda com história e imagem (antes pedimos a sua permissão), a palavra, o seu gancho e a sua história são enviados a modelos que geram texto e imagens (Anthropic, Cloudflare).</li>
+    <li>Coletamos estatísticas de uso anônimas para melhorar o app (PostHog).</li>
+    <li>Não vendemos seus dados, não os usamos para publicidade e não rastreamos você em outros apps ou sites.</li>
+    <li>Você pode apagar seus dados do celular e do nosso servidor em Ajustes → “Apagar meus dados”.</li>
   </ul>
-  <p>Quais palavras você aprende e o que você digita ou pesquisa não fazem parte dessas estatísticas (o backup do progresso é explicado separadamente abaixo). Essas estatísticas são guardadas com um número de instalação gerado aleatoriamente no seu celular; esse número não é associado ao seu nome, ao seu e-mail nem à sua conta, e é apagado do celular quando você desinstala o app. Seu endereço IP não é guardado junto com as estatísticas.</p>
-  <p>As estatísticas são processadas em nosso nome pela PostHog, em servidores na União Europeia (<a href="https://posthog.com/privacy">política de privacidade da PostHog</a>). Elas não são usadas para publicidade nem marketing e não são vendidas a ninguém.</p>
 
-  <h2 id="backup-progresso">Backup do progresso (conta do dispositivo)</h2>
-  <p>Para que você possa continuar de onde parou ao reinstalar o app ou trocar de celular, seu progresso de aprendizado é salvo em backup no nosso servidor. Não há cadastro, login nem códigos; o backup fica ligado a um <strong>número de dispositivo</strong> aleatório que o app recebe na primeira abertura. Esse número não é associado ao seu nome, ao seu e-mail, à sua conta da loja nem às estatísticas de uso acima.</p>
+  <h2 id="controller">Controlador dos dados</h2>
+  <p>Fırat Tunç, que desenvolve o Gancho de Palavras de forma independente na Turquia, é o controlador dos dados conforme a KVKK e o GDPR. Você pode falar com a gente em <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a>. Os dados são coletados automaticamente pelo app, como descrito abaixo.</p>
+
+  <h2 id="on-your-phone">O que fica no seu celular</h2>
+  <p>Os cartões de palavras, as imagens deles e o áudio gravado estão dentro do app (os pacotes de idioma são baixados uma única vez). O texto sem gravação é lido em voz alta pelo mecanismo de texto para fala do próprio celular; o app não envia nenhum dado para isso, e esse mecanismo segue os termos do fabricante do seu celular. Se você ativar o lembrete diário, o próprio celular agenda a notificação; nenhum servidor participa, e você pode desativar a permissão nos ajustes do celular quando quiser. Só abrimos a câmera ou a galeria quando você toca para adicionar uma foto ao seu próprio gancho. Se o backup do próprio celular (Google ou iCloud) estiver ativado, os dados do app também podem ser incluídos nele; nós não temos acesso a esse backup.</p>
+
+  <h2 id="progress-backup">Backup do progresso (conta do dispositivo)</h2>
+  <p>Para que você possa continuar de onde parou ao reinstalar o app ou trocar de celular, seu progresso de aprendizado é salvo em backup no nosso servidor. Não há cadastro, login nem códigos; o backup fica ligado a um <strong>número de dispositivo</strong> aleatório que o app recebe na primeira abertura. Esse número não é associado ao seu nome, ao seu e-mail, à sua conta da loja nem às estatísticas de uso.</p>
   <ul>
-    <li><strong>O que entra no backup:</strong> as palavras que você aprendeu e suas datas de revisão, as marcações de “Já sei”, seu contador de sequência, seu álbum, as configurações do app e os números das palavras que você abriu com sua cota gratuita; os ganchos e histórias que você mesmo escreve e as palavras que você adiciona (texto e emoji). As informações de compra não entram no backup (os pacotes voltam pela sua conta da loja). Suas próprias fotos e as imagens desenhadas para você também entram no backup (uma cópia reduzida, no máximo 120 KB cada); só você pode baixá-las.</li>
+    <li><strong>O que entra no backup:</strong> as palavras que você aprendeu e suas datas de revisão, as marcações de “Já sei”, sua sequência de dias, seu álbum, as configurações do app e os números das palavras que você abriu com sua cota gratuita; os ganchos e histórias que você escreve e as palavras que você adiciona (texto e emoji); cópias reduzidas das suas próprias fotos e das imagens desenhadas para você (até 120 KB cada, até 200; só você pode baixá-las). As compras de pacotes não fazem parte do backup (elas voltam pela sua conta da loja); o registro de compra que guardamos no nosso servidor é descrito abaixo.</li>
+    <li><strong>Guardado junto com o registro:</strong> a plataforma (Android ou iPhone), a versão e o idioma do app, quando o registro foi criado e quando o app foi aberto pela última vez.</li>
     <li><strong>Identificador do celular:</strong> para reconhecer uma reinstalação no mesmo celular, é enviado o identificador do celular específico deste app (ANDROID_ID no Android, identifierForVendor no iPhone); o servidor não guarda o identificador em si, apenas um resumo irreversível (hash) dele.</li>
-    <li><strong>No seu celular:</strong> o número do dispositivo também é guardado nas Chaves (Keychain) do iPhone e, no Android, no Block Store do Google. O Block Store é uma parte criptografada do backup do Google do seu celular; se você configurar um celular novo a partir desse backup ou por transferência do celular antigo, seu progresso volta. Nós não temos acesso a esse espaço.</li>
-    <li><strong>Por quê:</strong> para restaurar seu progresso, juntar vários celulares e impedir que a cota gratuita de palavras seja reiniciada desinstalando e reinstalando o app ou mudando o relógio do celular (uso justo). Por isso o “hoje” do app é contado pelo relógio do servidor.</li>
-    <li><strong>Onde:</strong> nos servidores da Cloudflare (banco de dados na Europa Ocidental), em nosso nome. A conexão é criptografada (HTTPS). Não é usado para publicidade, rastreamento nem marketing, não é vendido nem compartilhado com ninguém.</li>
-    <li><strong>Exclusão:</strong> em Configurações → “Apagar meus dados”, seu backup e tudo o que está no celular são apagados na hora; você também pode pedir isso escrevendo para info@kelimekancasi.com. Para evitar abusos, apenas o resumo do identificador do celular e os números das palavras gratuitas que você usou são guardados por 24 meses (nesse período a cota gratuita não recomeça). “Reiniciar o progresso” apaga só o progresso; a lista de palavras gratuitas usadas continua.</li>
-    <li><strong>Prazo de guarda:</strong> o backup de um app que não é aberto por 24 meses é apagado automaticamente.</li>
+    <li><strong>No seu celular:</strong> o número do dispositivo também é guardado nas Chaves (Keychain) do iPhone ou, no Android, no Block Store do Google. O Block Store é uma parte criptografada do backup do Google do seu celular; se você configurar um celular novo a partir desse backup ou por transferência do celular antigo, seu progresso volta. Nós não temos acesso a esses espaços.</li>
+    <li><strong>Por quê:</strong> para restaurar seu progresso, juntar vários celulares e impedir que a cota gratuita de palavras seja reiniciada ao reinstalar o app ou mudar o relógio do celular (uso justo). Por isso o “hoje” do app é contado pelo relógio do servidor.</li>
+    <li><strong>Onde:</strong> nos servidores da Cloudflare (banco de dados na Europa Ocidental), em nosso nome. Não é usado para publicidade, rastreamento nem marketing, e não é vendido.</li>
   </ul>
-  <p>Sem internet o app funciona normalmente; o backup é feito quando a conexão volta. Se o backup do próprio celular (Google ou iCloud) estiver ativado, o banco de dados do app também pode ser incluído nele; nós não temos acesso a esse backup.</p>
+  <p>Sem internet o app funciona normalmente; o backup é feito quando a conexão volta. O prazo de guarda e a exclusão são explicados mais abaixo em <a href="#deletion">“Apagar seus dados”</a>.</p>
 
-  <h2 id="seu-gancho">Seu próprio gancho, sua história e sua foto</h2>
-  <p>Você pode escrever seu próprio gancho para um cartão, adicionar sua própria palavra e colocar neles um emoji ou uma foto sua. O gancho, a história e a foto que cada usuário cria ficam apenas no celular dele e no backup dele; não são mostrados a mais ninguém e não fazem parte das estatísticas. Textos, emojis e fotos (uma cópia reduzida) entram no backup do progresso descrito acima; eles voltam quando você reinstala o app. Não filtramos nem lemos o que você escreve, nem colocamos isso em estatísticas ou vídeos promocionais. Só abrimos a câmera ou a galeria quando você toca para escolher uma foto; a permissão da câmera serve só para isso. “Apagar meus dados” apaga tudo isso; “Reiniciar o progresso” não apaga seus próprios ganchos e palavras. A única exceção é “Contribua com seus ganchos”, que você mesmo ativa: se estiver ativado, uma cópia anônima dos seus ganchos e histórias chega até nós (veja abaixo).</p>
+  <h2 id="own-hook">Seu próprio gancho, sua história, suas palavras e suas fotos</h2>
+  <p>Você pode trocar o gancho de um cartão em “✎ Editar” ou escrever o seu próprio, adicionar suas próprias palavras e colocar nelas um emoji ou uma foto sua. Tudo isso fica só no seu celular e no seu próprio backup; não é mostrado a outros usuários e não faz parte das estatísticas. Não filtramos, não lemos nem usamos em promoções o que você escreve. Só abrimos a câmera ou a galeria quando você toca; a permissão da câmera serve só para isso. A única exceção é “Contribua com seus ganchos”, que você mesmo ativa: quando está ativado, uma cópia anônima dos seus ganchos e histórias chega até nós (veja abaixo).</p>
+
+  <h2 id="purchases">Compras</h2>
+  <p>Uma parte do app é gratuita. Os pacotes de palavras e o pacote “Minhas próprias palavras” são compras únicas; os pacotes de imagens são consumíveis (cada imagem usa um crédito). Não há assinaturas. O pagamento é feito pelo Google Play (Android) ou pela App Store (iPhone); os dados do seu cartão ou de pagamento nunca chegam até nós.</p>
+  <ul>
+    <li><strong>No celular:</strong> o app fica sabendo pela loja quais pacotes foram comprados com a sua conta da loja e guarda isso no celular.</li>
+    <li><strong>No nosso servidor:</strong> para que as cotas de histórias e imagens sejam contadas corretamente e os créditos de imagem comprados possam ser adicionados, o comprovante de compra da loja é enviado ao nosso servidor e verificado com a loja. O registro de compra que guardamos é: um resumo irreversível (hash) do número da transação da loja (não o número em si), o produto, a plataforma e a data. O registro fica ligado ao número do seu dispositivo. Quantos créditos de imagem comprados ainda restam também é guardado junto com o registro do seu dispositivo.</li>
+    <li><strong>Reembolsos:</strong> para encontrar compras reembolsadas, esses hashes são comparados com os dados de reembolso da Apple e do Google; os extras que vieram com um pacote ou com créditos de imagem reembolsados são retirados. Uma compra de pacote libera as cotas do pacote da ajuda com história e imagem em no máximo 5 registros de dispositivo.</li>
+    <li><strong>Estatísticas:</strong> abrir a tela de compra e o resultado de uma compra (iniciada, concluída, cancelada, com erro) também fazem parte das estatísticas de uso anônimas.</li>
+  </ul>
+  <p>As compras também estão sujeitas à política de privacidade do <a href="https://policies.google.com/privacy">Google</a> ou da <a href="https://www.apple.com/legal/privacy/">Apple</a>.</p>
+
+  <h2 id="help">Ajuda com história, imagem e pronúncia</h2>
+  <p>Ao escrever o seu próprio gancho, você pode receber ajuda de modelos que geram texto e imagens com os botões “Escreva a história pra mim” e “Desenhe minha imagem”. Na primeira vez que você os usa, pedimos a sua permissão uma única vez; você pode desativar em Ajustes → “Ajuda com história e imagem”. Enquanto estiver desativado, sua palavra, seu gancho e sua história não são enviados a lugar nenhum.</p>
+  <ul>
+    <li><strong>O que é enviado:</strong> a palavra, o significado, o seu gancho e (se houver) a história que você escreveu. Seu nome, e-mail, contatos, localização e número de dispositivo não são enviados a essas empresas. Os pedidos passam pelo nosso servidor.</li>
+    <li><strong>Para quem:</strong> para as histórias, a <strong>Anthropic</strong> (modelo Claude). Para as imagens, a Anthropic primeiro escreve uma descrição curta da cena a ser desenhada a partir da sua história e confere se ela é adequada; depois o modelo de imagens da <strong>Cloudflare</strong> desenha a imagem a partir dessa descrição (o modelo de imagens nunca vê o que você escreveu). As duas trabalham em nosso nome como serviço pago e não usam o que é enviado para treinar modelos; podem guardar os pedidos por pouco tempo, conforme os próprios termos, para detectar abusos.</li>
+    <li><strong>Pronúncia:</strong> quando você adiciona uma palavra sua, só a palavra que você digitou e o idioma do app são enviados à Anthropic, pelo nosso servidor, para preencher o campo de pronúncia. Esse pedido pode ser feito antes de a janela de permissão aparecer; ele não é enviado se você desativou a ajuda com história e imagem ou tocou em “Agora não” na janela de permissão. Nosso servidor não guarda a palavra e esse pedido não consome nenhuma cota.</li>
+    <li><strong>O que é guardado:</strong> a história e a imagem ficam só no seu celular e no seu próprio backup e não são mostradas a mais ninguém; nosso servidor não escreve o texto da história nos registros. As histórias e imagens dos nossos próprios ganchos prontos (não o seu texto) podem ser guardadas num cache comum para ficarem prontas para o próximo usuário. Para deixar a imagem pronta, se a ajuda estiver ativada, uma imagem pode ser desenhada a partir de uma história que você salvou antes de pedir; se não for usada, ela é apagada do servidor em pouco tempo. Para contar as cotas, o servidor guarda só números (quantas histórias e imagens e quando).</li>
+    <li><strong>Cotas:</strong> histórias e imagens têm cotas diárias; o app mostra quantas restam.</li>
+    <li><strong>Denunciar:</strong> se aparecer um resultado impróprio, avise a gente com “⚑ Denunciar”; esse resultado é ocultado na hora. A denúncia envia apenas o número do resultado e o motivo que você escolheu, não o que você escreveu.</li>
+  </ul>
 
   <h2 id="contribuir">Contribua com seus ganchos (opcional)</h2>
-  <p>Na primeira vez que você salva seu próprio gancho ou sua história, perguntamos uma única vez: o que você escreve pode ser usado de forma anônima para melhorar os ganchos do Gancho de Palavras? Vem desativado; se você não tocar em “Sim, podem usar”, nada é enviado. Você pode ativar ou desativar quando quiser em Configurações → “Contribua com seus ganchos”.</p>
+  <p>Na primeira vez que você salva o seu próprio gancho ou a sua história, perguntamos uma única vez se o que você escreve pode ser usado, de forma anônima, para melhorar os ganchos do Gancho de Palavras. Vem desativado por padrão; se você não tocar em “Sim, podem usar”, nada é enviado. Você pode ativar ou desativar quando quiser em Ajustes → “Contribua com seus ganchos”.</p>
   <ul>
     <li><strong>O que é enviado:</strong> o idioma do app, o pacote e o número da palavra (numa palavra que você mesmo adicionou: a palavra e o significado), seu gancho e sua história, o tipo de imagem (nenhuma, emoji, foto ou desenho; nunca a imagem em si), o dia em que foi salvo e os totais de quanto você lembrou a palavra nas 5 revisões seguintes (quantas vezes direto, com o gancho ou errado).</li>
-    <li><strong>O que não é enviado:</strong> seu nome, seu e-mail, o identificador do celular, o número do dispositivo, seu endereço IP e suas fotos. O servidor olha o número do dispositivo para saber que o pedido vem de um app registrado e para limitar abusos, mas não o guarda junto com a contribuição. O registro guardado tem o dia, não a hora.</li>
-    <li><strong>Para quê:</strong> aprender com os ganchos mais lembrados e mais trocados e melhorar os ganchos do app. O que você escreve não é mostrado como está a outros usuários, não é vendido, não é usado para publicidade e não é compartilhado com ninguém.</li>
-    <li><strong>Onde:</strong> no mesmo banco de dados da Cloudflare que o backup do progresso (Europa Ocidental), numa tabela separada do backup. Seu backup na nuvem não é usado para isso.</li>
-    <li><strong>Desativar e apagar:</strong> ao desativar, nada mais é enviado e o que estava esperando no celular para ser enviado é apagado. O que já foi enviado é anônimo e não pode ser ligado a você; por isso não pode ser separado e apagado por pessoa (“Apagar meus dados” não inclui isso).</li>
+    <li><strong>O que não é enviado:</strong> seu nome, seu e-mail, o identificador do celular, o número do dispositivo, seu endereço IP e suas fotos. O servidor olha o número do dispositivo para conferir que o pedido vem de um app registrado e para limitar abusos, mas não o guarda junto com a contribuição. O registro guardado não tem a hora, só o dia.</li>
+    <li><strong>Para quê:</strong> aprender com os ganchos que são bem lembrados ou trocados com frequência e melhorar os ganchos do app. O que você escreve não é mostrado como está a outros usuários, não é vendido, não é usado para publicidade e não é compartilhado com ninguém.</li>
+    <li><strong>Onde:</strong> no mesmo banco de dados da Cloudflare que o backup do progresso (Europa Ocidental), numa tabela separada.</li>
+    <li><strong>Desativar e apagar:</strong> ao desativar, nada mais é enviado e o que estava esperando no celular é apagado. O que já foi enviado é anônimo e não pode ser ligado a você; por isso não pode ser separado e apagado (“Apagar meus dados” não inclui isso).</li>
   </ul>
 
-  <h2 id="ajuda-ia">Ajuda com história e imagem</h2>
-  <p>Ao escrever seu próprio gancho, se quiser, você pode receber ajuda de modelos que geram texto e imagens com os botões “Escreva a história pra mim” e “Desenhe minha imagem”. No primeiro uso pedimos sua permissão uma única vez; você pode desativar em Configurações → “Ajuda com história e imagem”. Desativado, nada é enviado.</p>
+  <h2 id="statistics">Estatísticas de uso</h2>
+  <p>Para melhorar o app e corrigir erros, coletamos <strong>estatísticas de uso anônimas</strong>:</p>
   <ul>
-    <li><strong>O que é enviado:</strong> a palavra, o significado, seu gancho e (se houver) a história que você escreveu. Seu nome, seu e-mail, seus contatos, sua localização ou qualquer outra informação pessoal não são enviados.</li>
-    <li><strong>Para quem:</strong> para a história, a <strong>Anthropic</strong> (modelo Claude); para a imagem, a <strong>Cloudflare</strong>. As duas geram o conteúdo em nosso nome como serviço pago e não usam o que é enviado para treinar modelos. Os pedidos passam pelo nosso servidor; o número do seu dispositivo não vai para essas empresas.</li>
-    <li><strong>O que é guardado:</strong> a história fica só no seu celular e no seu próprio backup; nosso servidor não guarda o texto da história. A imagem do seu gancho fica no seu celular e no seu próprio backup de fotos e não é mostrada a mais ninguém. As imagens dos ganchos reserva que nós preparamos (não o seu texto) podem ser guardadas em comum para ficarem prontas para o próximo usuário. Para contar o uso permitido, o servidor guarda só números (quantas histórias / imagens e quando); a palavra, o gancho ou a história não são escritos nos registros. Para deixar a imagem pronta, se você ativou a ajuda, ela pode ser desenhada a partir de uma história salva antes mesmo de você pedir; essa imagem não usada é apagada do servidor em pouco tempo.</li>
-    <li><strong>Limites e segurança:</strong> suas cotas de histórias e imagens (quanto ainda resta) aparecem no app. A compra do pacote é verificada no servidor com o registro de compra da loja (Google Play / App Store). Antes de desenhar uma imagem, a verificação do próprio celular (Google Play Integrity no Android, Apple App Attest no iPhone) confirma que o app não foi modificado; essa verificação não contém a sua identidade. Nos pedidos de história, sugestão de gancho e pronúncia também se olha a mesma verificação do dispositivo; pedidos sem verificação recebem um limite de uso mais rígido.</li>
-    <li><strong>Denunciar:</strong> se aparecer um resultado inadequado, você pode nos avisar com “⚑ Denunciar”; o conteúdo é removido na hora. A denúncia só nos envia o número do resultado e o motivo que você escolhe, não o que você escreveu.</li>
-    <li><strong>Exclusão:</strong> “Apagar meus dados” apaga as cópias no servidor, incluindo as imagens desenhadas para você. Para evitar abusos, a contagem da cota gratuita de imagens fica guardada por 24 meses junto com o resumo do identificador do celular.</li>
+    <li>Instalações, aberturas e atualizações do app; quais etapas foram concluídas (introdução, palavras de hoje, revisão, testes, álbum, relatório de memória) e suas quantidades (quantas palavras, quantas respostas certas, qual dia).</li>
+    <li>O nível e o pacote que você escolhe, o número de palavras por dia, se você ativa os lembretes, quantos dias se passaram desde a instalação, se você tem um pacote e o país da sua loja.</li>
+    <li>Se a tela de compra foi aberta e o resultado da compra. Os dados de pagamento nunca chegam até nós.</li>
+    <li>Contagens que mostram que você adicionou um gancho ou uma palavra sua (não o texto em si). Quando você troca o gancho de um cartão, também são enviados a palavra do cartão e o gancho pronto que você escolheu; um gancho que você mesmo digitou não é enviado.</li>
+    <li>Códigos de resultado da ajuda com história e imagem (concluída, cota esgotada, erro etc.); nenhuma palavra, gancho ou história.</li>
+    <li>A versão do app, o modelo e o fabricante do celular, a versão do sistema operacional, o idioma e o fuso horário configurados no celular, e um registro técnico de erros do app (tela, nome da função, mensagem de erro).</li>
+    <li>O texto que você decide escrever na caixa “Escrever um comentário”. Não pedimos seu nome nem seu e-mail; por favor, não inclua informações pessoais.</li>
+  </ul>
+  <p>Essas estatísticas são guardadas com um número de instalação aleatório que a PostHog cria no seu celular; ele não é associado ao seu nome, ao seu e-mail, ao número do seu dispositivo (backup) nem à sua conta da loja, e é apagado do celular quando você desinstala o app. O app desativa a dedução de uma localização a partir do seu endereço IP. As estatísticas são processadas em nosso nome pela PostHog, em servidores na União Europeia (<a href="https://posthog.com/privacy">política de privacidade da PostHog</a>). Elas não são usadas para publicidade nem marketing e não são vendidas.</p>
+  <p><strong>Desativar:</strong> por enquanto o app não tem nenhuma configuração para desativar as estatísticas. Como as estatísticas não identificam você, não conseguimos separar e apagar o que foi enviado do seu celular; ao desinstalar o app, o número de instalação é apagado do celular. Para se opor ou tirar dúvidas, escreva para <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a>.</p>
+
+  <h2 id="attestation">Verificação do dispositivo</h2>
+  <p>Antes de desenhar uma imagem, e nos pedidos de história e de pronúncia, usa-se a verificação do próprio celular para confirmar que o pedido vem de um app sem modificações: Google Play Integrity no Android, Apple App Attest no iPhone. O app recebe do Google ou da Apple um resultado assinado e o nosso servidor o confere; o resultado não contém seu nome nem sua conta. No iPhone, a parte pública de uma chave criada no celular é guardada, para isso, junto com o registro do seu dispositivo. Pedidos sem verificação recebem limites mais rígidos.</p>
+
+  <h2 id="updates">Atualizações e downloads</h2>
+  <ul>
+    <li><strong>Atualizações do app:</strong> ao abrir, o app pergunta ao servidor de atualizações da Expo (u.expo.dev) se há uma atualização. Esse pedido inclui a versão do app, a plataforma e um número de instalação aleatório criado no celular pela Expo; seu endereço IP chega à Expo como parte da conexão. Esse número não é associado ao número do seu dispositivo nem às estatísticas.</li>
+    <li><strong>Verificação de versão:</strong> ao abrir, o app lê um pequeno arquivo em <a href="https://kelimekancasi.com/surum.json">kelimekancasi.com/surum.json</a> para conferir se a sua versão ainda é compatível. Nenhum dado pessoal nem de progresso é enviado; apenas o seu endereço IP pode aparecer, pela própria natureza da conexão, nos registros do servidor do GitHub, que hospeda o site.</li>
+    <li><strong>Download de conteúdo:</strong> os pacotes de idioma, as listas de ganchos prontos e as imagens dos cartões são baixados de dil.kelimekancasi.com (Cloudflare). Nenhum dado pessoal é enviado nesses pedidos.</li>
+  </ul>
+  <p>Sem internet, essas verificações são puladas e o app funciona normalmente.</p>
+
+  <h2 id="website">Site</h2>
+  <p>Este site (kelimekancasi.com) usa o Cloudflare Web Analytics apenas para ver quantas pessoas o visitam. Ele não usa cookies nem rastreia você entre sites; guarda apenas dados agregados, como o número de páginas vistas, o país, o tipo de navegador e o link de onde a pessoa veio.</p>
+
+  <h2 id="providers">Prestadores de serviços</h2>
+  <p>Somente estas empresas processam seus dados, para as finalidades descritas acima e em nosso nome:</p>
+  <ul>
+    <li><strong>Cloudflare, Inc.</strong> (EUA; banco de dados na Europa Ocidental): nosso servidor, o backup do progresso e das fotos, os registros de compra, as contribuições, o desenho das imagens, o download de conteúdo e as estatísticas do site.</li>
+    <li><strong>Anthropic, PBC</strong> (EUA): escrita das histórias, descrição e conferência das cenas das imagens, pronúncia.</li>
+    <li><strong>PostHog, Inc.</strong> (servidores na União Europeia): estatísticas de uso e registros de erros.</li>
+    <li><strong>Expo</strong> (650 Industries, Inc., EUA): atualizações do app.</li>
+    <li><strong>GitHub, Inc.</strong> (EUA): hospedagem do site e do arquivo de versão.</li>
+  </ul>
+  <p>O app é distribuído pelo Google Play e pela App Store. Os downloads, os pagamentos, a verificação do dispositivo (Play Integrity, App Attest) e os backups do próprio celular (Block Store, Keychain, backups do Google e do iCloud) estão sujeitos às políticas de privacidade do Google e da Apple. Além disso, não compartilhamos nem vendemos seus dados; se a lei exigir, compartilhamos apenas o necessário.</p>
+
+  <h2 id="transfers">Transferências internacionais</h2>
+  <p>Os servidores dos prestadores acima ficam fora da Turquia (na União Europeia e nos EUA). Quando você usa o app, os dados descritos nesta página são transferidos para esses países apenas para as finalidades indicadas. As transferências são feitas com base nos termos de processamento de dados dessas empresas. As transferências para a ajuda com história e imagem também se baseiam no seu consentimento, que você pode retirar em Ajustes.</p>
+
+  <h2 id="legal-basis">Bases legais</h2>
+  <ul>
+    <li><strong>Prestação do serviço</strong> (KVKK art. 5(2)(c); GDPR art. 6(1)(b)): backup do progresso, backup do seu próprio conteúdo, registros de compra e adição de créditos de imagem, pronúncia.</li>
+    <li><strong>Nossos interesses legítimos</strong> (KVKK art. 5(2)(f); GDPR art. 6(1)(f)): uso justo das cotas gratuitas, verificação do dispositivo, conferência de reembolsos e prevenção de abusos; estatísticas de uso para melhorar o app e corrigir erros; atualizações do app.</li>
+    <li><strong>Seu consentimento</strong> (KVKK art. 5(1); GDPR art. 6(1)(a)): a ajuda com história e imagem e Contribua com seus ganchos. Você pode retirar o consentimento a qualquer momento em Ajustes; isso não afeta o que foi feito antes.</li>
+    <li><strong>Obrigações legais</strong> (KVKK art. 5(2)(ç); GDPR art. 6(1)(c)): solicitações legítimas de autoridades.</li>
   </ul>
 
-  <h2>Notificações</h2>
-  <p>Se você ativar o lembrete diário, a notificação é agendada pelo próprio celular. Nenhum servidor é usado para isso; você pode desativar a permissão a qualquer momento nas configurações do celular.</p>
-  <h2>Pronúncia</h2>
-  <p>As palavras são reproduzidas com as gravações incluídas no app e, no texto sem gravação, com o mecanismo de texto para fala do próprio celular. O app não envia nenhum dado para isso; o comportamento do mecanismo de texto para fala depende das condições de privacidade do fabricante do seu celular.</p>
-  <h2>Verificação de versão</h2>
-  <p>Ao abrir, o app (Android e iPhone) lê um pequeno arquivo em <a href="https://kelimekancasi.com/surum.json">kelimekancasi.com/surum.json</a> para saber se a versão que você usa ainda é compatível. Com essa solicitação não é enviado nenhum dado pessoal nem de progresso; apenas, pela própria natureza da conexão com a internet, seu endereço IP pode aparecer nos registros do servidor do GitHub, que hospeda o site. Se não houver internet, a verificação é ignorada e o app funciona normalmente.</p>
-  <h2>Compra</h2>
-  <p>Uma parte do app é gratuita; as demais palavras são liberadas com uma compra única no Google Play (Android) ou na App Store (iPhone). O pagamento é feito inteiramente pela loja correspondente; os dados do seu cartão ou de pagamento não chegam até nós. O app apenas recebe da loja a informação de que esta conta fez a compra e a guarda no seu celular. Para que as cotas de histórias e imagens sejam contadas corretamente no servidor, o comprovante de compra (o número da transação da loja) é enviado ao nosso servidor; ele não é guardado como está, apenas como um resumo irreversível (hash). Para identificar compras reembolsadas, esses resumos são comparados com as informações de reembolso da Apple e do Google; os extras dados pelo pacote ou pela cota de imagens reembolsados são removidos. Nenhuma outra informação é coletada para isso. As compras estão sujeitas à política de privacidade do <a href="https://policies.google.com/privacy">Google</a> ou da <a href="https://www.apple.com/legal/privacy/">Apple</a>.</p>
-  <h2>Site</h2>
-  <p>Este site (kelimekancasi.com) usa o Cloudflare Web Analytics apenas para ver quantas pessoas o visitam. Essa ferramenta não usa cookies, não acompanha você entre sites e não coleta dados pessoais; apenas informações agregadas que não revelam sua identidade, como o número de páginas vistas, o país, o tipo de navegador e o link de onde você chegou ao site. As estatísticas anônimas dentro do app são explicadas acima, na seção “Dados que coletamos”.</p>
-  <h2>Terceiros</h2>
-  <p>As estatísticas de uso anônimas são processadas em nosso nome pela PostHog, como explicado acima. Se você usar a ajuda com história e imagem, o que você envia é processado em nosso nome pela Anthropic e pela Cloudflare (veja acima). Fora isso, o app não compartilha seus dados com nenhum terceiro. O app é distribuído pelo Google Play e pela App Store; downloads e atualizações estão sujeitos às políticas de privacidade do Google e da Apple.</p>
-  <h2>Idade</h2>
-  <p>O app foi pensado para usuários com 13 anos ou mais e não coleta dados identificáveis de nenhuma faixa etária.</p>
+  <h2 id="retention">Por quanto tempo guardamos os dados</h2>
+  <ul>
+    <li><strong>Backup e registro do dispositivo:</strong> até você apagá-los. O registro e o backup de um app que não é aberto por 24 meses são apagados automaticamente.</li>
+    <li><strong>Registros de compra:</strong> enquanto o registro do dispositivo existir. Os hashes das compras de pacotes de imagens são mantidos, sem o vínculo com o dispositivo, para que a mesma compra nunca seja somada duas vezes; os hashes das compras reembolsadas são mantidos para as conferências de reembolso.</li>
+    <li><strong>Contagens de uso de histórias e imagens:</strong> as cotas diárias são apagadas ao fim do dia; os registros técnicos de uso (tipo, resultado, duração; não o seu texto) são mantidos por 90 dias.</li>
+    <li><strong>Contadores contra abusos:</strong> os contadores guardados com um hash irreversível do endereço IP são apagados em no máximo um dia.</li>
+    <li><strong>Denúncias:</strong> o registro de uma “⚑ Denunciar” (o número do resultado e o motivo) é mantido para revisar o conteúdo.</li>
+    <li><strong>Contribuições:</strong> anônimas, por isso não podem ser ligadas a uma pessoa; mantidas para melhorar os ganchos.</li>
+    <li><strong>Estatísticas:</strong> mantidas na PostHog pelo tempo necessário para melhorar o app.</li>
+  </ul>
+
+  <h2 id="deletion">Apagar seus dados</h2>
+  <p>Ajustes → <strong>“Apagar meus dados”</strong> (precisa de internet):</p>
+  <ul>
+    <li><strong>No celular:</strong> seu progresso, suas configurações e seus lembretes são apagados; o app abre como no primeiro dia. Seus próprios ganchos, palavras e fotos são apagados se você marcar “Apagar também meus próprios ganchos, palavras e fotos”; se você não marcar, eles ficam no celular e voltam para o seu novo backup se você continuar usando o app.</li>
+    <li><strong>Apagado do nosso servidor na hora:</strong> seu backup, os backups das suas fotos e imagens, os registros de compra deste registro de dispositivo, os créditos de imagem que você comprou (eles não voltam), a chave de verificação do dispositivo e as imagens desenhadas antecipadamente.</li>
+    <li><strong>O que permanece:</strong> para evitar abusos, um hash do identificador do celular e os números das palavras gratuitas que você usou são mantidos por 24 meses (nesse período a cota gratuita não recomeça). Os hashes das compras de pacotes de imagens permanecem sem vínculo com o dispositivo. Os pacotes que você comprou ficam na sua conta da loja e voltam com “Já comprei antes”. As contribuições anônimas não podem ser ligadas a você, por isso não podem ser apagadas.</li>
+  </ul>
+  <p>“Reiniciar o progresso” apaga apenas o seu progresso; a lista de palavras gratuitas usadas continua. Desinstalar o app apaga só os dados do celular; o backup no nosso servidor é apagado automaticamente depois de 24 meses. Se você quiser que ele seja apagado na hora, use primeiro “Apagar meus dados” ou escreva para <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a>.</p>
+
+  <h2 id="rights">Seus direitos</h2>
+  <p>Conforme o artigo 11 da KVKK, você tem o direito de saber se seus dados são tratados, de pedir informações sobre eles, de saber a finalidade do tratamento e se os dados são usados de acordo com ela, de saber para quem são transferidos na Turquia ou no exterior, de pedir a correção se estiverem incompletos ou errados, de pedir a eliminação ou destruição e que isso seja comunicado a quem os recebeu, de se opor a um resultado desfavorável a você que decorra exclusivamente de uma análise automatizada e de pedir indenização se sofrer dano por um tratamento ilícito.</p>
+  <p>Se você mora na União Europeia, conforme o GDPR você tem o direito de acesso, retificação e apagamento dos seus dados, o direito à limitação do tratamento, o direito à portabilidade dos dados, o direito de se opor ao tratamento baseado em interesses legítimos e o direito de retirar o consentimento.</p>
+  <p>Para exercer esses direitos, escreva para <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a>; respondemos gratuitamente em no máximo 30 dias. Como não há contas, não conseguimos encontrar você pelo nome; vamos dizer os passos de que precisamos para localizar o seu registro. O jeito mais rápido de apagar é “Apagar meus dados” no app. Se você não ficar satisfeito com a nossa resposta, pode apresentar uma reclamação à Autoridade de Proteção de Dados Pessoais da Turquia (KVKK) ou, na União Europeia, à autoridade de proteção de dados do seu país.</p>
+
+  <h2 id="age">Limite de idade</h2>
+  <p>O app é para pessoas a partir de 13 anos. Menores de 13 anos não devem usá-lo, e não coletamos dados deles de forma consciente. Se você acha que uma criança menor de 13 anos está usando o app, escreva para a gente e apagaremos os dados dela.</p>
+
+  <h2 id="security">Segurança</h2>
+  <p>Todas as conexões entre o app e o nosso servidor são criptografadas (HTTPS), e os pedidos são assinados com uma chave própria do app. O identificador do celular, o endereço IP e o número da transação da loja ficam no servidor apenas como hashes irreversíveis. O que você escreve não é gravado nos registros do servidor.</p>
+
   <h2>Alterações</h2>
   <p>Se esta política mudar, a versão atual será publicada nesta página e a data acima será atualizada. Se o alcance dos dados coletados mudar, esta página será atualizada antes.</p>
-  <h2>Contato</h2>
+
+  <h2 id="contact">Contato</h2>
   <p>O Gancho de Palavras é desenvolvido de forma independente por Fırat Tunç.</p>
   <p>Para dúvidas: <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a></p>
 

@@ -1,6 +1,6 @@
 # Kelime Kancası
 
-> İngilizce kelimeleri hafıza kancalarıyla öğreten mobil uygulama (Android'de Google Play'de, iPhone'da App Store'da yayında). Her kelime, Türkçede sesi ya da yazılışı benzeyen bir kelimeye (kanca) bağlanır, kısa bir hikâye ve resimle canlandırılır, aralıklı tekrarla (Leitner kutuları) pekiştirilir. İçerik: İngilizcede en sık kullanılan 1000 kelime (New General Service List). İlk 20 kelime ücretsiz, kalanı tek seferlik tam sürümle açılır. Hesap ve reklam yok.
+> İngilizce kelimeleri hafıza kancalarıyla öğreten mobil uygulama (Android'de Google Play'de, iPhone'da App Store'da yayında). Her kelime, Türkçede sesi ya da yazılışı benzeyen bir kelimeye (kanca) bağlanır, kısa bir hikâye ve resimle canlandırılır, aralıklı tekrarla (Leitner kutuları) pekiştirilir. İçerik: İngilizcede en sık kullanılan 1000 kelime (New General Service List). İlk 20 kelime ücretsiz, sonra her gün 1 yeni kelime ücretsiz; kalanı tek seferlik paketle açılır, abonelik yok. Temeli bilenler için Orta seviye (B1-B2) 1000 kelime paketi de var. Kartın kancası "✎ Düzenle" ile değiştirilebilir; kendi kelimeni ekleyebilir, kendi kancana hikâye ve resim yardımı alabilirsin. İlerleme hesap gerekmeden yedeklenir. Hesap ve reklam yok.
 
 ## Sayfalar
 
@@ -10,6 +10,7 @@
 - [Google Play](https://play.google.com/store/apps/details?id=com.kelimekancasi.app): Android uygulaması
 - [App Store](https://apps.apple.com/tr/app/id6816336789): iPhone uygulaması
 - [Gizlilik politikası](https://kelimekancasi.com/gizlilik.html)
+- [Kullanım koşulları](https://kelimekancasi.com/kosullar.html)
 
 ## Kancası ve hikâyesi açık kelimeler
 
