@@ -59,6 +59,7 @@
     <li>We collect anonymous usage statistics to improve the app (PostHog).</li>
     <li>We don't sell your data, use it for ads, or track you across other apps or websites.</li>
     <li>You can delete your data from the phone and from our server with Settings → “Delete my data”.</li>
+    <li>Messages you write in the app’s “Write to us” screen and our replies are kept on our server so we can answer you; we never ask for your name or e-mail.</li>
   </ul>
 
   <h2 id="controller">Data controller</h2>
@@ -113,6 +114,16 @@
     <li><strong>Turning it off and deletion:</strong> once you turn it off, nothing more is sent and anything waiting on the phone is deleted. What was sent before is anonymous and cannot be linked to you, so it cannot be singled out and deleted (“Delete my data” does not cover it).</li>
   </ul>
 
+  <h2 id="support">“Write to us” messages</h2>
+  <p>You can write to us inside the app in Settings → Help → “Write to us”; our reply comes to the same screen, no e-mail needed.</p>
+  <ul>
+    <li><strong>What is kept:</strong> your messages and our replies (plain text, with their time); so that we can answer, with each message your phone’s model, the system and app version, the app’s language, the packs you own and the number of words you have learned. Messages are linked to your random device number; we never ask for your name, e-mail or phone ID.</li>
+    <li><strong>What for:</strong> to answer your question or idea and to find problems in the app. Only we read your messages; they are not shown to others, not sold and not used for advertising.</li>
+    <li><strong>Notice:</strong> when a new message arrives, its first 200 characters are sent to us by e-mail (at most once every 10 minutes); your device number is not in the e-mail.</li>
+    <li><strong>Against abuse:</strong> to send a message the app is checked to be running on a real phone (Play Integrity, App Attest) and up to 5 messages can be sent a day; the counters use a one-way hash of the IP address.</li>
+    <li><strong>How long:</strong> 12 months after the last message of the conversation, then deleted automatically. “Delete my data” deletes your messages and our replies at once.</li>
+  </ul>
+
   <h2 id="statistics">Usage statistics</h2>
   <p>To improve the app and fix errors, we collect <strong>anonymous usage statistics</strong>:</p>
   <ul>
@@ -145,6 +156,7 @@
   <p>Only these companies process your data, for the purposes above and on our behalf:</p>
   <ul>
     <li><strong>Cloudflare, Inc.</strong> (USA; database in Western Europe): our server, progress and photo backup, purchase records, contributions, picture drawing, content downloads and website statistics.</li>
+    <li><strong>Google LLC</strong> (USA): the e-mail inbox where we get the notice of a new “Write to us” message (its first 200 characters).</li>
     <li><strong>Anthropic, PBC</strong> (USA): story writing, describing and checking picture scenes, pronunciation.</li>
     <li><strong>PostHog, Inc.</strong> (servers in the European Union): usage statistics and error records.</li>
     <li><strong>Expo</strong> (650 Industries, Inc., USA): app updates.</li>
@@ -158,6 +170,7 @@
   <h2 id="legal-basis">Legal bases</h2>
   <ul>
     <li><strong>Providing the service</strong> (KVKK Art. 5(2)(c); GDPR Art. 6(1)(b)): progress backup, backup of your own content, purchase records and adding picture credits, pronunciation.</li>
+    <li><strong>“Write to us” messages</strong> (KVKK Art. 5(2)(c); GDPR Art. 6(1)(b)): processing your message and the device details to give you the answer you asked for.</li>
     <li><strong>Our legitimate interests</strong> (KVKK Art. 5(2)(f); GDPR Art. 6(1)(f)): fair use of free allowances, the device check, refund checks and preventing abuse; usage statistics to improve the app and fix errors; app updates.</li>
     <li><strong>Your consent</strong> (KVKK Art. 5(1); GDPR Art. 6(1)(a)): story and picture help, and Contribute your hooks. You can withdraw consent at any time in Settings; this does not affect what was done before.</li>
     <li><strong>Legal obligations</strong> (KVKK Art. 5(2)(ç); GDPR Art. 6(1)(c)): lawful requests from authorities.</li>
@@ -165,6 +178,7 @@
 
   <h2 id="retention">How long we keep data</h2>
   <ul>
+    <li><strong>“Write to us” messages:</strong> 12 months after the last message of the conversation, then deleted automatically.</li>
     <li><strong>Backup and device record:</strong> until you delete them. The record and backup of an app that hasn't been opened for 24 months are deleted automatically.</li>
     <li><strong>Purchase records:</strong> as long as the device record exists. Hashes of picture-pack purchases are kept, without the link to the device, so the same purchase is never added twice; hashes of refunded purchases are kept for refund checks.</li>
     <li><strong>Story and picture usage counts:</strong> daily allowances are deleted when the day ends; technical usage records (type, result, duration; not your text) are kept for 90 days.</li>
@@ -179,6 +193,7 @@
   <ul>
     <li><strong>On the phone:</strong> your progress, settings and reminders are deleted; the app opens as on the first day. Your own hooks, words and photos are deleted if you tick “Also delete my own hooks, words and photos”; if you don't, they stay on the phone and go back into your new backup if you keep using the app.</li>
     <li><strong>Deleted from our server at once:</strong> your backup, your photo and picture backups, the purchase records of this device record, the picture credits you bought (they don't come back), the device-check key and pre-drawn pictures.</li>
+    <li><strong>“Write to us”:</strong> your messages and our replies are deleted from our server at once.</li>
     <li><strong>What remains:</strong> to prevent abuse, a hash of the phone ID and the numbers of the free words you used are kept for 24 months (the free allowance does not restart in that time). Hashes of picture-pack purchases remain without a link to the device. Packs you bought stay with your store account and come back with “I already bought it”. Anonymous contributions cannot be linked to you, so they cannot be deleted.</li>
   </ul>
   <p>“Reset progress” deletes only your progress; the list of free words used stays. Deleting the app from the phone deletes only the data on the phone; the backup on our server is deleted automatically after 24 months. If you want it deleted right away, use “Delete my data” first or write to <a href="mailto:info@kelimekancasi.com">info@kelimekancasi.com</a>.</p>
